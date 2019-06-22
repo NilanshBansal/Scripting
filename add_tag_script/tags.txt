@@ -1,0 +1,26 @@
+nexmo
+tokbox
+javascript
+Vue
+saas
+baas
+serverless
+optimization
+image performance
+image optimizAtion
+image API
+Digital Asset Manager 
+JAMStack
+Continuous Integration
+DevOps
+Continuous Deployment
+unit testing
+travis ci
+Heroku
+Linux
+Ubuntu
+EdgeX Foundry
+circleci
+Java
+PL/SQL
+Twitter API
