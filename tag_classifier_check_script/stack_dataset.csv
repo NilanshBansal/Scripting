@@ -1,0 +1,10 @@
+﻿s.no,msg,old_tags,new_tags
+1,Implement continuous deployment to angular project using ftp,old_tags,"['angular', 'continuous deployment', 'ftp']"
+2,How to fix missing functions directory problem with Netlify continuous deployment?,"['ftp', 'angular6', 'continuous-deployment', 'continuous deployment', 'bitbucket-pipelines', 'bitbucket']",['netlify continuous deployment']
+3,How to set flyway config in continuous deployment pipeline using Travis CI and Azure?,"['continuous deployment', 'reactjs', 'netlify']","['travis ci', 'azure', 'flyway config', 'continuous deployment', 'pipeline']"
+4,"Continuous deployment with gitlab, what are the possible methods?","['flyway', 'azure-web-app-service', 'azure', 'azure-container-service', 'continuous deployment']","['gitlab', 'continuous deployment']"
+5,How exactly works build promotion with GitFlow?,"['continuous deployment', 'gitlab', 'continuous-deployment']","['gitflow', 'build']"
+6,Azure Docker Web App - Failed to update data for container settings,"['git', 'continuous-integration', 'continuous deployment', 'jenkins', 'artifactory', 'devops']","['azure docker', 'container settings', 'web app']"
+7,Jenkins build failed with &quot;Task &#39;Play&#39; not found in root project&quot; error,"['azure-web-app-service', 'docker', 'azure', 'continuous deployment', 'linux']","['jenkins', 'root', 'build']"
+8,aws CodeDeploy vs aws Lambda,"['continuous deployment', 'android', 'jenkins', 'gradle']",['aws lambda']
+9,Best practice to create .NET Web API using generated Server Stub,"['continuous-deployment', 'continuous deployment', 'amazon-web-services', 'aws-code-deploy', 'aws-lambda']","['.net', 'generated', 'stub', 'web api']"
