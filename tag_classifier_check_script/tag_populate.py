@@ -6,7 +6,6 @@ import json
 with open('tweets.csv','r') as f:
 	reader = csv.reader(f)
 	messages = []
-	old_tags = []
 	for row in reader:
 		messages.append(row[1])
 
