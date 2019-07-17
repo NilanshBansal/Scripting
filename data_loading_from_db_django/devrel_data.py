@@ -6,7 +6,9 @@ import django
 django.setup()
 
 import datetime
+
 from users.models import User,Member,UserEvent
+from twitter.models import TwitterUserToken,UserTimeline
 
 def get_user_info(user_email):
     user = User.objects.get(email=user_email)
@@ -63,7 +65,70 @@ def get_user_events_info(user_email):
         for event in all_events:
             writer.writerow(event)
 
+def get_twitter_token_info(user_email):
+    user_token = TwitterUserToken.objects.get(email=user_email)
+    obj = {
+        "id":user_token.id,
+        "user_email":user_token.email,
+        "twitter_id":user_token.twitter_id,
+        "access_token":user_token.access_token,
+        "access_token_secret":user_token.access_token_secret,
+        "screen_name":user_token.screen_name,
+        "member_id":user_token.member.id,
+        "member_email":user_token.member.member_email,
+        "member_name":user_token.member.first_name + ' ' + user_token.member.last_name
+    }
+
+    with open('twitter_token_info.csv','w',encoding='utf-8-sig',newline='') as f:
+        writer = csv.DictWriter(f,obj.keys())
+        writer.writeheader()
+        writer.writerow(obj)
+
+def get_twitter_user_timeline_info(user_email):
+    members = Member.objects.filter(user__email=user_email)
+    for member in members:
+        member_email = member.member_email
+        member_tweets = UserTimeline.objects.filter(user_email=user_email, member__member_email=member_email)
+        twitter_user_token = TwitterUserToken.objects.get(email=user_email,member__member_email=member_email)
+        
+        tweets_info = []
+        for tweet in member_tweets:
+            tweet_obj = {
+                "id":tweet.id,
+                "status_id":tweet.status_id,
+                "posted_by_user_name":tweet.posted_by_user_name,
+                "posted_by_user_screen_name":tweet.posted_by_user_screen_name,
+                "created_at_time":tweet.created_at_time,
+                "created_at_date":tweet.created_at_date,
+                "text":tweet.text,
+                
+                "user_email":user_email,
+                "member_email":member_email,
+                "member_id":tweet.member.id,
+                "member_name":tweet.member.first_name + ' ' + tweet.member.last_name,
+                "member_user_twitter_id": twitter_user_token.twitter_id,
+                "member_user_screen_name":twitter_user_token.screen_name,
+
+                "devrel_choices" : tweet.get_devrel_choices_display(),
+                "text_type" : tweet.text_type,
+                "sentiment_positive" : tweet.sentiment_positive,
+                "sentiment_negative" : tweet.sentiment_negative,
+                "sentiment_neutral": tweet.sentiment_neutral,
+                "tags":tweet.tags,
+                "location":tweet.location
+            }
+
+            tweets_info.append(tweet_obj)
+
+        with open(member_email +'_twitter_timeline_info.csv','w',encoding='utf-8-sig',newline='') as f:
+            writer = csv.DictWriter(f,tweets_info[0].keys())
+            writer.writeheader()
+            for row in tweets_info:
+                writer.writerow(row)
+
 if __name__ == '__main__':
     # get_user_info('bansalnilansh@gmail.com')
     # get_all_members_info('bansalnilansh@gmail.com')
-    get_user_events_info('bansalnilansh@gmail.com')
+    # get_user_events_info('bansalnilansh@gmail.com')
+    # get_twitter_token_info('bansalnilansh@gmail.com')
+    get_twitter_user_timeline_info('bansalnilansh@gmail.com')
