@@ -9,7 +9,7 @@ import datetime
 
 from users.models import User,Member,UserEvent
 from twitter.models import TwitterUserToken,UserTimeline
-from github.models import GithubToken
+from github.models import GithubToken, GithubUser, UserIssue
 
 """
 
@@ -192,33 +192,139 @@ def get_twitter_user_timeline_info(user_email):
 ****** GITHUB ******
 
 """
-# BASED ON MEMBERS TOO ?
 
 def get_github_token_info(user_email):
-    try:
-        user_token = GithubToken.objects.get(email=user_email)
-    except:
-        return print('Twitter not connected !')
+    members = Member.objects.filter(user__email=user_email)
+    if not members.exists():
+        return print('No member exists !')
+    
+    for member in members:
+        member_email = member.member_email
+
+        try:
+            user_token = GithubToken.objects.get(email=user_email, member__member_email=member_email)
+        except:
+            continue
+            
+        obj = {
+            "id":user_token.id,
+            "user_email":user_token.email,
+            "github_user_id":user_token.user_id,
+            "access_token":user_token.access_token,
+            "github_user_name":user_token.user_name,
+            "member_id":user_token.member.id,
+            "member_email":user_token.member.member_email,
+            "member_name":user_token.member.first_name + ' ' + user_token.member.last_name
+        }
+
+        filename = 'scraped_data/' + member_email + '_github_token_info.csv'
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
         
-    obj = {
-        "id":user_token.id,
-        "user_email":user_token.email,
-        "twitter_id":user_token.twitter_id,
-        "access_token":user_token.access_token,
-        "access_token_secret":user_token.access_token_secret,
-        "screen_name":user_token.screen_name,
-        "member_id":user_token.member.id,
-        "member_email":user_token.member.member_email,
-        "member_name":user_token.member.first_name + ' ' + user_token.member.last_name
-    }
+        with open(filename, 'w',encoding='utf-8-sig',newline='') as f:
+            writer = csv.DictWriter(f,obj.keys())
+            writer.writeheader()
+            writer.writerow(obj)
 
-    filename = 'scraped_data/twitter_token_info.csv'
-    os.makedirs(os.path.dirname(filename), exist_ok=True)
 
-    with open(filename,'w',encoding='utf-8-sig',newline='') as f:
-        writer = csv.DictWriter(f,obj.keys())
-        writer.writeheader()
-        writer.writerow(obj)
+def get_github_user_issues(user_email):
+    members = Member.objects.filter(user__email=user_email)
+    if not members.exists():
+        return print('No member exists !')
+    
+    for member in members:
+        member_email = member.member_email
+        
+        try:
+            user_token = GithubToken.objects.get(email=user_email, member__member_email=member_email)
+            owner_user_id = user_token.user_id
+        except:
+            continue
+
+        member_issues = UserIssue.objects.filter(owner_user_id=owner_user_id, member__member_email=member_email)
+        if not member_issues.exists():
+            continue
+        
+        issues_info = []
+        
+        for issue in member_issues:
+            issue_obj = {
+                "id":issue.id,
+                "github_issue_id":issue.issue_id,
+                "issue_title":issue.issue_title,
+                "issue_body":issue.issue_body,
+                "text_type" : issue.text_type,
+                "sentiment_positive" : issue.sentiment_positive,
+                "sentiment_negative" : issue.sentiment_negative,
+                "sentiment_neutral": issue.sentiment_neutral,
+
+                "repo_name":issue.repo_name,
+                "tags":issue.tags,
+                "created_at_time":issue.created_at_time,
+                "created_at_date":issue.created_at_date,
+                
+                "issue_creator_user_github_id":issue.user_id,
+
+                "user_email":user_email,
+                "member_email":member_email,
+                "member_id":issue.member.id,
+                "member_name":issue.member.first_name + ' ' + issue.member.last_name,
+                "member_user_github_id":issue.owner_user_id,
+
+                "devrel_choices" : issue.get_devrel_choices_display(),
+            }
+
+            try:
+                issue_creator_user_obj=GithubUser.objects.get(user_id=issue_obj['issue_creator_user_github_id'])
+                issue_obj['issue_creator_user_github_username'] = issue_creator_user_obj.username
+                issue_obj['issue_creator_user_github_location'] = issue_creator_user_obj.location
+            except:
+                continue
+
+            try:
+                issue_member_user_obj=GithubUser.objects.get(user_id=issue_obj['member_user_github_id'])
+                issue_obj["member_user_github_username"] = issue_member_user_obj.username
+                issue_obj["member_user_github_location"] = issue_member_user_obj.location
+            except:
+                continue
+
+            issues_info.append(issue_obj)
+        
+        filename = 'scraped_data/' + member_email +'_github_issues_info.csv'
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
+
+        with open(filename, 'w',encoding='utf-8-sig',newline='') as f:
+            writer = csv.DictWriter(f,issues_info[0].keys())
+            writer.writeheader()
+            for row in issues_info:
+                writer.writerow(row)
+
+
+def get_github_user_info(user_email):
+    members = Member.objects.filter(user__email=user_email)
+    if not members.exists():
+        return print('No member exists !')
+    
+    for member in members:
+        member_email = member.member_email
+
+        users = GithubUser.objects.filter(member__member_email=member_email)
+
+        if not users.exists():
+            continue
+        
+        filename = 'scraped_data/' + member_email + '_github_user_info.csv'
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
+
+        with open(filename, 'w',encoding='utf-8-sig',newline='') as f:
+            writer = csv.DictWriter(f,users[0].keys())
+            writer.writeheader()
+            for user in users:
+                writer.writerow(user)
+
+
+
+
+
 
 if __name__ == '__main__':
     user_email = 'mhall119@gmail.com'
