@@ -9,13 +9,23 @@ import datetime
 
 from users.models import User,Member,UserEvent
 from twitter.models import TwitterUserToken,UserTimeline
+from github.models import GithubToken
+
+"""
+
+****** USER ******
+
+"""
 
 def get_user_info(user_email):
     user = User.objects.get(email=user_email)
     obj = user.__dict__
     del obj['_state']
 
-    with open('scraped_data/user_info.csv','w',encoding='utf-8-sig',newline='') as f:
+    filename = "scraped_data/user_info.csv"
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
+
+    with open(filename, 'w',encoding='utf-8-sig',newline='') as f:
         writer = csv.DictWriter(f,obj.keys())
         writer.writeheader()
         writer.writerow(obj)
@@ -23,7 +33,10 @@ def get_user_info(user_email):
 def get_all_members_info(user_email):
     members = Member.objects.filter(user__email = user_email).values('member_email','first_name','last_name')
     if members.exists():
-        with open('scraped_data/member_info.csv','w',encoding='utf-8-sig',newline='') as f:
+        filename = 'scraped_data/member_info.csv'
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
+
+        with open(filename, 'w',encoding='utf-8-sig',newline='') as f:
             writer = csv.DictWriter(f,members[0].keys())
             writer.writeheader()
             for member in members:
@@ -31,66 +44,90 @@ def get_all_members_info(user_email):
     else:
         print('No member exists !')
 
+
 def get_user_events_info(user_email):
-    events = UserEvent.objects.filter(user_email=user_email)
-    if events.exists():
-        all_events = []
-        for event in events:
-            obj = {
-                "id": event.id,
-                "user_email":event.user_email,
-                "member_id":event.member.id,
-                "member_email":event.member.member_email,
-                "member_name":event.member.first_name + ' ' + event.member.last_name,
+    members = Member.objects.filter(user__email=user_email)
+    if members.exists():
+        for member in members:
+            member_email = member.member_email
+            events = UserEvent.objects.filter(user_email=user_email, member__member_email=member_email)
+            if not events.exists():
+                continue
 
-                "event_name":event.event_name,
-                "about_event":event.about_event,
-                "from_date":event.from_date.strftime("%Y-%m-%d"),
-                "to_date":event.to_date.strftime("%Y-%m-%d"),
-                "event_url":event.event_url,
-                "event_type":event.get_event_type_display(),
+            all_events = []
+            for event in events:
+                obj = {
+                    "id": event.id,
+                    "user_email":event.user_email,
+                    "member_id":event.member.id,
+                    "member_email":event.member.member_email,
+                    "member_name":event.member.first_name + ' ' + event.member.last_name,
 
-                "meetup_event_id": None if not event.meetup_event_selection else event.meetup_event_selection.id,
-                "meetup_event_name":None if not event.meetup_event_selection else event.meetup_event_selection.name,
-                "meetup_yes_rsvp_count":None if not event.meetup_event_selection else event.meetup_event_selection.yes_rsvp_count,
-                "meetup_event_id":None if not event.meetup_event_selection else event.meetup_event_selection.event_id,
-                "meetup_event_link":None if not event.meetup_event_selection else event.meetup_event_selection.link,
+                    "event_name":event.event_name,
+                    "about_event":event.about_event,
+                    "from_date":event.from_date.strftime("%Y-%m-%d"),
+                    "to_date":event.to_date.strftime("%Y-%m-%d"),
+                    "event_url":event.event_url,
+                    "event_type":event.get_event_type_display(),
 
-                "user_attending_count":event.user_attending_count
-            }
-            all_events.append(obj)
+                    "meetup_event_id": None if not event.meetup_event_selection else event.meetup_event_selection.id,
+                    "meetup_event_name":None if not event.meetup_event_selection else event.meetup_event_selection.name,
+                    "meetup_yes_rsvp_count":None if not event.meetup_event_selection else event.meetup_event_selection.yes_rsvp_count,
+                    "meetup_event_id":None if not event.meetup_event_selection else event.meetup_event_selection.event_id,
+                    "meetup_event_link":None if not event.meetup_event_selection else event.meetup_event_selection.link,
 
+                    "user_attending_count":event.user_attending_count
+                }
+                all_events.append(obj)
 
-        with open('scraped_data/user_events_info.csv','w',encoding='utf-8-sig',newline='') as f:
-            writer = csv.DictWriter(f,all_events[0].keys())
-            writer.writeheader()
-            for event in all_events:
-                writer.writerow(event)
+            filename = 'scraped_data/' + member_email + '_user_events_info.csv'
+            os.makedirs(os.path.dirname(filename), exist_ok=True)
+
+            with open(filename, 'w',encoding='utf-8-sig',newline='') as f:
+                writer = csv.DictWriter(f,all_events[0].keys())
+                writer.writeheader()
+                for event in all_events:
+                    writer.writerow(event)
     else:
-        print('No event exists !')
+        print('No member exists !')
+
+"""
+
+****** TWITTER ******
+
+"""
 
 def get_twitter_token_info(user_email):
-    try:
-        user_token = TwitterUserToken.objects.get(email=user_email)
-    except:
-        return print('Twitter not connected !')
+    members = Member.objects.filter(user__email=user_email)
+    if not members.exists():
+        return print('No member exists !')
+    
+    for member in members:
+        member_email = member.member_email
+        try:
+            user_token = TwitterUserToken.objects.get(email=user_email,member__member_email=member_email)
+        except:
+            continue
         
-    obj = {
-        "id":user_token.id,
-        "user_email":user_token.email,
-        "twitter_id":user_token.twitter_id,
-        "access_token":user_token.access_token,
-        "access_token_secret":user_token.access_token_secret,
-        "screen_name":user_token.screen_name,
-        "member_id":user_token.member.id,
-        "member_email":user_token.member.member_email,
-        "member_name":user_token.member.first_name + ' ' + user_token.member.last_name
-    }
+        obj = {
+            "id":user_token.id,
+            "user_email":user_token.email,
+            "twitter_id":user_token.twitter_id,
+            "access_token":user_token.access_token,
+            "access_token_secret":user_token.access_token_secret,
+            "screen_name":user_token.screen_name,
+            "member_id":user_token.member.id,
+            "member_email":user_token.member.member_email,
+            "member_name":user_token.member.first_name + ' ' + user_token.member.last_name
+        }
 
-    with open('scraped_data/twitter_token_info.csv','w',encoding='utf-8-sig',newline='') as f:
-        writer = csv.DictWriter(f,obj.keys())
-        writer.writeheader()
-        writer.writerow(obj)
+        filename = 'scraped_data/' + member_email + '_twitter_token_info.csv'
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
+
+        with open(filename, 'w',encoding='utf-8-sig',newline='') as f:
+            writer = csv.DictWriter(f,obj.keys())
+            writer.writeheader()
+            writer.writerow(obj)
 
 
 def get_twitter_user_timeline_info(user_email):
@@ -136,8 +173,11 @@ def get_twitter_user_timeline_info(user_email):
                 }
 
                 tweets_info.append(tweet_obj)
+            
+            filename = 'scraped_data/' + member_email +'_twitter_timeline_info.csv'
+            os.makedirs(os.path.dirname(filename), exist_ok=True)
 
-            with open('scraped_data/' + member_email +'_twitter_timeline_info.csv','w',encoding='utf-8-sig',newline='') as f:
+            with open(filename, 'w',encoding='utf-8-sig',newline='') as f:
                 writer = csv.DictWriter(f,tweets_info[0].keys())
                 writer.writeheader()
                 for row in tweets_info:
@@ -145,6 +185,40 @@ def get_twitter_user_timeline_info(user_email):
     else:
         print('No member exists !')
 
+
+
+"""
+
+****** GITHUB ******
+
+"""
+# BASED ON MEMBERS TOO ?
+
+def get_github_token_info(user_email):
+    try:
+        user_token = GithubToken.objects.get(email=user_email)
+    except:
+        return print('Twitter not connected !')
+        
+    obj = {
+        "id":user_token.id,
+        "user_email":user_token.email,
+        "twitter_id":user_token.twitter_id,
+        "access_token":user_token.access_token,
+        "access_token_secret":user_token.access_token_secret,
+        "screen_name":user_token.screen_name,
+        "member_id":user_token.member.id,
+        "member_email":user_token.member.member_email,
+        "member_name":user_token.member.first_name + ' ' + user_token.member.last_name
+    }
+
+    filename = 'scraped_data/twitter_token_info.csv'
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
+
+    with open(filename,'w',encoding='utf-8-sig',newline='') as f:
+        writer = csv.DictWriter(f,obj.keys())
+        writer.writeheader()
+        writer.writerow(obj)
 
 if __name__ == '__main__':
     user_email = 'mhall119@gmail.com'
