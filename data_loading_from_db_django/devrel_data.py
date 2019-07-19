@@ -9,7 +9,7 @@ import datetime
 
 from users.models import User,Member,UserEvent
 from twitter.models import TwitterUserToken,UserTimeline
-from github.models import GithubToken, GithubUser, UserIssue
+from github.models import GithubToken, GithubUser, UserIssue, IssueComment
 
 """
 
@@ -322,6 +322,75 @@ def get_github_user_info(user_email):
                 writer.writerow(user)
 
 
+def get_github_user_issue_comments(user_email):
+    
+    members = Member.objects.filter(user__email=user_email)
+    if not members.exists():
+        return print('No member exists !')
+    
+    for member in members:
+        member_email = member.member_email
+        
+        try:
+            user_token = GithubToken.objects.get(email=user_email, member__member_email=member_email)
+            owner_user_id = user_token.user_id
+        except:
+            continue
+
+        member_issue_comments = IssueComment.objects.filter(owner_user_id=owner_user_id, member__member_email=member_email)
+        if not member_issue_comments.exists():
+            continue
+        
+        issue_comments_info = []
+        
+        for issue_comment in member_issue_comments:
+            issue_comment_obj = {
+                "id":issue_comment.id,
+                "issue_id":issue_comment.issue_id,
+                "comment_id":issue_comment.comment_id,
+                "comment":issue_comment.comment,
+                "text_type" : issue_comment.text_type,
+                "sentiment_positive" : issue_comment.sentiment_positive,
+                "sentiment_negative" : issue_comment.sentiment_negative,
+                "sentiment_neutral": issue_comment.sentiment_neutral,
+                "tags":issue_comment.tags,
+                "created_at_time":issue_comment.created_at_time,
+                "created_at_date":issue_comment.created_at_date,
+                "issue_comment_creator_user_github_id":issue_comment.user_id,
+
+                "user_email":user_email,
+                "member_email":member_email,
+                "member_id":issue_comment.member.id,
+                "member_name":issue_comment.member.first_name + ' ' + issue_comment.member.last_name,
+                "member_user_github_id":issue_comment.owner_user_id,
+
+                "devrel_choices" : issue_comment.get_devrel_choices_display(),
+            }
+            try:
+                issue_comment_creator_user_obj=GithubUser.objects.filter(user_id=issue_comment_obj['issue_comment_creator_user_github_id'])[0]
+                issue_comment_obj['issue_comment_creator_user_github_username'] = issue_comment_creator_user_obj.username
+                issue_comment_obj['issue_comment_creator_user_github_location'] = issue_comment_creator_user_obj.location
+            except:
+                continue
+
+            try:
+                issue_comment_member_user_obj=GithubUser.objects.filter(user_id=issue_comment_obj['member_user_github_id'])[0]
+                issue_comment_obj["member_user_github_username"] = issue_comment_member_user_obj.username
+                issue_comment_obj["member_user_github_location"] = issue_comment_member_user_obj.location
+            except:
+                continue
+
+            issue_comments_info.append(issue_comment_obj)
+        
+        filename = user_email + '/github/' + member_email +'_github_issue_comments_info.csv'
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
+        
+        if len(issue_comments_info) > 0: 
+            with open(filename, 'w',encoding='utf-8-sig',newline='') as f:
+                writer = csv.DictWriter(f,issue_comments_info[0].keys())
+                writer.writeheader()
+                for row in issue_comments_info:
+                    writer.writerow(row)
 
 
 
@@ -336,3 +405,4 @@ if __name__ == '__main__':
     get_github_token_info(user_email)
     get_github_user_issues(user_email)
     get_github_user_info(user_email)
+    get_github_user_issue_comments(user_email)
