@@ -272,16 +272,15 @@ def get_github_user_issues(user_email):
 
                 "devrel_choices" : issue.get_devrel_choices_display(),
             }
-
             try:
-                issue_creator_user_obj=GithubUser.objects.get(user_id=issue_obj['issue_creator_user_github_id'])
+                issue_creator_user_obj=GithubUser.objects.filter(user_id=issue_obj['issue_creator_user_github_id'])[0]
                 issue_obj['issue_creator_user_github_username'] = issue_creator_user_obj.username
                 issue_obj['issue_creator_user_github_location'] = issue_creator_user_obj.location
             except:
                 continue
 
             try:
-                issue_member_user_obj=GithubUser.objects.get(user_id=issue_obj['member_user_github_id'])
+                issue_member_user_obj=GithubUser.objects.filter(user_id=issue_obj['member_user_github_id'])[0]
                 issue_obj["member_user_github_username"] = issue_member_user_obj.username
                 issue_obj["member_user_github_location"] = issue_member_user_obj.location
             except:
@@ -291,12 +290,13 @@ def get_github_user_issues(user_email):
         
         filename = 'scraped_data/' + member_email +'_github_issues_info.csv'
         os.makedirs(os.path.dirname(filename), exist_ok=True)
-
-        with open(filename, 'w',encoding='utf-8-sig',newline='') as f:
-            writer = csv.DictWriter(f,issues_info[0].keys())
-            writer.writeheader()
-            for row in issues_info:
-                writer.writerow(row)
+        
+        if len(issues_info) > 0: 
+            with open(filename, 'w',encoding='utf-8-sig',newline='') as f:
+                writer = csv.DictWriter(f,issues_info[0].keys())
+                writer.writeheader()
+                for row in issues_info:
+                    writer.writerow(row)
 
 
 def get_github_user_info(user_email):
@@ -307,7 +307,7 @@ def get_github_user_info(user_email):
     for member in members:
         member_email = member.member_email
 
-        users = GithubUser.objects.filter(member__member_email=member_email)
+        users = GithubUser.objects.filter(member__member_email=member_email).values('username','repos','avatar_url','email','user_id','location')
 
         if not users.exists():
             continue
@@ -328,8 +328,11 @@ def get_github_user_info(user_email):
 
 if __name__ == '__main__':
     user_email = 'mhall119@gmail.com'
-    get_user_info(user_email)
-    get_all_members_info(user_email)
-    get_user_events_info(user_email)
-    get_twitter_token_info(user_email)
-    get_twitter_user_timeline_info(user_email)
+    # get_user_info(user_email)
+    # get_all_members_info(user_email)
+    # get_user_events_info(user_email)
+    # get_twitter_token_info(user_email)
+    # get_twitter_user_timeline_info(user_email)
+    # get_github_token_info(user_email)
+    get_github_user_issues(user_email)
+    # get_github_user_info(user_email)
