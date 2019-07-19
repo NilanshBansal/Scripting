@@ -22,7 +22,7 @@ def get_user_info(user_email):
     obj = user.__dict__
     del obj['_state']
 
-    filename = "scraped_data/user_info.csv"
+    filename = user_email + "/user/user_info.csv"
     os.makedirs(os.path.dirname(filename), exist_ok=True)
 
     with open(filename, 'w',encoding='utf-8-sig',newline='') as f:
@@ -33,7 +33,7 @@ def get_user_info(user_email):
 def get_all_members_info(user_email):
     members = Member.objects.filter(user__email = user_email).values('member_email','first_name','last_name')
     if members.exists():
-        filename = 'scraped_data/member_info.csv'
+        filename = user_email + '/user/member_info.csv'
         os.makedirs(os.path.dirname(filename), exist_ok=True)
 
         with open(filename, 'w',encoding='utf-8-sig',newline='') as f:
@@ -80,7 +80,7 @@ def get_user_events_info(user_email):
                 }
                 all_events.append(obj)
 
-            filename = 'scraped_data/' + member_email + '_user_events_info.csv'
+            filename = user_email + '/user/' + member_email + '_user_events_info.csv'
             os.makedirs(os.path.dirname(filename), exist_ok=True)
 
             with open(filename, 'w',encoding='utf-8-sig',newline='') as f:
@@ -121,7 +121,7 @@ def get_twitter_token_info(user_email):
             "member_name":user_token.member.first_name + ' ' + user_token.member.last_name
         }
 
-        filename = 'scraped_data/' + member_email + '_twitter_token_info.csv'
+        filename = user_email + '/twitter/' + member_email + '_twitter_token_info.csv'
         os.makedirs(os.path.dirname(filename), exist_ok=True)
 
         with open(filename, 'w',encoding='utf-8-sig',newline='') as f:
@@ -174,7 +174,7 @@ def get_twitter_user_timeline_info(user_email):
 
                 tweets_info.append(tweet_obj)
             
-            filename = 'scraped_data/' + member_email +'_twitter_timeline_info.csv'
+            filename = user_email + '/twitter/' + member_email +'_twitter_timeline_info.csv'
             os.makedirs(os.path.dirname(filename), exist_ok=True)
 
             with open(filename, 'w',encoding='utf-8-sig',newline='') as f:
@@ -217,7 +217,7 @@ def get_github_token_info(user_email):
             "member_name":user_token.member.first_name + ' ' + user_token.member.last_name
         }
 
-        filename = 'scraped_data/' + member_email + '_github_token_info.csv'
+        filename = user_email + '/github/' + member_email + '_github_token_info.csv'
         os.makedirs(os.path.dirname(filename), exist_ok=True)
         
         with open(filename, 'w',encoding='utf-8-sig',newline='') as f:
@@ -288,7 +288,7 @@ def get_github_user_issues(user_email):
 
             issues_info.append(issue_obj)
         
-        filename = 'scraped_data/' + member_email +'_github_issues_info.csv'
+        filename = user_email + '/github/' + member_email +'_github_issues_info.csv'
         os.makedirs(os.path.dirname(filename), exist_ok=True)
         
         if len(issues_info) > 0: 
@@ -312,7 +312,7 @@ def get_github_user_info(user_email):
         if not users.exists():
             continue
         
-        filename = 'scraped_data/' + member_email + '_github_user_info.csv'
+        filename = user_email + '/github/' + member_email + '_github_user_info.csv'
         os.makedirs(os.path.dirname(filename), exist_ok=True)
 
         with open(filename, 'w',encoding='utf-8-sig',newline='') as f:
@@ -328,11 +328,11 @@ def get_github_user_info(user_email):
 
 if __name__ == '__main__':
     user_email = 'mhall119@gmail.com'
-    # get_user_info(user_email)
-    # get_all_members_info(user_email)
-    # get_user_events_info(user_email)
-    # get_twitter_token_info(user_email)
-    # get_twitter_user_timeline_info(user_email)
-    # get_github_token_info(user_email)
+    get_user_info(user_email)
+    get_all_members_info(user_email)
+    get_user_events_info(user_email)
+    get_twitter_token_info(user_email)
+    get_twitter_user_timeline_info(user_email)
+    get_github_token_info(user_email)
     get_github_user_issues(user_email)
-    # get_github_user_info(user_email)
+    get_github_user_info(user_email)
