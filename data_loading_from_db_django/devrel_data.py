@@ -5,7 +5,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE','copernicus_api.settings')
 import django
 django.setup()
 
-import datetime
+from datetime import datetime
 
 from users.models import User,Member,UserEvent
 from twitter.models import TwitterUserToken,UserTimeline
@@ -422,7 +422,9 @@ def get_event_comments(user__email):
                 "posted_by_user":comment.name,
                 "like_count":comment.like_count,
                 "in_reply_to":comment.in_reply_to,
-                "created_on":comment.created_on,
+                "created_on_timestamp":comment.created_on,
+            
+
                 "tags":comment.tags,
                 "sentiment_type":comment.sentiment_type,
                 "text_type" : comment.text_type,
@@ -442,6 +444,12 @@ def get_event_comments(user__email):
                 "member_name":comment.members.first_name + ' ' + comment.members.last_name,
             }
 
+            try:
+                ts = int(float(comment.created_on)/1000)
+                comment_obj["created_on_date"] = datetime.utcfromtimestamp(ts).strftime('%Y-%m-%d')
+            except:
+                comment_obj["created_on_date"] = ''
+                
             all_comments.append(comment_obj)
 
         filename = user_email + '/meetup/' + member_email +'_event_comments_info.csv'
