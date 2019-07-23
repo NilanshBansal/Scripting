@@ -10,7 +10,7 @@ import datetime
 from users.models import User,Member,UserEvent
 from twitter.models import TwitterUserToken,UserTimeline
 from github.models import GithubToken, GithubUser, UserIssue, IssueComment
-
+from meetup.models import MeetupEventComment
 """
 
 ****** USER ******
@@ -393,16 +393,78 @@ def get_github_user_issue_comments(user_email):
                     writer.writerow(row)
 
 
+"""
+
+****** MEETUP ******
+
+"""
+
+def get_event_comments(user__email):
+    members = Member.objects.filter(user__email=user_email)
+    if not members.exists():
+        return print('No member exists !')
+    
+    for member in members:
+        member_email = member.member_email
+
+        member_event_comments = MeetupEventComment.objects.filter(members__member_email=member_email)
+        if not member_event_comments.exists():
+            continue
+        
+        all_comments = []
+        for comment in member_event_comments:
+            comment_obj = {
+                "id":comment.id,
+                
+                "comment_id":comment.comment_id,
+                "comment":comment.comment,
+                "meetup_member_id":comment.member_id,
+                "posted_by_user":comment.name,
+                "like_count":comment.like_count,
+                "in_reply_to":comment.in_reply_to,
+                "created_on":comment.created_on,
+                "tags":comment.tags,
+                "sentiment_type":comment.sentiment_type,
+                "text_type" : comment.text_type,
+                "devrel_choices" : comment.get_devrel_choices_display(),
+
+                "event_id" : comment.event.id,
+                "event_name":comment.event.name,
+                "event_yes_rsvp":comment.event.yes_rsvp_count,
+                "event_link":comment.event.link,
+                "event_description":comment.event.description,
+                "event_visibility":comment.event.visibility,
+
+
+                "user_email":user_email,
+                "member_email":member_email,
+                "member_id":comment.members.id,
+                "member_name":comment.members.first_name + ' ' + comment.members.last_name,
+            }
+
+            all_comments.append(comment_obj)
+
+        filename = user_email + '/meetup/' + member_email +'_event_comments_info.csv'
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
+        
+        if len(all_comments) > 0: 
+            with open(filename, 'w',encoding='utf-8-sig',newline='') as f:
+                writer = csv.DictWriter(f,all_comments[0].keys())
+                writer.writeheader()
+                for row in all_comments:
+                    writer.writerow(row)
+
 
 
 if __name__ == '__main__':
     user_email = 'mhall119@gmail.com'
-    get_user_info(user_email)
-    get_all_members_info(user_email)
-    get_user_events_info(user_email)
-    get_twitter_token_info(user_email)
-    get_twitter_user_timeline_info(user_email)
-    get_github_token_info(user_email)
-    get_github_user_issues(user_email)
-    get_github_user_info(user_email)
-    get_github_user_issue_comments(user_email)
+    # get_user_info(user_email)
+    # get_all_members_info(user_email)
+    # get_user_events_info(user_email)
+    # get_twitter_token_info(user_email)
+    # get_twitter_user_timeline_info(user_email)
+    # get_github_token_info(user_email)
+    # get_github_user_issues(user_email)
+    # get_github_user_info(user_email)
+    # get_github_user_issue_comments(user_email)
+    get_event_comments(user_email)
