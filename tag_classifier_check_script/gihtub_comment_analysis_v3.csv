@@ -1,0 +1,265 @@
+﻿s.no,comment,tags
+1,"Would adding the SHA to the version line in the CODE_OF_CONDUCT.md file do what you’re talking about?
+",['sha']
+2,"I just got here looking for the same thing - wanted to link off to a canonical URL for a version in my PR with an update. Any objection to tagging commits that contain version bumps? Seems like an easy win! :trophy: 
+",['canonical']
+3,"+3, though perhaps this should be three separate issues.
+
+With regard to any form of enforcement clause: this is different in kind than the rest of the statement – it is less universal.  As different projects have different enforcement needs, defining that policy here will tend to limit uptake of the CoC.
+
+With regard to the current specific enforcement clause, it is probably too vague. Legal documents are not really English or (choose your favorite language), though they appear to be.  They are more like code, and the legal system is the compiler.
+
+Laying out a process of termination definitely steps into the territory of legalities, but the compiler tends to choke on anything not written by a lawyer.  For example, under US law, a person has certain inherent due-process rights.  If an enforcement process abrogates those rights, then the enforcement clause may be unenforceable.  And if one clause in a document is bad, then the whole document may be void unless something called a ""severability clause"" was included.
+
+You would have to get a lawyer to explain the whole can of worms; I only know that it is a can of worms.  Without an enforcement clause, I believe it is clear that contributors serve ""at the pleasure of"" the project leader/s.
+",['leader']
+4,"I have created PR #79 to address this.
+",
+5,"Seconded.  Scripting out periodic discovery/update shouldn't be too difficult in nearly all cases, either.
+",['periodic']
+6,"> While this clause is well-intentioned, I feel that its directives are too vague to be effective: it states that a violator may be removed, but specifies neither who has the right to finalize this decision, nor the criteria and procedures to do so.
+> 
+> A fuzzy policy enforced within the soft, informally defined power structures characteristic of most OSS projects would merely legitimize whatever the leaders wish to do. In starker terms, I am afraid that it would have no effect.
+> 
+> For the policy to be effective, we would need to define clear guidelines that could be applied in a wide variety of contexts and cases. A daunting task that seems very prone to mistakes, pernicious quibbles, and deliberate neglect.
+
+I believe this is exactly what is going on in the opal.rb project. :disappointed: 
+",['opal']
+7,"I believe this issue can be closed as we now use canonical URLs for the Covenant.
+",['canonical']
+8,"Another tool that does something similar: https://creativecommons.org/choose/
+",
+9,"A suggestion: this could be done in software.  E.g. a tool (probably web-based) that allows project owners to pick & choose which values and areas are important to them, and then generates a CoC to use.
+
+I'm imagining something like this:
+
+https://github.com/RailsApps/rails-composer#build-your-own-application
+",['web based']
+10,"I would like to work on the Licensing part.How Do I Start?
+",['licensing']
+11,"souravsingh, if you wanted to research, document, and recommend creative commons licenses that would maybe be a way to contribute?
+",['licenses']
+12,"How about a Slack integration that pings the specified channel whenever a change happens to this repository, or specifically when the version is updated?
+",['slack']
+13,"How is it known that projects adopt the covenant? If it's from here, i agree, it could be based on this github, or from forks.. some reminder to update their version of the covenant on their projects... I'd love to help if i can! trying to do 24PullRequests :) 
+",['github']
+14,"this other issue is related: #136 
+",
+15,"See #168 
+",
+16,"Beautiful, thank you!
+
+> On Dec 10, 2015, at 3:52 PM, Emil Shakirov notifications@github.com wrote:
+> 
+> Hello @CoralineAda https://github.com/CoralineAda! I just start working on this, I'll add my PR shortly.
+> 
+> —
+> Reply to this email directly or view it on GitHub https://github.com/CoralineAda/contributor_covenant/issues/153#issuecomment-163760028.
+",['github']
+17,"Hello @CoralineAda! I just start working on this, I'll add my PR shortly.
+",
+18,"Information which is freely given in the form of a copyleft statement comes with only implicit permission to redistribute it, sure. The associated license encourages copying and transitive licensing, and when such copying happens requires copying of the original copyleft statement unmodified.
+
+However, the information is no longer private if the contribution was published online publicly by its author. A github PR is an example of something published online publicly.
+
+For contributions sent privately, the maintainer has a CoC obligation to ask first.
+
+It's still up to the maintainer to be certain that all their contributors understand the license they applied and the CoC they agreed to, so perhaps it is wisest to ask them up front or even each time. You could use a CLA for that if you must.
+
+[**EDIT**: punctuation]
+",['implicit']
+19,"Self-deprecating humour is fine, provided it doesn't do splash damage¹. Most CoC enforcers would surely allow a comment like the above even though it's an immutable copyright statement. Despite it not being the person's full legal name: some people need to use 'nyms for basic safety.
+
+However, to hypothetically extend the example above, if the person was comparing their appearance to stereotypical features of a named ethnic group at the receiving end of systemic oppression, that would be different. A CoC enforcer should notice, and would have the obligation and right to reject a PR containing it and/or ask for it to be changed at a later date if it was grandfathered in for some reason. Commits can be reverted, and doing so helps send the message that the project gives a damn
+
+---
+
+¹ From the VG and RPG ""term"":https://en.wikipedia.org/wiki/Splash_damage, meaning thoughtless actions that cause damage beyond the target. In this case the author of the self-dep humour is the target, but does their action cause others grief? Moral: take care when dropping stink bombs at your own feet, you may harm your friends.
+","['rpg', 'basic']"
+20,"Conversation has taken a different direction, but I'd like to point out a parallel to the concerns behind [the new subsection (d) of the Developer's Certificate of Origin added in version 1.1](http://developercertificate.org/). Kernel Trap covered the change [in a writeup](https://web.archive.org/web/20120409135119/http://kerneltrap.org/node/5277) that mentions UK data privacy law in particular.
+",['parallel']
+21,"Hi @adulau 
+
+> When reading the code of conduct, I was wondering what is the legal implication and especially compatibility with free software licensing (as described by the FSF or the OSI) when using the code of conduct. Especially the following section:
+> 
+> > Publishing other's private information, such as physical or electronic
+> > addresses, without explicit permission
+> 
+> It's very common for free software projects to include email address, name of contributors without explicit consent. As an example, when a contributor does a pull request, the contributor details are added in the commit logs and even sometime in a CONTRIBUTORS file. Even sometime, the ones doing the pull is not the contributor by herself/himself but another upstream manager of a repository.
+
+I think there's a misunderstanding here that might be based in the fact that there's nuance to this statement in the covenant that requires some knowledge of harassment techniques online.
+
+When harassing a person, it is common to ""dox"" them by obtaining addresses (physical or electronic), government issued identification numbers (Social Security Numbers, etc.), and information about the target's family online. This is what the covenant refers to, not the overly-literal interpretation you provide.
+
+> Another potential issue is the authorization of modifying copyright statement by a project maintainer:
+> 
+> > Project maintainers have the right and responsibility to remove, edit, or
+> > reject comments, commits, code, wiki edits, issues, and other contributions
+> > that are not aligned to this Code of Conduct, or to ban temporarily or
+> > permanently any contributor for other behaviors that they deem inappropriate,
+> > threatening, offensive, or harmful.
+> 
+> An example, you might have a new file added to a project including the following copyright notice:
+> 
+> ```
+> /* 
+>  This code is licensed under the GNU General Public License version 2 or later.
+>  Copyright (c) 2016 Alexandre ""aka Alex big nose"" Dulaunoy
+> /*
+> ```
+> 
+> So the contributor is basically having fun of himself (yes I have a big nose ;-) but the project maintainer feels that is inappropriate and fall into the category of "" personal appearance harassment"". So the code
+> of conduct gives the right to the project maintainer to modify this copyright statement but this could
+> be conflictual with the copyright (and author rights) of the contributor. By so, introducing a potential incompatibility with the free software license.
+
+Self-deprecation is one form of humor and one that the author/creator owns. I don't see how this would cause someone else to have to modify that copyright statement. Since copyright statements are not modified, it should be rather clear who wrote that and it would be clear that this was not an insult.
+
+You seem to also be unfamiliar with how people engaging in harassment tend to bombard a target with comments on their personal appearance to cause them emotional harm.
+
+> Have you considered the potential incompatibilities between the code of conduct and free software licensing?
+
+There are none when the covenant is read with the proper context. You seem to be the first person to have read these paragraphs this particular way. I wonder if this indicates a need for a separate place that has some context for these paragraphs.
+",['creator']
+22,"> What path can a person take to correct mistakes they might make?
+
+Yeah, I was a bit of confused about whether I should take the concerns to the accused and ask them to explain themselves first? Do they have a ""right to face accuser"" or ""right to defend themselves""?
+",
+23,"I'd also like to say I'd love to see more talk about making amends in some way. What path can a person take to correct mistakes they might make? Some situations aren't always so black and white and I'm sure people get nervous they might make a mistake that will cause them to be banned. It seems super scary. 
+",
+24,"@CoralineAda will take a look next week. 
+
+Also meant to ping you on a separate issue, the encoding on [this page for v1.3](http://contributor-covenant.org/version/1/3/0/hu/code_of_conduct.md) is incorrect. Do you want me to open an issue for that?
+",['matlab']
+25,"Yes please
+",
+26,"If no one is already doing it, I would be happy to contribute.
+",['happy']
+27,"I will have a look at it
+",
+28,"+1. Please push git tags for older releases to GitHub. Right now the only tag is 1.4 (which is odd because it's not even a [released version?]). 
+
+I was trying to use git to view a diff between versions and the lack of tags in git made this more difficult. 
+",['git']
+29,"Ah, I see now that all versions are present in master. Still, I think tags would be helpful. It's always a good idea to tag releases in git. 
+",['master']
+30,"Great, thanks!
+",
+31,"Can do it this week also. @guilro I can review your PR or work with you on this on a pad.
+",['pad']
+32,"I created this pad : https://bimestriel.framapad.org/p/contributor_covenant_fr
+
+For consistency, I took the french translation of 1.3, the English diff to 1.3 to 1.4, and tried to change the translation only where the English changed.
+
+I have done this work until line 40, I will continue later in the week.
+",['consistency']
+33,"@guilro you should have to write to edit the translation on my fork. Feel free to make any feedbacks.
+",['translation']
+34,"""With regard to"" is difficult to understand too. Simpler language would be better.
+
+Is ""will"" enough to express the ethical obligation? It is certainly good for expressing the will to maintain confidentiality of course. We're choosing to impose this duty on ourselves, we're not being forced to do so. As I understand it.
+
+May I suggest the following rewrite, assuming it keeps the spirit of the original?
+
+> The project team <del>is obligated to maintain confidentiality with regard to the reporter of an incident.</del>
+> The project team <ins>will keep information about incident reporters confidential, as an ethical duty.</ins>
+
+That knocks out the clumsier ""is obligated to"" ... ""with regard to"" lawyerese. It also makes clearer what is being talked about (your information, in our hands).
+
+Some people think ""obligated"" is an ugly word, and that ""obliged"" has an identical meaning. Yet the meanings seem to be drifting: http://grammarist.com/usage/obliged-vs-obligated/
+
+That said, I think ""duty"" serves, unless there is an actual legal requirement. And it sidesteps the argument.
+
+Though I don't like the dangling ""as an ethical duty"", for what it's worth. Is there a better way of conveying that?
+
+---
+
+Asides:
+
+Shouldn't the confidential treatment of data extend to the data which is gathered about identified parties, especially identified victims?
+
+Perhaps the CoC should also state when confidential information might be shared (specified trusted third parties, on a strict need to know basis, for legal reasons only?). But that's getting ahead of ourselves.
+",['shared']
+35,"Thanks for your quick reply!
+
+I agree with with what you say, however the wording of the CoC does not currently seem to reflect this, as I read: ""Examples of unacceptable behavior by participants include.... The use of sexualized language or imagery""
+
+This reads as a explicit blanket ban on the use of sexual content, which I feel is a major problem and goes beyond the intended scope of the CoC (i.e. preventing harassment). 
+
+It would be far better if the CoC made it clear that _appropriate_ use of sexual content is acceptable. I don't think the discretion of project maintainers is sufficient here (since they would have to go against the explicit wording of the CoC), and I also wouldn't want to encourage people to add exception / disclaimers / clarifying provisions (otherwise what is the point of encouraging a standardised CoC?)
+",['scope']
+36,"I appreciate you reaching out with these concerns, but I think that there is a clear difference between the contexts that you are pointing out and the intent of the language in the code of conduct. Contextually appropriate sexual content is not the same as sexualized language. And of course it is ultimately the role of project maintainers to clarify the rules around language usage, so of course in the case of a project dealing with sexual health no one would expect such a provision to be exercised simply for talking about the topic at hand.
+",['intent']
+37,"@igraves That's definitely in the spirit of my intentions.
+",
+38,"@davidcelis I think the part of the CoC you're referring to makes explicit the powers of project maintainers that everyone already knew that they had.  That is to say, if you troll the heck out of any project, you're gonna get thrown out.  The CoC is a covenant (hence the name) wherein maintainers _further_ make explicit their intent to use their powers to further prevent the behavior defined in the document.  The responsibility ultimately rests with maintainers to identify infractions, respond to them, and come to a resolution in a way that fits their community and the CoC.  I think that it's a bit of FUD that promotes the idea that the CoC is the first and last stop for marginalizing some group of people and kicking them out of the project for not engaging in some kind of groupthink.
+
+As far as penalties and bans go, I think this process is something that is best defined by an adopting community of the CoC.  Processes where significant offenders rehabilitate and are brought back into the fold are complicated and expensive (but they can be worth it, too!).  Communities have limited resources and time.  I think it follows that communities that want to employ procedure in this area need to figure out what works for them and implement it themselves (and add it to their fork of the CoC).  It's hard to identify a good one-size-fits-all approach a priori, but it may be possible that a successful process can be derived from many different communities in the future.
+",['go']
+39,"@seniorwrangler For something like this you're probably best off forking the CoC and replacing the clause with 'unwelcome sexual advances'. Judging what is 'appropriate' and 'inappropriate' language is still maintainer's discretion, codifying it only adds ambiguity.
+",['forking']
+40,"Whether or not the accused has the right to face the accuser, or is entitled to due process, are all very important questions.
+
+Thankfully enough, there exists another code of conduct that was put in place on other projects many years ago. It's been battle tested. Many arguments have been fought and resolved over its meaning. And most people accept its contents, or at the very least, follow it. That code of conduct is called ""the law"" and it dates back many centuries to Magna Carta (at least in the anglosphere.)
+
+Why reinvent the wheel? Who benefits from that?
+
+Open source projects wishing to ameliorate the very important concerns @parkr and @davidcelis have raised would be well-advised to consider adopting the FTFL-COC as defined by this document: https://gist.github.com/jart/f274d8dc156811a46b22
+",['exists']
+41,"@jart When we step into shared spaces and collaborative spaces, we often face scenarios where what is legal is not necessarily appropriate in that context. For example, it is legal for me to use expletives, but doing so in a theatre or a school is likely to get me removed.
+
+Aside from that, the legal minimums vary wildly from nation to nation. What is legal in your country may not be legal in mine, so 'the law' is certainly not going to provide a baseline of acceptability in any international project.
+
+The purpose of a Code of Conduct is not to 'reinvent' the law, but to build upon those basic expectations in order to foster a more welcoming environment. Whether a specific CoC gets the balance right is a worthwhile discussion, but creating an expected minimum standard of behaviour above 'follow the law' is certainly not revolutionary.
+
+Having said that, I do think that CoCs should learn from years of common law. Things like the right to face accusations, the right to present evidence in defence, maximum 'sentences' and transparency as to decision making processes seem to have been forgotten in most (including this one).
+
+Just my $0.02, and certainly doesn't amount to absolute support for any specific implementation of a CoC.
+",['basic']
+42,"That's all I'm trying to get at. I'm trying to discuss a very specific issue here. I don't a problem with the conversation at hand happening, but I'd prefer it happen in a separate issue. They're open, so anybody here can open another one to discuss this other topic. It's just easier. Thanks!
+",['discuss']
+43,"> On what philosophical grounds are you able to define behaviors as positive or negative? Such terminology implies the existence of an objective morality. Would you argue that the examples of positive and negative behavior given by the CC are objectively correct?
+> If you do not believe they are objective, then do you believe they are culturally relative? If so, whose culture is being used to define these behaviors as positive or negative?
+> 
+> Inherent in the formation of communities is the establishment of a common understanding of positive (acceptable) and negative (unacceptable) behaviors. This is necessarily subjective. However, beyond these community-defined standards, there are identifiable, behavioral anti-patterns (such as sexual harassment) that reinforce systemic abuse of certain populations. Some of these are specifically called out and addressed in the CC. The underlying assumption is that a healthy, positive software community aspires to address– or at least not be complicit with– systemic patterns of abuse or discrimination, instead committing to being welcoming and encouraging diversity.
+
+If a given project owner disagrees with this sentiment, does not believe in institutional or widespread social injustice, does not particularly care about creating and managing a welcoming and diverse community, or finds his or her values not aligned with those stated explicitly or implicitly in the CC then they shouldn’t adopt it. They should, however, make the guiding principles of community development and management that they DO believe in EXPLICIT so that would-be participants can make informed decisions about joining a particular community.
+
+I don’t see a thing that is controversial about this.
+",['relative']
+44,"Consequently I think any responsible maintainer of an open source project is going to be very cautious about enforcing any ideological views on non-project channels, even if those may come across as racist, homophobic, transphobic, etc.
+
+Much of the fear comes from the question of whether the code of conduct is a tool which will create more strife than it prevents.  And if one uses it to try to position a community relative to culture war topics, that is what will happen.
+",['relative']
+45,"Hey @CoralineAda could you please link to the GitHub Issue comment where someone was deliberately misgendering you? I ask because you look like a normal woman to me.
+
+> It includes examples of positive and negative behavior.
+
+On what philosophical grounds are you able to define behaviors as positive or negative? Such terminology implies the existence of an objective morality. Would you argue that the examples of positive and negative behavior given by the CC are objectively correct?
+
+If you do not believe they are objective, then do you believe they are culturally relative? If so, _whose_ culture is being used to define these behaviors as positive or negative?
+",['cc']
+46,"One of the difficulties here which I don't think gets the attention it needs is the fact that open source projects do span large cultural gaps and this includes family structures, places where people retire with the kids, and so forth.  These things lead to different views on things like sexuality.  A community which is welcome to all has to recognize that it exists relative to the cultural communities of the participants.  The goal cannot be a globalization of culture war, but rather a cultural peace.
+
+Certain things are culturally relative.  If gender is culturally constructed, then concepts of gender are culturally relative and people should not be excluded because of views here.
+
+Some things are culturally relative and successful projects tend to be tolerant and welcoming across these issues.
+
+I don't know of any open source community that wants an ideological orthodoxy on hot button issues, but for those that do, explicit notice of such is appreciated.
+",['forth']
+47,"Question and an honest one:  Is the intent to try to tell the most of the world which has different values that if they express their views on, say, homosexuality on Twitter, that they should not participate in open source?
+
+(One concern I can imagine maintainers having is whether advertising this means effectively soliciting ""so-and-so said such and such on Twitter so please throw him off the project"" tickets.  But I suppose that doesn't happen very often so can be effectively ignored.)
+",['twitter']
+48,"@jart, @Rudd-O: Please stop hijacking my issue. I didn't open this conversation to discuss whether or not the Contributor Covenant's Code of Conduct should be a thing. I opened it to discuss a nuance in the wording. If you have something else to discuss, you're free to open a separate issue and start a new conversation. But please stop doing it here.
+",['conversation']
+49,"It’s pretty clear with 1.4 what the scope of restrictions and the applicability of the rules are, Chris. You should read it if you haven’t already. Nothing in CC says that someone’s stated opinions affect their participation in the project unless those statements are made within the context of the project. 
+
+> On Feb 11, 2016, at 6:05 AM, Chris Travers notifications@github.com wrote:
+> 
+> Question and an honest one: Is the intent to try to tell the most of the world which has different values that if they express their views on, say, homosexuality on Twitter, that they should not participate in open source?
+> 
+> —
+> Reply to this email directly or view it on GitHub https://github.com/ContributorCovenant/contributor_covenant/issues/229#issuecomment-182828305.
+",['scope']
+50,"Yes, because suggesting starting a new conversation as opposed to hijacking this one is definitely silencing.
+",['conversation']

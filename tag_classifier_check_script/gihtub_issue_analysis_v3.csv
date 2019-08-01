@@ -1,0 +1,51 @@
+﻿s.no,issue,tags
+1,Tag versions,
+2,"Thoughts and proposals on conduct, diversity, and enforcement",['enforcement']
+3,bullying and cyber-bullying,
+4,Licensing,['licensing']
+5,v2 - Buffet-style sections,['sections']
+6,Should README specify which version various projects are using?,['readme']
+7,Automate notifications of new versions,['notifications']
+8,German translation,['translation']
+9,Russian translation,['translation']
+10,Code of conduct generator,['generator']
+11,Script to detect versions,
+12,Traditional Chinese translation,['chinese']
+13,"Free software licensing and ""code of conduct""",['licensing']
+14,Should we reword the bit about temporary or permanent removal of someone from a community?,['temporary']
+15,Version 1.4 Hungarian Translation,['translation']
+16,Russian translation for version 1.4,['translation']
+17,Version 1.4 French Translation,['french']
+18,Version 1.4 Italian Translation,['translation']
+19,Slovenian translation for 1.4,['translation']
+20,Version 1.4 Japanese Translation,['japanese']
+21,Encoding on Hungarian translation v1.3 is incorrect,['translation']
+22,"""is obligated to"" -> ""will""",
+23,"Clarify wording on ""use of sexualized language or imagery""",['wording']
+24,What legal obligations does the Contributor Covenant place upon the maintainer?,['place']
+25,Misunderstandings vs misbehavior,
+26,Migrate i18n to https://crowdin.com,['i18n']
+27,Add CC BY 4.0 license info to downloadable contributor covenant files,['cc']
+28,contributor covenant badge,['badge']
+29,Navigation arrows cover content ,['cover']
+30,Text hint in the search entry is hardly visible ,['entry']
+31,"Site: license link is broken, text is outdated",['license']
+32,Converting to Bootstrap,['bootstrap']
+33,Syntax highlighting for first code snippet under 'Describing the Snap' in '3. Building a snap is easy' is incorrect,['syntax highlighting']
+34,The location of snap-codelabs-code has been moved to https://github.com/ubuntu in github,['snap']
+35,Tried to build and run on raspberry pi3,['raspberry pi3']
+36,Navigation menu/table of contents covers content (on Chromium Browser),['chromium']
+37,Bahasa Indonesia translation,['translation']
+38,Allow specifying an email address in the document,['email address']
+39,"Kink and consensual, adult sexual proclivities",
+40,"Revert ""A few fixes for the French translation""",['revert']
+41,Support HTTPS,['https']
+42,Marathi Translation,['translation']
+43,Invisible tripwire feel could be avoided by rewording,['invisible']
+44,Add failure to comply clause,['failure']
+45,"Hello,I would like to translate it to tamil language.",['tamil']
+46,"please add target=""_blank"" to the <a> tag",
+47,[query] Preferred copyright line,['query']
+48,"[query] What is the status of ""1.4.1""?",['query']
+49,Human Race(s?),
+50,request for a step-by-step guide for setting up codelabs on a hosting site ,['hosting']
