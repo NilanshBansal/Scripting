@@ -1,0 +1,8 @@
+﻿s.no,text,stanford_sentiment,stanford_qa
+1,"Afternoon Tom, where in the convention center is the event taking place? Second floor first floor or downstairs?",unpredcitable,Q
+2,"Tonight's talks are available on our YouTube page! 
+
+Click the link to see all the great talks from tonight:
+https://www.youtube.com/playlist?list=PLUj8-Hhrb-a3lFkoKDpZlOnTFK8SLzMcR",negative,
+3,Starts in Ballroom B on top floor. Exhibits are on bottom floor north side,neutral,
+4,Can't wait to see the photos from the photo booth!,negative,
