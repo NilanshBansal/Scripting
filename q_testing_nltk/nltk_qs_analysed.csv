@@ -1,0 +1,2085 @@
+﻿s.no,platform,msg,text_type_stanford,text_type_nltk
+1,stackoverflow,Python kivy for cross-platform apps,,
+2,stackoverflow,Python kivy for cross-platform apps,,
+3,stackoverflow,Android Studio Adb connection Error:An existing connection was forcibly closed by the remote host,,
+4,stackoverflow,Android Studio Adb connection Error:An existing connection was forcibly closed by the remote host,,
+5,stackoverflow,Programmatically changing app language on older android versions,,
+6,stackoverflow,Programmatically changing app language on older android versions,,
+7,stackoverflow,Google Pay integration with Vantiv Gateway,,
+8,stackoverflow,Google Pay integration with Vantiv Gateway,,
+9,stackoverflow,Tapdaq fail to initialize in release mode,,
+10,stackoverflow,Tapdaq fail to initialize in release mode,,
+11,stackoverflow,App icon badge - Firebase push notification /FCM - Flutter,,
+12,stackoverflow,App icon badge - Firebase push notification /FCM - Flutter,,
+13,stackoverflow,Hidden navigation bar in xamarin forms shows up when on screen keyboard comes up on Android,,
+14,stackoverflow,Hidden navigation bar in xamarin forms shows up when on screen keyboard comes up on Android,,
+15,stackoverflow,Using an SSH tunnel to multiplex TCP connections,,
+16,stackoverflow,Using an SSH tunnel to multiplex TCP connections,,
+17,stackoverflow,Why Does My Deploy Directory Keep Changing,,
+18,stackoverflow,Why Does My Deploy Directory Keep Changing,,
+19,stackoverflow,Stub KMS with Sinon,,
+20,stackoverflow,Stub KMS with Sinon,,
+21,stackoverflow,How I customize the sam build to pass a ssh and access my private repo on GitHub?,,Q
+22,stackoverflow,How I customize the sam build to pass a ssh and access my private repo on GitHub?,,Q
+23,stackoverflow,"Amazon says I have a syntax error in this yml file, can anyone find it?",,Q
+24,stackoverflow,"Amazon says I have a syntax error in this yml file, can anyone find it?",,Q
+25,stackoverflow,How can I appoint a domain bought in Aws to another VPS company?,,Q
+26,stackoverflow,How can I appoint a domain bought in Aws to another VPS company?,,Q
+27,stackoverflow,API Gateway CORS error on POST request but not on GET Request,,
+28,stackoverflow,API Gateway CORS error on POST request but not on GET Request,,
+29,stackoverflow,How to increase video and image upload speed React Native,,
+30,stackoverflow,How to increase video and image upload speed React Native,,
+31,stackoverflow,Where do I create .ebextensions for it to work in AWS Elastic Beanstalk,,
+32,stackoverflow,Where do I create .ebextensions for it to work in AWS Elastic Beanstalk,,
+33,stackoverflow,User authentication for Spotify in Python using Spotipy on AWS,,
+34,stackoverflow,User authentication for Spotify in Python using Spotipy on AWS,,
+35,stackoverflow,Ansible Task failing with when condition,,
+36,stackoverflow,Ansible Task failing with when condition,,
+37,stackoverflow,Filtering out data returned by AWS Textract function,,
+38,stackoverflow,Filtering out data returned by AWS Textract function,,
+39,stackoverflow,bigbluebutton scalelite setup,,
+40,stackoverflow,bigbluebutton scalelite setup,,
+41,stackoverflow,How can I create a pipeline as code in AWS codepipeline,Q,
+42,stackoverflow,How can I create a pipeline as code in AWS codepipeline,Q,
+43,stackoverflow,Azure Pipeline AWS Powershell script task,,
+44,stackoverflow,Azure Pipeline AWS Powershell script task,,
+45,stackoverflow,Unstable Execution Time in Docker Container,,
+46,stackoverflow,Unstable Execution Time in Docker Container,,
+47,stackoverflow,Studio Error when i am use AWS Chime in Android Studio,,
+48,stackoverflow,Studio Error when i am use AWS Chime in Android Studio,,
+49,stackoverflow,How to build AWS services using Terraform with Bamboo,Q,Q
+50,stackoverflow,How to build AWS services using Terraform with Bamboo,Q,Q
+51,stackoverflow,CodeCommit Pull Request between two branches,,
+52,stackoverflow,CodeCommit Pull Request between two branches,,
+53,stackoverflow,Is it actually safe to use sha1 for AWS S3 signing?,Q,Q
+54,stackoverflow,Is it actually safe to use sha1 for AWS S3 signing?,Q,Q
+55,stackoverflow,What Elastic Beanstalk Environment should I choose?,,Q
+56,stackoverflow,What Elastic Beanstalk Environment should I choose?,,Q
+57,stackoverflow,How can I give server access to my Developer?,,Q
+58,stackoverflow,How can I give server access to my Developer?,,Q
+59,stackoverflow,How to design authentication and user database using Cognito and DynamoDB?,,Q
+60,stackoverflow,How to design authentication and user database using Cognito and DynamoDB?,,Q
+61,stackoverflow,Terraform: depends_on the status of aws instance,,
+62,stackoverflow,Single Sign on for AWS Cloud watch,,
+63,stackoverflow,Terraform: depends_on the status of aws instance,,
+64,stackoverflow,OpenVPN access server configuration is not added in client.ovpn file,,
+65,stackoverflow,OpenVPN access server configuration is not added in client.ovpn file,,
+66,stackoverflow,Could anyone compare and contrast the different FHIR databases that are available?,,Q
+67,stackoverflow,Could anyone compare and contrast the different FHIR databases that are available?,,Q
+68,stackoverflow,purge or achieve tables in Ruby on Rails,,
+69,stackoverflow,purge or achieve tables in Ruby on Rails,,
+70,stackoverflow,"Let users generate multiple unique embeddable code snippets, embed each so their end users can see my view and make a post request - ruby on rails",,
+71,stackoverflow,"Let users generate multiple unique embeddable code snippets, embed each so their end users can see my view and make a post request - ruby on rails",,
+72,stackoverflow,avoiding the error: missing a template for this request format and variant,,
+73,stackoverflow,avoiding the error: missing a template for this request format and variant,,
+74,stackoverflow,Ruby on Rails use encoding cp858,,
+75,stackoverflow,Ruby on Rails use encoding cp858,,
+76,stackoverflow,how to pass and access data to partial view in ruby on rails?,,Q
+77,stackoverflow,how to pass and access data to partial view in ruby on rails?,,Q
+78,stackoverflow,Azure B2C MFA via Email,,
+79,stackoverflow,Azure B2C MFA via Email,,
+80,stackoverflow,Has anyone found solution to the &quot;call was rejected by callee&quot; error in python,,
+81,stackoverflow,Has anyone found solution to the &quot;call was rejected by callee&quot; error in python,,
+82,stackoverflow,Flutter app starts in an unusual way after reopening,,
+83,stackoverflow,Flutter app starts in an unusual way after reopening,,
+84,stackoverflow,Storing the data to MongoDB collection to specific name,,
+85,stackoverflow,Storing the data to MongoDB collection to specific name,,
+86,stackoverflow,How to disable openapi docs API calls in Ambassador api gateway?,,Q
+87,stackoverflow,How to disable openapi docs API calls in Ambassador api gateway?,,Q
+88,stackoverflow,Get original image URLs (not thumbnails) from Google Search in Python3 (after 2018 changes),,
+89,stackoverflow,Get original image URLs (not thumbnails) from Google Search in Python3 (after 2018 changes),,
+90,stackoverflow,React higher order component not working in typescript,,
+91,stackoverflow,React higher order component not working in typescript,,
+92,stackoverflow,How to run a command line based application and input text?,,Q
+93,stackoverflow,How to run a command line based application and input text?,,Q
+94,stackoverflow,Python download file from Google Drive 403 permission,,
+95,stackoverflow,Python download file from Google Drive 403 permission,,
+96,stackoverflow,ModuleNotFoundError: No module named &#39;app&#39; on Heroku,,
+97,stackoverflow,ModuleNotFoundError: No module named &#39;app&#39; on Heroku,,
+98,stackoverflow,In C# Does using File.OpenRead() needs to be closed?,,Q
+99,stackoverflow,In C# Does using File.OpenRead() needs to be closed?,,Q
+100,stackoverflow,How is this implicitly creating a Pandas Series from a Dataframe without calling .Series()?,,Q
+101,stackoverflow,How is this implicitly creating a Pandas Series from a Dataframe without calling .Series()?,,Q
+102,stackoverflow,Xml SelectSingleNode() returns null,,
+103,stackoverflow,Xml SelectSingleNode() returns null,,
+104,stackoverflow,Kafka Streams 2.3 to 2.5 upgrade breaks Scala compilation,,Q
+105,stackoverflow,Kafka Streams 2.3 to 2.5 upgrade breaks Scala compilation,,Q
+106,stackoverflow,Browser permission &#39;Share your screen&#39; popup not showing in kiosk mode (safe browser),,
+107,stackoverflow,Browser permission &#39;Share your screen&#39; popup not showing in kiosk mode (safe browser),,
+108,stackoverflow,Blender export object lengths to a CSV file in the same directory as the blend file,,
+109,stackoverflow,Blender export object lengths to a CSV file in the same directory as the blend file,,
+110,stackoverflow,Log in to Twitter and create an account on Twitter vb.net,,
+111,stackoverflow,Log in to Twitter and create an account on Twitter vb.net,,
+112,stackoverflow,"How to get string from getSelection in Firefox 77.0.1, in a simple firefox extension",,
+113,stackoverflow,"How to get string from getSelection in Firefox 77.0.1, in a simple firefox extension",,
+114,stackoverflow,MongoDB not starting on docker-compose,,
+115,stackoverflow,MongoDB not starting on docker-compose,,
+116,stackoverflow,How can I bind influxdb json response to a typed object,,
+117,stackoverflow,How can I bind influxdb json response to a typed object,,
+118,stackoverflow,Transform result of a Spark Dataset transformation into a JSON string corresponding to a Java bean,,
+119,stackoverflow,Transform result of a Spark Dataset transformation into a JSON string corresponding to a Java bean,,
+120,stackoverflow,How do I solve this ? Mapping values are not allowed in this context,,Q
+121,stackoverflow,How do I solve this ? Mapping values are not allowed in this context,,Q
+122,stackoverflow,AWS IAM Roles - Best Practice,,
+123,stackoverflow,AWS IAM Roles - Best Practice,,
+124,stackoverflow,webpack: configuration.entry should be an non-empty object,,
+125,stackoverflow,webpack: configuration.entry should be an non-empty object,,
+126,stackoverflow,How can I access Cli options inside a resource file in serverless?,,Q
+127,stackoverflow,How can I access Cli options inside a resource file in serverless?,,Q
+128,stackoverflow,How browser knows which headers add to requests,,Q
+129,stackoverflow,How browser knows which headers add to requests,,Q
+130,stackoverflow,Can anyone help me sort out my xpaths? I&#39;m looking for specific information from a forum and I don&#39;t know why I keep getting errors,,Q
+131,stackoverflow,Can anyone help me sort out my xpaths? I&#39;m looking for specific information from a forum and I don&#39;t know why I keep getting errors,,Q
+132,stackoverflow,MediaDevices.getUserMedia() How can I set audio (voice messages) constraints?,,Q
+133,stackoverflow,MediaDevices.getUserMedia() How can I set audio (voice messages) constraints?,,Q
+134,stackoverflow,laravel.ERROR: SQLSTATE[HY000]: General error: 1100 Table &#39;sessions&#39; was not locked with LOCK TABLES,,
+135,stackoverflow,laravel.ERROR: SQLSTATE[HY000]: General error: 1100 Table &#39;sessions&#39; was not locked with LOCK TABLES,,
+136,stackoverflow,Find Specific HTML Tag in Beautifulsoup,,
+137,stackoverflow,Find Specific HTML Tag in Beautifulsoup,,
+138,stackoverflow,What is the proper URL to scrape this website with python and json?,,Q
+139,stackoverflow,What is the proper URL to scrape this website with python and json?,,Q
+140,stackoverflow,please read the code bellow and review my problem it is very annoying,,
+141,stackoverflow,please read the code bellow and review my problem it is very annoying,,
+142,stackoverflow,php cURL returning an empty string? What should I missing?,,Q
+143,stackoverflow,php cURL returning an empty string? What should I missing?,,Q
+144,stackoverflow,Downloading an on online report using Python requests,,
+145,stackoverflow,Downloading an on online report using Python requests,,
+146,stackoverflow,scraping/identifying a table from a website that has &lt;div tag,,
+147,stackoverflow,scraping/identifying a table from a website that has &lt;div tag,,
+148,stackoverflow,Python problem post json data with aiohttp,,
+149,stackoverflow,Python problem post json data with aiohttp,,
+150,stackoverflow,C# HttpClient PostAsync 403 forbidden with SSL,,
+151,stackoverflow,C# HttpClient PostAsync 403 forbidden with SSL,,
+152,stackoverflow,Is there a way to force delete a crd with failing webhooks?,,Q
+153,stackoverflow,Is there a way to force delete a crd with failing webhooks?,,Q
+154,stackoverflow,Triggering a training task on cloud ml when file arrives to cloud storage,,
+155,stackoverflow,Triggering a training task on cloud ml when file arrives to cloud storage,,
+156,stackoverflow,PersistentVolume and PersistentVolumeClaim for multiple deployments,,
+157,stackoverflow,Angular app on minikube: blank page with no error,,
+158,stackoverflow,PersistentVolume and PersistentVolumeClaim for multiple deployments,,
+159,stackoverflow,How to redirect http to https on kubernetes framework,,Q
+160,stackoverflow,How to redirect http to https on kubernetes framework,,Q
+161,stackoverflow,Environmental variables returning undefined for Kubernetes deployment,,
+162,stackoverflow,Environmental variables returning undefined for Kubernetes deployment,,
+163,stackoverflow,How Datadog read custom log files in containers kubernetes?,,Q
+164,stackoverflow,How Datadog read custom log files in containers kubernetes?,,Q
+165,stackoverflow,How to read a file from apache spark in kubernetes?,,Q
+166,stackoverflow,How to read a file from apache spark in kubernetes?,,Q
+167,stackoverflow,Clone a secure TFS git repo in Kubernetes pod using git-sync,,
+168,stackoverflow,Clone a secure TFS git repo in Kubernetes pod using git-sync,,
+169,stackoverflow,GKE Elastic Search only made pods but didn&#39;t make any deployment,,
+170,stackoverflow,GKE Elastic Search only made pods but didn&#39;t make any deployment,,
+171,stackoverflow,Self-signed certs vs. certificate authority when publishing an API that is backed by a Kubernetes service (load balancer)?,,Q
+172,stackoverflow,Self-signed certs vs. certificate authority when publishing an API that is backed by a Kubernetes service (load balancer)?,,Q
+173,stackoverflow,haproxy-ingress load balance http on non standard port,,
+174,stackoverflow,haproxy-ingress load balance http on non standard port,,
+175,stackoverflow,post file times out after 1 min in Kubernetes,,
+176,stackoverflow,post file times out after 1 min in Kubernetes,,
+177,stackoverflow,Configuring nginx to use ingress authentication by default on GKE?,,Q
+178,stackoverflow,Configuring nginx to use ingress authentication by default on GKE?,,Q
+179,stackoverflow,php while loop and some conditions,,
+180,stackoverflow,Kubernetes inside a VPN name resolution,,
+181,stackoverflow,Should I implement a dedicated api endpoint for Kubernetes health checks?,,Q
+182,stackoverflow,How to access website with IP address in CentOs 7,,
+183,stackoverflow,How to monitor gcloud k8s HTTP failure rate?,,Q
+184,stackoverflow,Please help me to solve this Digit Sum problem,,
+185,stackoverflow,How to make prometheus hit my servers by private (kubernetes service) names but not link to them from dashboard,,
+186,stackoverflow,Reserving a bit for discriminating the type of a union in C++,,
+187,stackoverflow,Access secrets as environment variables in Kubernetes,,
+188,stackoverflow,rook-ceph-osd-prepare pod stuck for hours,,
+189,stackoverflow,How to work with AWS cloud controller manager,,Q
+190,stackoverflow,loop Update value to dynamic temp table,,
+191,stackoverflow,Kubernetes : Invalid value: &quot; **** &quot;: error converting fieldPath: field label not supported,,
+192,stackoverflow,"(JSP ,Servlet ,Mysql ,dropdown) retrieve from one table and insert to another table",,
+193,stackoverflow,Connect to cqlsh cassandra cluster running in Kubernetes,,
+194,stackoverflow,How to connect microservice with NATS docker image inside kubernetes cluster,,Q
+195,stackoverflow,create object and bulk upload data into django model,,
+196,stackoverflow,bit shift on linux 64bit OS,,
+197,stackoverflow,compare indexes of lists and check the conditions,,
+198,stackoverflow,Object of type type is not JSON serializable in django,,Q
+199,stackoverflow,Generating foreign based query sets,,
+200,stackoverflow,Django 3 Pass Get The Selected Value Dropdown select option,,
+201,stackoverflow,who has databaselink in rdbms or non rdbms?,,Q
+202,stackoverflow,How do I build a Django model that retrieves some fields from an API?,,Q
+203,stackoverflow,"Python, pandas dataframe, groupby column and known in advance values",,
+204,stackoverflow,How does two function or two class call each other in python,,
+205,stackoverflow,QR Scanner in XCode to update Firebase Data,,
+206,stackoverflow,Mysql - How can I select how many users each imei placed an order within a specified time,,
+207,stackoverflow,How to only let user transfer funds from wallet which belongs to his account in django?,,Q
+208,stackoverflow,how to search between multi property of a vertex in gremlin,,Q
+209,stackoverflow,iterate over objects/list,,
+210,stackoverflow,Django : Select Multiple products from a Model,,
+211,stackoverflow,How to estimate parameters of exponential function with R?,,Q
+212,stackoverflow,Django Google App Engine Upload files greater than 32mb,,
+213,stackoverflow,How to create new model with foreignkey in django,,
+214,stackoverflow,WCF netTcpBinding hosted in IIS with windows authentication throws &quot;The service does not allow you to log on anonymously&quot;,,
+215,stackoverflow,Creating new cluster table on file group,,
+216,stackoverflow,How to display a result for my javascript quiz?,,Q
+217,stackoverflow,Display Objects Related Objects Reference In Django Admin,,
+218,stackoverflow,How to Change Input Forms for ManyToMany Field Django,,Q
+219,stackoverflow,Dynamic properties passed as C# method parameters,,
+220,stackoverflow,The serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: &#39;ilan_no&#39;,,
+221,stackoverflow,How to correct virtualenv command output,,Q
+222,stackoverflow,How to display hierarchical data structure into nested json (Python)?,,Q
+223,stackoverflow,Pattern print using python integers,,
+224,stackoverflow,Incorrect Comparisons And Swaps Counter Output for Quicksort Function,,
+225,stackoverflow,What is the best way to download files from a server in Django?,,Q
+226,stackoverflow,When the program built with C::B doesn&#39;t work,,
+227,stackoverflow,Django - Saving many-to-many within Celery shared task,,
+228,stackoverflow,Extract month and year then Count and get Average with Grouping by using Django ORM,,
+229,stackoverflow,Convert JSON to CSV by Python,,
+230,stackoverflow,Scala Map Function,,
+231,stackoverflow,How to implement K fold cross validation and get scores on a custom ML classifier model (ID3 Descision Tree),,
+232,stackoverflow,django - Could I have messed up my setting.py file or is this a problem with my code?,,Q
+233,stackoverflow,Send SMS with non-english text in HUAWEI E3372,,
+234,stackoverflow,Char array never stop scanning,,
+235,stackoverflow,SQL Server Error: XQuery [nodes()]: A node or set of nodes is required for &#39;nodes()&#39;,,
+236,stackoverflow,It is necessary that during the animation to increase the value of the number also participated tenths and hundredths,,
+237,stackoverflow,Ask Anomaly Detection Methods,,
+238,stackoverflow,uwsgi error with ModuleNotFoundError &#39;xxx.context_processors&#39; use customized context_processors,,
+239,stackoverflow,Populate Highcharts Pie Chart with JSON Data for Django Application,,
+240,stackoverflow,Why do we need to reshape the input for LSTM?,,Q
+241,stackoverflow,Cannot build A3C model with LSTM to play Breakout using PyTorch,,
+242,stackoverflow,Trying to display the webcam feed on my wxpython GUI but failing to do so,,
+243,stackoverflow,Unable to receive form data from Frontend using React/Django,,Q
+244,stackoverflow,Google Oauth2 Consent Screen Allow button disabled,,
+245,stackoverflow,Operand data type nvarchar is invalid for sum operator,,
+246,stackoverflow,Prompt user for email in Android,,
+247,stackoverflow,loading google map from another component with vue router,,
+248,stackoverflow,django login form returns &#39;AnonymousUser&#39; object has no attribute &#39;_meta&#39;,,
+249,stackoverflow,OBJLoader.js:459 Uncaught TypeError: Cannot read property &#39;itemError&#39; of undefined in THREE.js using MTLLoader and OBJLoader to load a model,,
+250,stackoverflow,cant find source-Layer Ids after reading Vector Tile using vector-tile JS library,,
+251,stackoverflow,Trying to get the value of the buttons when i onclick here and store in an array? any idea what im doing wrong?,,Q
+252,stackoverflow,Django Pedigree Table,,
+253,stackoverflow,Somehow I lost my CSS using Tailwind Laravel\Vuejs,,
+254,stackoverflow,Python app returns MySQL data 3 times instead of 1,,
+255,stackoverflow,how to align icons inside the text box in react js?,,Q
+256,stackoverflow,How would I customize my form for uploading images?,,Q
+257,stackoverflow,I can&#39;t load a javascript scatter plot in any browser,,
+258,stackoverflow,Trying to filter data based on start and end date,,
+259,stackoverflow,Refactoring multiple if conditions with Q() chaining in querystring evaluation Python/Django,,
+260,stackoverflow,How can I add/remove margin to a div with jQuery for an alert bar?,,Q
+261,stackoverflow,Editing npm packages in a webapp,,
+262,stackoverflow,react css update style onclick,,
+263,stackoverflow,"In R, how do I calculate difference between dates when condition is met?",,Q
+264,stackoverflow,Validation Formik js,,
+265,stackoverflow,Uncaught TypeError: &quot;#login&quot;.validate is not a function,,
+266,stackoverflow,Wrong degree of freedom for between-subject factor in lmer,,
+267,stackoverflow,"In R, how to group data by multiple columns in the descending order, then give every group an index starting from 1?",Q,Q
+268,stackoverflow,"Selectize js don&#39;t show add ... , when the exactly the same variant exists",,
+269,stackoverflow,WebView1.InvokeScriptAsync throws exception,,
+270,stackoverflow,Js operator &quot;+&quot; made me confuse,,
+271,stackoverflow,"ACR38; READER , ACOS3; SMARTCARD",,
+272,stackoverflow,How to use Angular ngFor to create Bootstrap navbar links,Q,Q
+273,stackoverflow,How can I fix this error still using node8.9.4 in @google-cloud/translate library? @grpc/grpc-js only works on Node ^8.13.0 || &gt;=10.10.0,Q,Q
+274,stackoverflow,How to set value to autonumeric element programmatically?,Q,Q
+275,stackoverflow,How to update the echarts from the report.service.ts in angular,Q,Q
+276,stackoverflow,font awesome icons showing as a blank square,,
+277,stackoverflow,Redirect to the wrong URL using Angular LoginService,,
+278,stackoverflow,how to show all the chips when it filtered in Angular,Q,Q
+279,stackoverflow,How to repeat same network request multiple times with different parameters in rxjs (Angular)?,Q,Q
+280,stackoverflow,Node JS Deploying API to client without any Front End,,
+281,stackoverflow,How to have a one to many relationship in React JS,Q,
+282,stackoverflow,"How can I set a reference variables to a specific item, in *ngFor?",Q,Q
+283,stackoverflow,Same function name in Terser for minification,,
+284,stackoverflow,ReactJs how to import component from sibling folder inside src folder?,Q,Q
+285,stackoverflow,Post user.id and event.id to new table,,
+286,stackoverflow,HighCharts Inverted Bubble chart and data labels are not in the inverted position of the bubbles,,
+287,stackoverflow,showing by console.log an observable array in angular 8,,Q
+288,stackoverflow,Filtering content based on query string using React Js,,
+289,stackoverflow,how to get firestore document content with angularfire and save it in variables?,Q,Q
+290,stackoverflow,Dynamic filter in clarity design,,
+291,stackoverflow,Always Getting Internal Server Error 500 for POST in Angular 9 with JSON-SERVER,,
+292,stackoverflow,How to display the child array in angular ag grid,Q,Q
+293,stackoverflow,Angular global function returning the elementId on hover,,
+294,stackoverflow,Property &#39;result&#39; does not exist on type &#39;unknown&#39;. Vue js error,,
+295,stackoverflow,Using ngx-print to print ngx-qrcode,,
+296,stackoverflow,No-unused-expressions error keeps recurring at script import in React,,
+297,stackoverflow,In d3.js how to reach till selected maximum end time range after zoomIn on circle and panning towards right side?,Q,Q
+298,stackoverflow,Webpack production config having with excluding tests folders &amp; files,,
+299,stackoverflow,"React lifecycle methods not trigger, is there some hack behind lifecycle methods?",Q,Q
+300,stackoverflow,Keep getting an undefined result from new Promise,,
+301,stackoverflow,AppSync Java authenticate with IAM,,
+302,stackoverflow,Reactive form unit testing,,
+303,stackoverflow,"Property &#39;index&#39; does not exist on type &#39;Ingredient&#39;, angular8",,
+304,stackoverflow,Adding External boostrap link to only one component in Angular8,,
+305,stackoverflow,Reading data from Angular Elements Web Component in plain JavaScript,,
+306,stackoverflow,Dynamically set ion-input value within form using ngFor,,
+307,stackoverflow,Convert today date into UTC string,,
+308,stackoverflow,how to format number to currency by currency name in JavaScript/Angular,,Q
+309,stackoverflow,Using Ngrx DevTools with Ionic 5,,
+310,stackoverflow,Issue with the submit button in angular,,
+311,stackoverflow,Angular formly select shows blank drop down list from backend api call,,
+312,stackoverflow,Custom styles inside a component in angular full calendar,,
+313,stackoverflow,Error: Cannot match any routes. URL Segment: in angular9,,
+314,stackoverflow,Angular 9 unit test routeReuseStrategy,,
+315,stackoverflow,Print file name in quotation marks using cat and sprintf,,
+316,stackoverflow,"user input not passing through if statement in Python, but is able to pass through in Java",,
+317,stackoverflow,How do I run this python script in java?,Q,Q
+318,stackoverflow,how to solve codechef Covid Sampling (Challenge) problem?,Q,Q
+319,stackoverflow,i can&#39;t understand this graphql resolver,,
+320,stackoverflow,nuxt-apollo issues while pulling array of objects,,
+321,stackoverflow,Where does GraphQL argument type come from?,Q,Q
+322,stackoverflow,How to delegateToSchema with a different selection?,Q,Q
+323,stackoverflow,Enforcing access permissions - AuthDirective drawback,,
+324,stackoverflow,Apollo client authorization header error: Response not successful: Received status code 400,,
+325,stackoverflow,Strapi GraphQL search by multiple attributes,,
+326,stackoverflow,Apollo-server tutorial from GrapQL website produce error,,
+327,stackoverflow,Retrieve products based on Discount,,
+328,stackoverflow,Optimize all blog post images with gatsby-image plugin,,
+329,stackoverflow,GraphQL vs REST for uploading images or files,,
+330,stackoverflow,GraphQL &amp; Sequelize: Users and followers/following,,
+331,stackoverflow,Recursive/Nested/Tree Data fetching in hasura,,
+332,stackoverflow,Cannot return null for non-nullable field,,
+333,stackoverflow,How do I leverage Strapi for large existing collections,Q,Q
+334,stackoverflow,Can a typescript type be created that concatenates two fields?,Q,Q
+335,stackoverflow,Hasura Migration failed : Required privilege is not held by client,,
+336,stackoverflow,Is white space significant in GraphQL or not?,Q,Q
+337,stackoverflow,"How to buy cryptocurrency programatically, REST / GraphQL",Q,Q
+338,stackoverflow,Flutter Graphql error Exception has occurred. _TypeError (type &#39;(HttpException) =&gt; Null&#39; is not a subtype of type &#39;(dynamic) =&gt; dynamic&#39;),,
+339,stackoverflow,Netlify build fails on multiple Gatsby sites,,
+340,stackoverflow,How can I deploy to different firebase environments using github actions and w9jds/firebase-action,Q,
+341,stackoverflow,PyCharm running with WSL2 do not display plots,,
+342,stackoverflow,How to fix the &#39;mysql2&#39; error when loading rails console?,Q,Q
+343,stackoverflow,Segmentation fault (core dumped) over a 100 round loop bash script,,
+344,stackoverflow,ubuntu 20 wok no virtualization tab,,
+345,stackoverflow,How to enable fingerprint login (Pop!_OS 20.04)?,Q,Q
+346,stackoverflow,Undefined symbol to destructor only on MacOS,,
+347,stackoverflow,How to run Android emulator on windows while using WSL2 with zsh?,Q,Q
+348,stackoverflow,Tomcat 9 starts on terminal [ubuntu 18.04] but does not load in browser,,
+349,stackoverflow,Problem with Aide. Lot of files &#39;atime in future&#39;,,
+350,stackoverflow,Cannot attach new volume to a new DigitalOcean droplet using Ansible,,
+351,stackoverflow,How do I use imagemagick with Python?,Q,Q
+352,stackoverflow,can&#39;t compile basic program using gcc ubuntu ld: unrecognized option -p,,
+353,stackoverflow,pip installing in usr/lib/python3.6/site-packages instead of virtualenv on ubuntu server,,
+354,stackoverflow,"Numpy module not found, but I have installed numpy",,
+355,stackoverflow,gdb printing a __m256i as 8x 32-bit elements instead of the default 4x 64-bit?,Q,Q
+356,stackoverflow,Github actions go test cannot find package error. How can I fix this?,Q,Q
+357,stackoverflow,Fatal Error: Unable to parse input tree - sm8150-coral-dtb-overlay.dtbo - Attempting to compile Android 11 Beta Kernel,,
+358,stackoverflow,minikube start error virtualbox 6.1 ubuntu,,
+359,stackoverflow,golang cmd.Output() of exec.Command() throws error in systemd service (ubuntu),,
+360,stackoverflow,Why can&#39;t i use the last version from firefox 77.0 with geckodriver v0.26 and selenium 3.11.0 in python 2.7.2?,Q,Q
+361,stackoverflow,Constant Java JDK message after a SUDO command (Ubuntu 18.04),,
+362,stackoverflow,I&#39;m new to working with static/shared libraries in Windows. Please confirm that I understand things correctly,,
+363,stackoverflow,Error command ovsdb external with opendaylight,,
+364,stackoverflow,Larave valet park not working in ubuntu and showing phpinfo,,
+365,stackoverflow,React Native Scrollview keyboardshouldpersisttaps not working for ios,,
+366,stackoverflow,How to remove multiple return from method in ruby?,Q,Q
+367,stackoverflow,Merge Ruby nested hashes with same keys,,
+368,stackoverflow,Damage tar archive with resource archive_file,,
+369,stackoverflow,digest library issue for rails,,
+370,stackoverflow,elestic search text search function on mastodon full text search,,
+371,stackoverflow,Using accessors for jsonb hash record,,
+372,stackoverflow,Rails user to user messages with devise gem,,Q
+373,stackoverflow,How can I declare what class a YAML.load() will return so that my IDE will properly identify the loaded object in inspections?,Q,Q
+374,stackoverflow,psql - terminal authentication access problem,,
+375,stackoverflow,How to link pages of website using the Sinatra framework Ruby (issue with my href)?,Q,Q
+376,stackoverflow,"How to check if a variable has a map available in rails? In other words, if a variable is mappable?",Q,Q
+377,stackoverflow,Filtering chain issue with ActiveRecord and Arel (SQL),,
+378,stackoverflow,How does iteration with each method over product of arrays work in Ruby?,Q,Q
+379,stackoverflow,Bundle Exec Rake Test and rails db:migrate RAILS_ENV=test is not working,,
+380,stackoverflow,Does my MinMaxStack#pop method amortize to O(1)?,Q,Q
+381,stackoverflow,quickbooks-ruby not providing me with code,,
+382,stackoverflow,Ruby to_xml with repeating same nodes but remove parent node,,
+383,stackoverflow,Locate element in multi level array using Groovy,,
+384,stackoverflow,HTTParty + JSON-LD Content-Type response,,
+385,stackoverflow,How to add a todo depending on a droplist menu,Q,Q
+386,stackoverflow,Is there a way to get response on error with HTTPClient in Ruby?,Q,Q
+387,stackoverflow,QuickBooks API example shows usage of &quot;curl&quot; but it actually doesn&#39;t work or am I missing something,,
+388,stackoverflow,Ruby Capybara Element not found error handling,,
+389,stackoverflow,NotImplementedError: fork() function is unimplemented on this machine,,
+390,stackoverflow,Store 72 millions of rows per day in MySQL,,
+391,stackoverflow,why I not receiving on_message callback from AWS iot core,Q,
+392,stackoverflow,Comparison Open-source IoT platforms,,
+393,stackoverflow,How to pass environment variable to a react app deployed in tomcat?,Q,Q
+394,stackoverflow,Why is the boolean expression returning false in java?,Q,Q
+395,stackoverflow,Android get the topmost view by getdecorview,,
+396,stackoverflow,Remove duplicate set of strings in a hyphen separated big string,,
+397,stackoverflow,WFLYSRV0153: Failed to process phase INSTALL of subdeployment,,
+398,stackoverflow,BeanIOFlatFileItemWriter doesnt work with spring batch 4.2.4,,
+399,stackoverflow,Iterate enum in Java,,
+400,stackoverflow,Problem while reading UCS-2 LE BOM encoded file in Apache NiFi,,
+401,stackoverflow,How can i return new object using a method that modifies a data field without messing with the data field of the object used to call that method,Q,
+402,stackoverflow,Update field in embedded mongodb document using Spring Data MongodB?,Q,Q
+403,stackoverflow,I want to know how to draw class diagram in this case,,
+404,stackoverflow,Time to start Algorithms and Data Structures,,
+405,stackoverflow,Android Security : how to protect the local files/db in my application and access to it with no problem?,Q,Q
+406,stackoverflow,Getting issue of unsafe deserialization,,
+407,stackoverflow,Spring Security - Url with IS_AUTHENTICATED_ANONYMOUSLY but with credentials still specified (and unknow) is blocked by the framework,,
+408,stackoverflow,&quot;variable might not have been initialized&quot; (in if statement).I have used switch statement followed by if. (JAVA),,
+409,stackoverflow,Apache Camel rout doesn&#39;t call Processor,,
+410,stackoverflow,Orphan ponctudation just when I use &lt;strong&gt; or &lt;b&gt;. How to solve this?,Q,Q
+411,stackoverflow,java.security.NoSuchAlgorithmException: Ed25519 KeyPairGenerator not available,,
+412,stackoverflow,Retrieve AD User info in Spring Boot filter,,
+413,stackoverflow,I need to display a certain row from a Txt File,,
+414,stackoverflow,Performance of database during table loads,,
+415,stackoverflow,@EntityGraph/JOIN FETCH are not working with Bytecode Enanhcement,,
+416,stackoverflow,how do i make and open java projects in eclipse,Q,
+417,stackoverflow,How to host java web application online,,Q
+418,stackoverflow,How to take conditional actions on Event Hub Content in Power Automate Flow?,Q,Q
+419,stackoverflow,How to time every request in Spring Boot,Q,
+420,stackoverflow,JavaFx how to write text into specific position,,
+421,stackoverflow,Mapstruct: Check for null for source before mapping to target,,
+422,stackoverflow,JTextField maximum characters length without overlapping characters,,
+423,stackoverflow,Java Remote Debug : Is there a way to clear the stale session,,
+424,stackoverflow,Setting Empty Adapter-FirestoreRecyclerAdapter,,
+425,stackoverflow,How to move an image that has been rotated?,Q,Q
+426,stackoverflow,how to resolve methodmatcher exception in data driven testing using TestNG?,Q,Q
+427,stackoverflow,Your device isn&#39;t compatible with this version android,,
+428,stackoverflow,How to build a webserver for collecting IoT telemetry and saving it to a database?,Q,Q
+429,stackoverflow,"How to fix &quot;Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.&quot;",,
+430,stackoverflow,Find and format visually aesthetically pleasant pattern of trees in a forest using java challenge question,,Q
+431,stackoverflow,hibernate entity discovery only works inside the same folder,,
+432,stackoverflow,Can historical high error rates cause Google Calendar APIs to timeout?,Q,Q
+433,stackoverflow,Java Spring input stream to php download file,,
+434,stackoverflow,Bottom sheet + MotionLayout implementation,,
+435,stackoverflow,Spring Boots Web Socket with SockJS Whoops! Lost connection to http://localhost:8080/chats,,
+436,stackoverflow,Table not displaying until clicked when a CellPainterWrapper instead of a TextPainter for columns,,
+437,stackoverflow,Hibernate envers: how to get the current audited table name?,Q,Q
+438,stackoverflow,How to change id inside onClick method?,Q,Q
+439,stackoverflow,"Not in union [&quot;null&quot;,&quot;int&quot;] Avro Format org.apache.avro.UnresolvedUnionException",,
+440,stackoverflow,Sort list by LocalDate descending and LocalTime ascending,,
+441,stackoverflow,Unable to load class &#39;org.jetbrains.kotlin.annotation.plugin.ide.AnnotationBasedPluginModelBuilderService&#39;,,
+442,stackoverflow,Remap a CSV structure using Groovy,,
+443,stackoverflow,Tomcat can&#39;t find Log4j library,,
+444,stackoverflow,Java Jackson Always Serialize One Type As Another,,
+445,stackoverflow,GrantedAuthority caused JSON mapping exception,,
+446,stackoverflow,Kafka consumer poll method giving Attempt to join group failed due to fatal error: The group member&#39;s supported protocols are incompatible,,
+447,stackoverflow,java.lang.NullPointerException: Attempt to invoke virtual method &#39;int android.database.sqlite.SQLiteDatabase.getVersion()&#39; on a null object reference,,
+448,stackoverflow,How to get Overall Result of Script in OpenScript,Q,Q
+449,stackoverflow,How do I run 2 Android phones on a PC simultaneously So that DroidCam for number 1 &amp; TC games screen mirror for number 2?,Q,Q
+450,stackoverflow,Which is good calling method or passing parameters in groovy,Q,Q
+451,stackoverflow,Getting 2d array from a method where I use switch,,
+452,stackoverflow,Can subclass be run without having a main() method,,
+453,stackoverflow,How change String in Android Java?,Q,Q
+454,stackoverflow,"I have an AJAX post request, how should my spring controller look",,
+455,stackoverflow,Error while using JPQL to query by joining tables,,
+456,stackoverflow,Spring Cloud Config Client not able to resolve placeholder,,
+457,stackoverflow,Transform this into method that uses streams?,Q,Q
+458,stackoverflow,"Having Invalid key length,Invalid IV length, library issues while converting the tripleDES script written in Java to NodeJS",,
+459,stackoverflow,How should I test a method that calls a constructor that calls static/final methods? (Mockito),Q,Q
+460,stackoverflow,Is Mac equivalent to a hash and encrypt function?,Q,Q
+461,stackoverflow,User input in java,,
+462,stackoverflow,Locking ConcurrentHashMap for an exclusive read,,
+463,stackoverflow,Completable must complete when an observable&#39;s on next is fired,,
+464,stackoverflow,gRPC exception related with NameResolverProvider,,
+465,stackoverflow,Web scraping javascript with htmlunit - &quot;You are currently browsing with JavaScript turned off&quot;,,
+466,stackoverflow,How to output &quot; * &quot; with the necessary spacing and indents with while loop?,Q,Q
+467,stackoverflow,How to Get Available Disk Space *IN A FOLDER* from Java,Q,Q
+468,stackoverflow,find duplicate entries with streams in Java,,Q
+469,stackoverflow,java android WebView progress dialog problem,,
+470,stackoverflow,How to apply the security features in EJB,Q,Q
+471,stackoverflow,Convert CSV to List&lt;String&gt; Java,,
+472,stackoverflow,Changing delimiter in @ConfigurationProperties for reading a List property,,
+473,stackoverflow,How to retrieve translations of CustomList items in NetSuite using SuiteTalk?,Q,Q
+474,stackoverflow,jOOQ Dynamic WITH Clause,,
+475,stackoverflow,Spring data persistence column user1_.id does not exist exception,,
+476,stackoverflow,Processcpuload greater than systemcpuload,,
+477,stackoverflow,TinkerPop Gremlin repeat() with property(),,
+478,stackoverflow,I want to improve this code on JAVA but Im not shure,,
+479,stackoverflow,"Am I using @Cacheable, @CachePut and @CacheEvict correctly?",Q,Q
+480,stackoverflow,Custom Result from Spring JPA Query,,
+481,stackoverflow,"RCP nattable groupBy column for 55,000+ data performance",,
+482,stackoverflow,Not receiving all data from IGDB Api using retrofit,,
+483,stackoverflow,QueryDSL filter using two properties on child documents in MongoDB,,Q
+484,stackoverflow,"Hi, I&#39;m running through an error while initializing chrome in selenium test case, Please advise",,
+485,stackoverflow,Texture Randomly Appears Above Character LibGDX,,
+486,stackoverflow,Response with Object datatype assigned null - java,,
+487,stackoverflow,java.lang.SecurityException: Neither user 11029 nor current process has android.permission.SET_TIME_ZONE,,
+488,stackoverflow,CSS style not being used and List not being read,,
+489,stackoverflow,how to load an external cryptographic provider dynamically,Q,Q
+490,stackoverflow,Discord JDA - How to check how many users a user invited,,Q
+491,stackoverflow,Implementing a directed/undirected graph using 2D linked list which uses nodes that point in four directions,,
+492,stackoverflow,Rolling LogBack - Failed to create parent directories for: [c:\var...],,
+493,stackoverflow,"I am getting an empty string from textview.gettext().tostring() method, not getting the value present in textview",,
+494,stackoverflow,Constaraint layout inside Scroll View,,
+495,stackoverflow,Reading a file from SBT resources folder without escaping characters,,
+496,stackoverflow,How to delete the blob on the edge by the SDK then it will also delete the blob on the cloud automatically,Q,
+497,stackoverflow,Unable to start gRPC server on Quarkus - Unable to find beans exposing the `BindableService`,,
+498,stackoverflow,How to use GPU when training OpenNLP models?,Q,Q
+499,stackoverflow,Difference between StandardOpenOption.WRITE + StandardOpenOption.CREATE with/without TRUNCATE_EXISTING?,Q,Q
+500,stackoverflow,how to upgrade sqlite database in user&#39;s phone,Q,
+501,twitter,i have a programming in java final tomorrow 😭😭😭 please someone wish me luck,,
+502,twitter,"RT @skillbakery: Hi Friends, Learn Javascript Framework - Crank Using Async JSX Component
+
+watch now: https://t.co/WcrOAcXc9D
+
+#skillbakery…",,
+503,twitter,"RT @AlRASHIRATORI: the more we learn about rinne the more i feel like hes purposefully singing ""risky penis"" in risky venus",,
+504,twitter,"RT @ellie_bufkin: EXACTLY.
+From @li88yinc “This kind of indoctrination will not make white kids think differently about their own biases, b…",,
+505,twitter,"RT @mambo247: Eeeyy! Just thought y'all should know,we are an award-winning WEB DESIGN COMPANY in Kenya.Check our site https://t.co/TI8o43c…",,
+506,twitter,"RT @CHlAKlMORISAWA: theres starpro, cospro and rhythm link whats the last one again",,
+507,twitter,"Node.js vs Java: The Ultimate Battle For Being Best Back-End 
+
+#Java #Js #NodeJs https://t.co/PBFiiKTr5X",,
+508,twitter,@soloratiste N...no.. (visible sweating),,
+509,twitter,"RT @ashuistic: Epic! 😂
+#100DaysOfCode #Code #Java #javascript #DEVCommunity #programming #programmingmemes https://t.co/ilpZTkwwfK",,
+510,twitter,"RT @CupidAnitwt: good day #anitwt! 
+
+@1800ANlME needs our help to look for Ariel, someone here on anitwt who they met on Omegle. please hel…",,
+511,twitter,"RT @ashuistic: Epic! 😂
+#100DaysOfCode #Code #Java #javascript #DEVCommunity #programming #programmingmemes https://t.co/ilpZTkwwfK",,
+512,twitter,"RT @nuicemedia: From 206 labs, there were 17,052 samples tested from 10,119 subjects on the last 24 hours bringing the totals to 540,115 sa…",,
+513,twitter,"RT @Angelalokhart: Node.js vs Java: The Ultimate Battle For Being Best Back-End   https://t.co/k4SoXKGG0C  
+
+#Nodejs #Java #Js",,
+514,twitter,"RT @BluzelleHQ: 🎉🎉🎉H-O-O-R-A-Y🎉🎉🎉
+
+We now have added support for 4 new languages to interact with #BluzelleDB💻:
+
+🔹#Ruby
+🔹#Golang
+🔹#Python
+🔹…",,
+515,twitter,"RT @vishakha1235: Node.JS vs Java  - Which Is Better And Faster? 
+
+#Nodejs #Java 
+
+https://t.co/8nvSlSs8pP",Q,Q
+516,twitter,"RT @chrisjackson531: Node.js vs Java: The Ultimate Battle For Being Best Back-End 
+
+Visit: https://t.co/NgkIu1sJBw  #Nodejs #Javascript #Js…",,
+517,twitter,"@RubinReport Honestly Dave, and I mean no offense by this, we don't care.  What you (or anyone for that matter) does in their bedroom is none of our business. I don't discuss sex with close friends so why would I discuss it with you? We don't do identity politics.",Q,Q
+518,twitter,"RT @chrisjackson531: Node.js vs Java: The Ultimate Battle For Being Best Back-End 
+
+Visit: https://t.co/NgkIu1sJBw  #Nodejs #Javascript #Js…",,
+519,twitter,"RT @Hypersistence: The best way to initialize LAZY entity and collection proxies with @Java Persistence and #Hibernate
+
+https://t.co/lTrjDz…",,
+520,twitter,"@daniteshale @java_the_ETHIOP @Opinionat33d @bilutam i do not support abiy, he is the heir to the TPLF regime. i want a full revolution, not thie ""reform"".",,
+521,twitter,"RT @marybrown9884: Node.JS vs Java  - Which Is Better And Faster? 
+
+#Java #Javascript #NodeJs 
+
+https://t.co/6SvoGe2i9s https://t.co/RhW9mE…",Q,Q
+522,twitter,"@thecodercoder Ah! The list is long!!
+C, React, vue, mongo, node, ruby, python, c#, Java, flutter, swift, reactive native",,
+523,twitter,"RT @chuckchucknock: Chuck Norris can instantiate an abstract class.
+
+#100DaysOfCode #Code #Java #javascript #DEVCommunity #programming #pro…",,
+524,twitter,"RT @SerenaM2194: Node.js vs Java: The Ultimate Battle For Being Best Back-End 
+
+#Java #Js #NodeJs https://t.co/PBFiiKTr5X",,
+525,twitter,"RT @javinpaul: Clean Code — A must-read Coding Book for Programmers
+Want to learn the art of converting a bad code to good code? This book…",Q,Q
+526,twitter,"RT @skillbakery: Hi Friends, Learn Javascript Framework - Crank Using Async JSX Component
+
+watch now: https://t.co/WcrOAcXc9D
+
+#skillbakery…",,
+527,twitter,RT @Karasvchi: there are 4 types of people meeting a ValkP https://t.co/oi2d7ueOEj,,
+528,twitter,"RT @nuicemedia: From 206 labs, there were 17,052 samples tested from 10,119 subjects on the last 24 hours bringing the totals to 540,115 sa…",,
+529,twitter,RT @enstruggletwt: This is kinda sad https://t.co/2vD0csj4PC,,
+530,twitter,"Java Developer Salary: 12631.9€
+Cloud Architect Salary: 5395.06€
+CyberSecurity Expert Salary: 10743.43€
+Project Manager Salary: 7737.98€
+Agile Coach Salary: 13275.63€",,
+531,twitter,"https://t.co/70qpVJyBe9
+In this analyst paper, you'll find key findings on:
+
+Cost savings
+Deployment density
+Startup memory usage
+Throughput
+Startup time
+Developer productivity
+
+#quarkus #developer #Java #DevOps #",,
+532,twitter,"RT @skillbakery: Hi Friends, Learn Javascript Framework - Crank Using Async JSX Component
+
+watch now: https://t.co/WcrOAcXc9D
+
+#skillbakery…",,
+533,twitter,"RT @skillbakery: Hi Friends, Learn Javascript Framework - Crank Using Async JSX Component
+
+watch now: https://t.co/WcrOAcXc9D
+
+#skillbakery…",,
+534,twitter,@daniteshale @java_the_ETHIOP @Opinionat33d @bilutam i did not say our opinion is biggest than our country. comparing my opinion with the country is so dumb.,,
+535,twitter,"Hey  @EclipseJavaIDE you gluys seriously need to work on a good dark theme like vs code for the upcoming eclipse release.
+#eclipse #java #update #release #java8 #java11",,
+536,twitter,"@daniteshale @Opinionat33d @bilutam @java_the_ETHIOP not tigray, TPLF.",,
+537,twitter,"RT @VeronicaKoman: 15/6/20 Malang, Java
+
+During a #PapuanLivesMatter protest, Indonesian demonstrators apologized to West Papuans over suff…",,
+538,twitter,"RT @_crstne_08: don't break the chain ✨
+
+• Lockscreen
+• Homescreen 
+• Last song you listened to
+• 35th picture in your camera roll
+
+7 tags:…",,
+539,twitter,"@EzkMorales @RubinReport LOL...I almost shot coffee through my nose!🤣😂🤣😂 
+
+I'm sure your lake outfits would have been on point!🙌",,
+540,twitter,"@ShannaPlatano @java_assassin Me, I needed to hear this.",,
+541,twitter,RT @AuCyble: Apparently Adani group has a linkage to a JAVA-based ransomware attack - VT Hash -&gt; 558a3048daa2623ca5dedc442740ef585138253016…,,
+542,twitter,"RT @coding_monkeys: Software Engineer : Movies v/s real life⁣
+😆😅⁣
+
+#Python #rstats #java #javascript #100DaysOfCode #ReactJS #AWS #CloudCom…",,
+543,twitter,"New app on our platform: GLeDitor.
+
+Programmer's editor whith syntax highlight, extended search features and code completion.
+GLeDitor currently supports C, C++, C#, Java, Pascal, Basic, Php, Python, Html, Css, Xml and Sql syntax highlight.
+
+Try it now! https://t.co/6YJY8GqX1J https://t.co/0SyyLgrr7y",,
+544,twitter,"Node.js vs Java: The Ultimate Battle For Being Best Back-End   https://t.co/k4SoXKGG0C  
+
+#Nodejs #Java #Js",,
+545,twitter,"RT @DivaAmon: Post 60: These are the deepest EVER sightings of octopus! Grimpoteuthis dumbo octopus were seen 5,760m &amp; 6,957m in the Java T…",,
+546,twitter,bassball07 Java,,
+547,twitter,"Node.JS vs Java  - Which Is Better And Faster? 
+
+#Nodejs #Java 
+
+https://t.co/8nvSlSs8pP",Q,Q
+548,twitter,RT @KAIASGEBRER: cries for help in the middle east have been ignored for too long but yemen is currently having one of the WORST humanitari…,,
+549,twitter,"Only TWO WEEKS LEFT until our Java Developer course starts.
+
+Take your chance! Learn #Java remotely in a digital classroom and start your #newcareer now! 💪
+
+Apply for our upcoming course starting on the 29th of June:
+➡️ https://t.co/ITHJF56A85 ⬅️
+
+#it #coding #remotelearning https://t.co/rAthMlN3EE",,
+550,twitter,"RT @coding_monkeys: Software Engineer : Movies v/s real life⁣
+😆😅⁣
+
+#Python #rstats #java #javascript #100DaysOfCode #ReactJS #AWS #CloudCom…",,
+551,twitter,"Minecraft SFA Accounts FOR ONLY 1.50$!
+#Minecraft #Minecraftaccounts #minecraftbuy #Minecraft https://t.co/1t2UVfFz8v",,
+552,twitter,"RT @Scot_Blog: “Operating a business in Nashville Davidson County is a privilege, not a right,"" Dr. Caldwell said. 
+
+https://t.co/mBidlNdWD…",,
+553,twitter,RT @EvilDreadsII: Reminder that the Golden State Killer who terrorized Californians for over a decade from The Bay to LA was a cop.,,
+554,twitter,"RT @VeronicaKoman: 16/6/20 Surabaya, Java
+
+West Papuan and Indonesian students are blocked by police, disproportionately, from marching to…",,
+555,twitter,"RT @dreamsea_mss: A manuscript in the collection of Iim Abdurrohim from the Lengkong area, Kuningan, West Java has an interesting feature.…",,
+556,twitter,"There are 100+ job opportunities at Capgemini India in Bangalore, Chennai, Mumbai, Pune and Hyderabad.
+
+Check out all their job openings, ranging from Java Developer to Salesforce Architect, TeamCenter Developer and many more.
+
+Apply here: https://t.co/bWll0EgEHo https://t.co/aNNLmQ2XWd",,
+557,twitter,"Node.js vs Java: The Ultimate Battle For Being Best Back-End 
+
+Visit: https://t.co/NgkIu1sJBw  #Nodejs #Javascript #Js https://t.co/oUGAVPm9Xo",,
+558,twitter,"Java and PHP Engineer - San Francisco, CA https://t.co/4Dln1dNuMy",,
+559,twitter,"RT @RoubinaAlabash: console.log('Day '+'30/100'+':');
+console.log('Hello '+'World, '+'I just got introduced to '+'Java'+'Script'+'.');
+#100…",,
+560,twitter,RT @javinpaul: @ravinwashere And this list doesn't look correct unless they didn't ask to any @java developers,,
+561,twitter,"Node.js vs Java: The Ultimate Battle For Being Best Back-End
+
+Visit: https://t.co/SQL3uxo3UA    #WebDevelopment #Nodejs https://t.co/fpGDyH11ci",,
+562,twitter,@xria_c 😂😂leave alone JavaScript...java can literally rape you,,
+563,twitter,"RT @nuicemedia: From 206 labs, there were 17,052 samples tested from 10,119 subjects on the last 24 hours bringing the totals to 540,115 sa…",,
+564,twitter,"RT @benedickewan: It's canon Zsasz and Roman play hide and seek and wheelbarrow race around the apartment,,,, What a fucking time to be ali…",,
+565,twitter,"RT @allthingskenobi: Ewan talks about The Mandalorian and ""Hello There: The Musical."" The opening number sounds amazing already. #EwanMcGre…",,
+566,twitter,"RT @chuckchucknock: Chuck Norris can unit test entire applications with a single assert.
+
+#100DaysOfCode #Code #Java #javascript #DEVCommun…",,
+567,twitter,RT @sitharies: HE SAID THE THING https://t.co/B8BL7vOH6V,,
+568,twitter,"RT @sabrialmandi: One of the wonderful natural attractions in Asia is the beautiful Java Waterfall, Indonesia💦🌏😉👍🤩 https://t.co/CDJ7pOhdZi",,
+569,twitter,"RT @rubie_shell: Beginning PHP.
+
+#Coding #Programming #Tech #WebDeveloper #HTML #CSS  #Devops #NodeJS #VueJS #IoT  #Datascience #Linux #Jav…",,
+570,twitter,"RT @rubie_shell: Beginning PHP.
+
+#Coding #Programming #Tech #WebDeveloper #HTML #CSS  #Devops #NodeJS #VueJS #IoT  #Datascience #Linux #Jav…",,
+571,twitter,"RT @rubie_shell: Beginning PHP.
+
+#Coding #Programming #Tech #WebDeveloper #HTML #CSS  #Devops #NodeJS #VueJS #IoT  #Datascience #Linux #Jav…",,
+572,twitter,"RT @nuicemedia: From 206 labs, there were 17,052 samples tested from 10,119 subjects on the last 24 hours bringing the totals to 540,115 sa…",,
+573,twitter,"RT @rubie_shell: Beginning PHP.
+
+#Coding #Programming #Tech #WebDeveloper #HTML #CSS  #Devops #NodeJS #VueJS #IoT  #Datascience #Linux #Jav…",,
+574,twitter,"RT @RoubinaAlabash: console.log('Day '+'30/100'+':');
+console.log('Hello '+'World, '+'I just got introduced to '+'Java'+'Script'+'.');
+#100…",,
+575,twitter,"Although there are newer versions, #Java 8 is still the most used, by quite a margin. However Java 11 is steadily growing. https://t.co/4BfsCjm1l1",,
+576,twitter,RT @PiyushRaj714: @googledevs @Google @ThePSF @Codecademy @freeCodeCamp @edXOnline @github @ThePracticalDev @java @udacity I hope you all a…,,
+577,twitter,"don't break the chain ✨
+
+• Lockscreen
+• Homescreen 
+• Last song you listened to
+• 35th picture in your camera roll
+
+7 tags: @nhieghel06 @thea_java @ctmcdn @angel_cutess @chinnyzx_ @AnalouArcillas @iamkaiiMB https://t.co/CEGsfp7mzJ https://t.co/kZo34h14u9",,
+578,twitter,"RT @VeronicaKoman: 16/6/20 Surabaya, Java
+
+West Papuan and Indonesian students are blocked by police, disproportionately, from marching to…",,
+579,twitter,"Node.js vs Java: The Ultimate Battle For Being Best Back-End 
+
+&gt;&gt;https://t.co/3V0CH8LbiE
+
+#NodeJs #javascript #WebDevelopment",,
+580,twitter,"RT @mcswany: Node.js vs Java: The Ultimate Battle For Being Best Back-End 
+
+&gt;&gt;https://t.co/3V0CH8LbiE
+
+#NodeJs #javascript #WebDevelopment",,
+581,twitter,"RT @mcswany: Node.js vs Java: The Ultimate Battle For Being Best Back-End 
+
+&gt;&gt;https://t.co/3V0CH8LbiE
+
+#NodeJs #javascript #WebDevelopment",,
+582,twitter,"@NanouuSymeon 
+CSS Is Just Combination Of DHTML And HTML And Of Course Java Script Give Life To That Web Page Or Section As HTML Consists Of PreDefined Tags..!",,
+583,twitter,"RT @alchudriysaid: @nuicemedia though, 63.7% of death confirmed today comes from E. Java",,
+584,twitter,"RT @KJKAfrica: Brain Teaser: Let’s see who can correctly guess the language of the above code snippet.  
+
+Clue: sounds more like an animal…",,
+585,twitter,"RT @KJKAfrica: Brain Teaser: Let’s see who can correctly guess the language of the above code snippet.  
+
+Clue: sounds more like an animal…",,
+586,twitter,"RT @VeronicaKoman: 15/6/20 Malang, Java
+
+During a #PapuanLivesMatter protest, Indonesian demonstrators apologized to West Papuans over suff…",,
+587,twitter,"Updating my existing web page ( html/Javascript) and connect third party IBM API instead of google voice https://t.co/X4PJztyYKs Hi all,  I have a simple local web page which is running on my laptop via IIS hosting. The existing function: it reads the English text which is stor…",,
+588,twitter,I am looking for a developer who has worked on the zerodha kite api -- 2 - https://t.co/raVRjWnKeh,,
+589,twitter,"Node.JS vs Java  - Which Is Better And Faster? 
+
+👉https://t.co/unTHHLef6B   #NodeJs #Java #Js",,Q
+590,twitter,"@thibaut_barrere We don't have anything published but that would be good to get out there! In general, all the various JVMs continue to run JRuby faster with each release. We are also close to being fully Java module-friendly, which will make it easier to switch to the most recent releases.",,
+591,twitter,"🎓 CockroachDB Tutorial: Build an App with @springboot, #Java, @Hibernate, @gradle and @CockroachDB   
+
+https://t.co/ymoT6cPW9Y
+
+✏️ @glennfawcett 
+
+#HibernateORM #SpringBoot #CockroachDB #Gradle #DistributedSQL",,
+592,twitter,"#FEATURED #COURSES
+#Java #Programming Masterclass for #Software #Developers Last Updated 02/2020
+Become a #Computer #Programmer. Obtain valuable #Core Java Skills And Java #Certification
+https://t.co/qw5VM412Mp
+#coding #softwaredevelopment  #100DaysOfCode https://t.co/iYcAokUMkQ",,
+593,twitter,"RT @byLilyV: #FEATURED #COURSES
+#Java #Programming Masterclass for #Software #Developers Last Updated 02/2020
+Become a #Computer #Programme…",,
+594,twitter,"@cmdcolin @ChromiumDev It depends how you do it. In custom async things, I've used the abort event to terminate the worker doing the parallel work.",,
+595,twitter,"@jaffathecake @ChromiumDev Even when using webworkers, we don't just worker.terminate. In our app we created a concept of abort signal that we pass to a webworker (we have more of a worker pool style thing instead of spinning up a worker for a specific task)",,
+596,twitter,@cmdcolin @ChromiumDev Sure. It depends.,,
+597,twitter,"RT @WebDevLiveIndia: 📢[Registration open for #WebDevLiveIndia] 
+
+Inviting developers &amp; tech enthusiasts to attend the 4-day event on differ…",,
+598,twitter,"Wrote a 20 liner for RGB-HCL color space conversion
+
+Results differ slightly from @d3js_org as I preferred using the same D50 sRGB matrix as @ChromiumDev 
+
+https://t.co/CwoGErdbOn https://t.co/1Um85wp3oF",,
+599,twitter,"RT @WebDevLiveIndia: 📢[Registration open for #WebDevLiveIndia] 
+
+Inviting developers &amp; tech enthusiasts to attend the 4-day event on differ…",,
+600,twitter,RT @_varshajaiswal_: Register youself for #WebDevLiveIndia at https://t.co/ugLc4JIP4L and reserve your evening coffee/tea for the show from…,,
+601,twitter,"RT @sidagarwal04: 📢[Registration open for #WebDevLiveIndia] 
+
+Inviting developers &amp; tech enthusiasts to attend the 4-day event on different…",,
+602,twitter,"RT @mayur_sojitra: 📢 Registrations are open 
+
+Get Ready #DinoFans 🦖
+
+@WebDevLiveIndia @ChromiumDev @GoogleDevsIN https://t.co/OlVTVf3PW4",,
+603,twitter,"RT @schachin: If we cannot turn this off, guess it is goodbye to @googlechrome 
+
+""Chrome Google resumes its senseless attack on the URL bar…",,
+604,twitter,@Google @ChromiumDev @googlechrome @firefox @opera @AppleSupport @MicrosoftEdge @Windows @Yahoo @yandexcom @bing @DuckDuckGo @startpage Please remove access to adult content sites &amp; remove them from search results &amp; block the ads in pages &amp; advert sites that open additional tabs.,,
+605,twitter,@ChromiumDev @MSEdgeDev Can one of your billion dollar corporations please pay an intern to fix session persistence &amp; restore so it's no longer possible for all open tabs (even pinned ones!) to just randomly get nuked because the OS crashed? Maybe ask @Firefox how they did it.,,Q
+606,twitter,RT @LNplum: @ChromiumDev @MSEdgeDev Can one of your billion dollar corporations please pay an intern to fix session persistence &amp; restore s…,,
+607,twitter,@TheCryptoMonk4 @googlechrome @Google @ChromiumDev I have heard people in the industry using it. I will give it a go. Thanks!,,
+608,twitter,"RT @PraveenPal4232: 📢[Registration open for #WebDevLiveIndia] 
+
+Inviting developers &amp; tech enthusiasts to attend the 4-day event on differe…",,
+609,twitter,"@ChromeDevTools @ChromiumDev Something seems terribly wrong here. FCP of 5s for a serverless SSR app? The whole thing shows up in less than a second, fully rendered (of course, because it's SSR). https://t.co/ITUDmIJyOS",,Q
+610,twitter,"Hola #WebDevs,
+
+Most awaited announcement is here! Gear up and register yourself now for #WebDevLiveIndia 
+
+@WebDevLiveIndia @ChromiumDev @GoogleDevsIN @gdg @WtmIndia https://t.co/MOGhNbvkwq",,
+611,twitter,RT @JosueYenga: Like😊 comment ✍ and share to support the community of developer👥 #100DaysOfCode #programmerslife #CodeNewbie #CodeIslife #N…,,
+612,twitter,RT @JosueYenga: Like😊 comment ✍ and share to support the community of developer👥 #100DaysOfCode #programmerslife #CodeNewbie #CodeIslife #N…,,
+613,twitter,RT @JosueYenga: Like😊 comment ✍ and share to support the community of developer👥 #100DaysOfCode #programmerslife #CodeNewbie #CodeIslife #N…,,
+614,twitter,RT @JosueYenga: Like😊 comment ✍ and share to support the community of developer👥 #100DaysOfCode #programmerslife #CodeNewbie #CodeIslife #N…,,
+615,twitter,RT @JosueYenga: Like😊 comment ✍ and share to support the community of developer👥 #100DaysOfCode #programmerslife #CodeNewbie #CodeIslife #N…,,
+616,twitter,RT @JosueYenga: Like😊 comment ✍ and share to support the community of developer👥 #100DaysOfCode #programmerslife #CodeNewbie #CodeIslife #N…,,
+617,twitter,"RT @WebDevLiveIndia: 📢[Registration open for #WebDevLiveIndia] 
+
+Inviting developers &amp; tech enthusiasts to attend the 4-day event on differ…",,
+618,twitter,"RT @WebDevLiveIndia: 📢[Registration open for #WebDevLiveIndia] 
+
+Inviting developers &amp; tech enthusiasts to attend the 4-day event on differ…",,
+619,twitter,"Believe it or not, I have found something that Safari is handling (MUCH) better than Chrome: pathologically big CSS grids. Chrome has a *hardcoded* limit of 1000 tracks. How fucking stupid is this ? https://t.co/U2mFDzXCAA (poke @ChromiumDev)",,Q
+620,twitter,"RT @WebDevLiveIndia: 📢[Registration open for #WebDevLiveIndia] 
+
+Inviting developers &amp; tech enthusiasts to attend the 4-day event on differ…",,
+621,twitter,"@ChromiumDev
+ This happens to my in Chrome Dev and Chrome Canary on some websites for month and I don't know how to fix it, works fine in Chrome and Firefox. Any idea? https://t.co/f9sb4TsywG",,Q
+622,twitter,"RT @sidagarwal04: 📢[Registration open for #WebDevLiveIndia] 
+
+Inviting developers &amp; tech enthusiasts to attend the 4-day event on different…",,
+623,twitter,"RT @WTMJalandhar: Hi #WebDevs,
+
+Post #IWDIndia2020, WTM Jalandhar is back with beautiful surprise for the web developers.
+
+Register yoursel…",,
+624,twitter,"RT @WebDevLiveIndia: 📢[Registration open for #WebDevLiveIndia] 
+
+Inviting developers &amp; tech enthusiasts to attend the 4-day event on differ…",,
+625,twitter,"RT @WebDevLiveIndia: 📢[Registration open for #WebDevLiveIndia] 
+
+Inviting developers &amp; tech enthusiasts to attend the 4-day event on differ…",,
+626,twitter,"RT @WebDevLiveIndia: 📢[Registration open for #WebDevLiveIndia] 
+
+Inviting developers &amp; tech enthusiasts to attend the 4-day event on differ…",,
+627,twitter,"RT @WebDevLiveIndia: 📢[Registration open for #WebDevLiveIndia] 
+
+Inviting developers &amp; tech enthusiasts to attend the 4-day event on differ…",,
+628,twitter,"RT @mayur_sojitra: 📢[Registration open for #WebDevLiveIndia] 
+
+Inviting developers &amp; tech enthusiasts to attend the 4-day event on differen…",,
+629,twitter,"console.log('Hi #WebDevs');
+
+I have registered for #WebDevLiveIndia to attend many amazing sessions.
+Have you?
+
+If not, register yourself at: https://t.co/ZhUSdwR7nS
+
+#WebDev #WebDevLive #WebDevLiveIndia @WebDevLiveIndia @ChromiumDev @GoogleDevsIN @GDGJalandhar @gdg",,Q
+630,twitter,"Seems that issue is with @ChromiumDev @googlechrome  Browser .
+https://t.co/IXrcellPhl",,
+631,twitter,"RT @prince_shivaram: console.log('Hi #WebDevs');
+
+I have registered for #WebDevLiveIndia to attend many amazing sessions.
+Have you?
+
+If not…",,Q
+632,twitter,"RT @WebDevLiveIndia: 📢[Registration open for #WebDevLiveIndia] 
+
+Inviting developers &amp; tech enthusiasts to attend the 4-day event on differ…",,
+633,twitter,"RT @WebDevLiveIndia: 📢[Registration open for #WebDevLiveIndia] 
+
+Inviting developers &amp; tech enthusiasts to attend the 4-day event on differ…",,
+634,twitter,"RT @NxDevTools: Today, we announce the release of Nx 9.4 that includes new features, including Gatsby support!
+
+✨ Initial @GatsbyJS support…",,
+635,twitter,"RT @cosmicjs: Create a Localized Website using @GatsbyJS and @CosmicJS  🌎 🌏 🌍 https://t.co/GKSq537F0C
+
+#cosmicjs #headlesscms #reactjs #gat…",,
+636,twitter,"RT @cosmicjs: Create a Localized Website using @GatsbyJS and @CosmicJS  🌎 🌏 🌍 https://t.co/GKSq537F0C
+
+#cosmicjs #headlesscms #reactjs #gat…",,
+637,twitter,RT @stackbithq: Here are 10 of the best free and open source themes to start your next @GatsbyJS Jamstack project with. https://t.co/9nMPgC…,,
+638,twitter,@cmwhited @GatsbyJS @NxDevTools You can thank @maxkoretskyi for the Gatsby integration,,
+639,twitter,"RT @FrustrateCoder: Just Finished Gatsby!
+It's really Awesome! works 100% offline, isn't it cool?!
+
+git repo: https://t.co/vcHXXBnfL4
+Live:…",,Q
+640,twitter,"RT @fedetibaldo: If you're interested, I've also made a small write-up on why I moved from #WordPress to #Gatsby. You can @ me for any feed…",,
+641,twitter,"RT @aralroca: If you want to create an i18n (P)React app with a Static Site Generator, which one will you use? And with which plugin/librar…",,Q
+642,twitter,"RT @aralroca: If you want to create an i18n (P)React app with a Static Site Generator, which one will you use? And with which plugin/librar…",,Q
+643,twitter,"Have you tried Nx 9.4 yet? The new release includes @GatsbyJS support! 
+
+✨ Initial @GatsbyJS support
+✨ Customizable workspace layouts
+✨ Custom Babel configuration
+✨ Seamless Connection to #NxCloud 
+
+#Nx blog by @brandontroberts: https://t.co/IJCaMDOPjn",,Q
+644,twitter,"RT @nrwl_io: Have you tried Nx 9.4 yet? The new release includes @GatsbyJS support! 
+
+✨ Initial @GatsbyJS support
+✨ Customizable workspace…",,Q
+645,twitter,"RT @NxDevTools: Today, we announce the release of Nx 9.4 that includes new features, including Gatsby support!
+
+✨ Initial @GatsbyJS support…",,
+646,twitter,@jameseaton @hover @blankenship @ryansworth Lol I meant Gatsby as in @GatsbyJS 😂,,
+647,twitter,"@Swizec @GatsbyJS I'm working on a fresh new look + feel for https://t.co/G3lQeBbHMY and making the writing, publishing, and reading experience nicer. 
+
+I got a really nice Notion to Markdown to Gatsby, EPUB, Kindle, PDF workflow setup, and auth is the last piece of the puzzle.",,
+648,twitter,"RT @nrwl_io: Have you tried Nx 9.4 yet? The new release includes @GatsbyJS support! 
+
+✨ Initial @GatsbyJS support
+✨ Customizable workspace…",,Q
+649,twitter,"RT @NxDevTools: Today, we announce the release of Nx 9.4 that includes new features, including Gatsby support!
+
+✨ Initial @GatsbyJS support…",,
+650,twitter,"RT @NxDevTools: Today, we announce the release of Nx 9.4 that includes new features, including Gatsby support!
+
+✨ Initial @GatsbyJS support…",,
+651,twitter,"RT @FlorianGyger: Just released my first @GatsbyJS starter to allow building blazing fast mobile apps using Gatsby and @capacitorjs 🎉🎉🎉
+
+Re…",,
+652,twitter,RT @thetrevorharmon: The May issue of “Gatsby Gazette” included gatsby-theme-shopify-manager as one of the themes released in May to check…,,
+653,twitter,RT @erchwy: Gatsby Theme Catalyst (project I have been puttering away on for the last while) was featured in the latest Gatsby Gazette! Nic…,,
+654,twitter,"RT @NxDevTools: Today, we announce the release of Nx 9.4 that includes new features, including Gatsby support!
+
+✨ Initial @GatsbyJS support…",,
+655,twitter,@saltnburnem Sounds like you want https://t.co/zLE5Cn9t1r,,
+656,twitter,"Buildin a new project in #Gatsby! It's pretty cool, but I'm starting to get skeptical with all the special configuration needed. If I have to have special manual Gatsby installs/configurations for Typescript, Jest, and Styled Components is the @GatsbyJS speediness still worth it?",,Q
+657,twitter,"RT @NxDevTools: Today, we announce the release of Nx 9.4 that includes new features, including Gatsby support!
+
+✨ Initial @GatsbyJS support…",,
+658,twitter,"RT @ZakLaughton: Buildin a new project in #Gatsby! It's pretty cool, but I'm starting to get skeptical with all the special configuration n…",,
+659,twitter,"RT @NxDevTools: Today, we announce the release of Nx 9.4 that includes new features, including Gatsby support!
+
+✨ Initial @GatsbyJS support…",,
+660,twitter,"Launch your website with these best g @gatsby themes today.
+
+https://t.co/0EEEVOKD2J
+
+#100DaysOfCode #CodeNewbie #100DaysOfDesign #gatsbyjs #reactjs #javascript #netlifycms #jamstack #womenwhocode #blog",,
+661,twitter,"RT @iamunwr: Launch your website with these best g @gatsby themes today.
+
+https://t.co/0EEEVOKD2J
+
+#100DaysOfCode #CodeNewbie #100DaysOfDes…",,
+662,twitter,"RT @iamunwr: Launch your website with these best g @gatsby themes today.
+
+https://t.co/0EEEVOKD2J
+
+#100DaysOfCode #CodeNewbie #100DaysOfDes…",,
+663,twitter,"RT @iamunwr: Launch your website with these best g @gatsby themes today.
+
+https://t.co/0EEEVOKD2J
+
+#100DaysOfCode #CodeNewbie #100DaysOfDes…",,
+664,twitter,"RT @iamunwr: Launch your website with these best g @gatsby themes today.
+
+https://t.co/0EEEVOKD2J
+
+#100DaysOfCode #CodeNewbie #100DaysOfDes…",,
+665,twitter,"RT @iamunwr: Launch your website with these best g @gatsby themes today.
+
+https://t.co/0EEEVOKD2J
+
+#100DaysOfCode #CodeNewbie #100DaysOfDes…",,
+666,twitter,"RT @iamunwr: Launch your website with these best g @gatsby themes today.
+
+https://t.co/0EEEVOKD2J
+
+#100DaysOfCode #CodeNewbie #100DaysOfDes…",,
+667,twitter,"RT @iamunwr: Launch your website with these best g @gatsby themes today.
+
+https://t.co/0EEEVOKD2J
+
+#100DaysOfCode #CodeNewbie #100DaysOfDes…",,
+668,twitter,"RT @iamunwr: Launch your website with these best g @gatsby themes today.
+
+https://t.co/0EEEVOKD2J
+
+#100DaysOfCode #CodeNewbie #100DaysOfDes…",,
+669,twitter,"RT @iamunwr: Launch your website with these best g @gatsby themes today.
+
+https://t.co/0EEEVOKD2J
+
+#100DaysOfCode #CodeNewbie #100DaysOfDes…",,
+670,twitter,"RT @iamunwr: Launch your website with these best g @gatsby themes today.
+
+https://t.co/0EEEVOKD2J
+
+#100DaysOfCode #CodeNewbie #100DaysOfDes…",,
+671,twitter,"RT @iamunwr: Launch your website with these best g @gatsby themes today.
+
+https://t.co/0EEEVOKD2J
+
+#100DaysOfCode #CodeNewbie #100DaysOfDes…",,
+672,twitter,"RT @NxDevTools: Today, we announce the release of Nx 9.4 that includes new features, including Gatsby support!
+
+✨ Initial @GatsbyJS support…",,
+673,twitter,"My article on Gatsby Slide Decks + Posenet was picked up by the @GatsbyJS  team. They asked if they could feature it on their blog and I’m pleased to say that the post is now live!
+
+Read it here: https://t.co/EjxNdWPhGd",,
+674,twitter,"✅ APLIKASI PREMIUM MURAH ✅
+
+- VIU
+- NETFLIX
+- YOUTUBE
+- SPOTIFY
+- IFLIX
+DLL
+
+BERMINAT? https://t.co/mzlzXqel3q
+
+T. Siapa yang jual app murah nord vpn netflix spotify youtube grammarly scribd iflix #zonaba #zonauang #zonajajan https://t.co/u40N4ss5tG",,Q
+675,twitter,"OPEN ORDER
+
+NETLIX ANTI ON HOLD‼
+
+✨30k/bulan (Shared)
+✨100k/bulan (Private)
+
+✅ FULL GARANSI
+✅ ANTI ONHOLD
+✅ NO TRIAL
+✅ TF&gt;DAPET ACC
+
+minat? mau tanya2? Bisa dm / wa ke https://t.co/IG5OvU7YbT
+
+t. jual netflix anti on hold spotify viu nord vpn premium jualan wtb need https://t.co/zBAa3zJKmA",,Q
+676,twitter,"APP PREMIUM MURAH💥
+
+🎬Netflix private sharing anti hold, Iflix, Viu, Youtube
+🎼Spotify, Apple Music
+⚡️Nord, Scribd
+
+👍🏻 aman legal
+🎟 full garansi
+💰 BNI-Dana-Ovo-Gopay-Jenius
+
+order, beli tanya2:
+📩 https://t.co/5nj9YhyXuC
+📩 https://t.co/WCbMN0LaxN https://t.co/CAQtq8Plqd",,
+677,twitter,"@aazerhaf APP PREMIUM MURAH💥
+
+🎬Netflix private sharing anti hold, Iflix, Viu, Youtube
+🎼Spotify, Apple Music
+⚡️Nord, Scribd
+
+👍🏻 aman legal
+🎟 full garansi
+💰 BNI-Dana-Ovo-Gopay-Jenius
+
+order, beli tanya2:
+📩 https://t.co/5nj9YhyXuC
+📩 https://t.co/WCbMN0LaxN https://t.co/YnfJrJl9TL",,
+678,twitter,"✅ APLIKASI PREMIUM MURAH ✅
+
+- VIU
+- NETFLIX
+- YOUTUBE
+- SPOTIFY
+- IFLIX
+DLL
+
+BERMINAT? https://t.co/mzlzXqel3q
+
+T. Siapa yang jual app murah nord vpn netflix spotify youtube grammarly scribd iflix 
+https://t.co/u40N4ss5tG",,Q
+679,twitter,"APP PREMIUM MURAH💥
+
+🎬Netflix private sharing anti hold, Iflix, Viu, Youtube
+🎼Spotify, Apple Music
+⚡️Nord, Scribd
+
+👍🏻 aman legal
+🎟 full garansi
+💰 BNI-Dana-Ovo-Gopay-Jenius
+
+order, beli tanya2:
+📩 https://t.co/5nj9YhyXuC
+📩 https://t.co/WCbMN0LaxN https://t.co/jAt8jQTyHe",,
+680,twitter,"APP PREMIUM MURAH💥
+
+🎬Netflix private sharing anti hold, Iflix, Viu, Youtube
+🎼Spotify, Apple Music
+⚡️Nord, Scribd
+
+👍🏻 aman legal
+🎟 full garansi
+💰 BNI-Dana-Ovo-Gopay-Jenius
+
+order, beli tanya2:
+📩 https://t.co/5nj9YhyXuC
+📩 https://t.co/WCbMN0LaxN https://t.co/rIJOWDHlsP",,
+681,twitter,"APP PREMIUM MURAH💥
+
+🎬Netflix private sharing anti hold, Iflix, Viu, Youtube
+🎼Spotify, Apple Music
+⚡️Nord, Scribd
+
+👍🏻 aman legal
+🎟 full garansi
+💰 BNI-Dana-Ovo-Gopay-Jenius
+
+order, beli tanya2:
+📩 https://t.co/5nj9YhyXuC
+📩 https://t.co/WCbMN0LaxN https://t.co/KnKwqoPq34",,
+682,twitter,"@cheesypanroll APP PREMIUM MURAH💥
+
+🎬Netflix private sharing anti hold, Iflix, Viu, Youtube
+🎼Spotify, Apple Music
+⚡️Nord, Scribd
+
+👍🏻 aman legal
+🎟 full garansi
+💰 BNI-Dana-Ovo-Gopay-Jenius
+
+order, beli tanya2:
+📩 https://t.co/5nj9YhyXuC
+📩 https://t.co/WCbMN0LaxN https://t.co/8aQjmxlWHM",,
+683,twitter,"@xomcthing Private antihold full garansi 85K aja
+
+🎬Netflix private sharing anti hold, Iflix, Viu, Youtube
+🎼Spotify, Apple Music
+⚡️Nord, Scribd
+
+👍🏻 aman legal
+🎟 full garansi
+💰 BNI-Dana-Ovo-Gopay-Jenius
+
+order, beli tanya2:
+📩 https://t.co/5nj9YhyXuC
+📩 https://t.co/WCbMN0LaxN https://t.co/qC9cX6D9zB",,
+684,twitter,"@Iapindelune APP PREMIUM MURAH💥
+
+🎬Netflix private sharing anti hold, Iflix, Viu, Youtube
+🎼Spotify, Apple Music
+⚡️Nord, Scribd
+
+👍🏻 aman legal
+🎟 full garansi
+💰 BNI-Dana-Ovo-Gopay-Jenius
+
+order, beli tanya2:
+📩 https://t.co/5nj9YhyXuC
+📩 https://t.co/WCbMN0LaxN https://t.co/xLGqYM7pNw",,
+685,twitter,"@kudaaanil APP PREMIUM MURAH💥
+
+🎬Netflix private sharing anti hold, Iflix, Viu, Youtube
+🎼Spotify, Apple Music
+⚡️Nord, Scribd
+
+👍🏻 aman legal
+🎟 full garansi
+💰 BNI-Dana-Ovo-Gopay-Jenius
+
+order, beli tanya2:
+📩 https://t.co/5nj9YhyXuC
+📩 https://t.co/WCbMN0LaxN https://t.co/ryfyHYYLV9",,
+686,twitter,"APP PREMIUM MURAH💥
+
+🎬Netflix private sharing anti hold, Iflix, Viu, Youtube
+🎼Spotify, Apple Music
+⚡️Nord, Scribd
+
+👍🏻 aman legal
+🎟 full garansi
+💰 BNI-Dana-Ovo-Gopay-Jenius
+
+order, beli tanya2:
+📩 https://t.co/5nj9YhyXuC
+📩 https://t.co/WCbMN0LaxN https://t.co/9uaHGJcvQV",,
+687,twitter,"APP PREMIUM MURAH💥
+
+🎬Netflix private sharing anti hold, Iflix, Viu, Youtube
+🎼Spotify, Apple Music
+⚡️Nord, Scribd
+
+👍🏻 aman legal
+🎟 full garansi
+💰 BNI-Dana-Ovo-Gopay-Jenius
+
+order, beli tanya2:
+📩 https://t.co/5nj9YhyXuC
+📩 https://t.co/WCbMN0LaxN https://t.co/GIBwQ8P8Jd",,
+688,twitter,"@crrjen READYYY
+
+💞Netflix Premium
+TF--&gt; Akun
+Sharing 3OK 
+Private 1OOK (bisa req email) 
+Anti on hold
+Garansi full
+
+💞SPOTIFY
+3 bulan 14K
+Proses 5 menit
+
+Byr : ovo dana bank shopeepay gopay pulsa
+
+DM/https://t.co/VwJCp5Mm1E",,
+689,twitter,"💯 APLIKASI PREMIUM MURAH 💯
+
+- VIU
+- NETFLIX
+- YOUTUBE
+- SPOTIFY
+- IFLIX
+DLL
+
+BERMINAT? https://t.co/mzlzXqel3q
+
+T. Siapa yang jual app murah nord vpn netflix spotify youtube grammarly scribd iflix #zonaba #zonauang #zonajajan https://t.co/u40N4ss5tG",,Q
+690,twitter,"APP PREMIUM MURAH💥
+
+🎬Netflix private sharing anti hold, Iflix, Viu, Youtube
+🎼Spotify, Apple Music
+⚡️Nord, Scribd
+
+👍🏻 aman legal
+🎟 full garansi
+💰 BNI-Dana-Ovo-Gopay-Jenius
+
+order, beli tanya2:
+📩 https://t.co/5nj9YhyXuC
+📩 https://t.co/WCbMN0LaxN https://t.co/vgAVmUhSP5",,
+691,twitter,"APP PREMIUM MURAH💥
+
+🎬Netflix private sharing anti hold, Iflix, Viu, Youtube
+🎼Spotify, Apple Music
+⚡️Nord, Scribd
+
+👍🏻 aman legal
+🎟 full garansi
+💰 BNI-Dana-Ovo-Gopay-Jenius
+
+order, beli tanya2:
+📩 https://t.co/5nj9YhyXuC
+📩 https://t.co/WCbMN0LaxN https://t.co/cJOyTM1vwZ",,
+692,twitter,"APP PREMIUM MURAH💥
+
+🎬Netflix private sharing anti hold, Iflix, Viu, Youtube
+🎼Spotify, Apple Music
+⚡️Nord, Scribd
+
+👍🏻 aman legal
+🎟 full garansi
+💰 BNI-Dana-Ovo-Gopay-Jenius
+
+order, beli tanya2:
+📩 https://t.co/5nj9YhyXuC
+📩 https://t.co/WCbMN0LaxN https://t.co/dis8NEnmsV",,
+693,twitter,"JUAL NETFLIX PREMIUM SHARING✨
+
+🍓Anti Hold LEGAL
+🍓Dapat 1 profile
+🍓READY STOCK
+🍓Kualitas Ultra HD
+🍓 FULL GARANSI
+
+Price: 30k/bulan only‼
+
+minat? mau tanya2? Bisa dm / wa ke https://t.co/IG5OvU7YbT
+
+t. jual netflix anti on hold spotify viu nord vpn premium jualan wtb need https://t.co/HC2Uappp9q",,Q
+694,twitter,"APP PREMIUM MURAH💥
+
+🎬Netflix private sharing anti hold, Iflix, Viu, Youtube
+🎼Spotify, Apple Music
+⚡️Nord, Scribd
+
+👍🏻 aman legal
+🎟 full garansi
+💰 BNI-Dana-Ovo-Gopay-Jenius
+
+order, beli tanya2:
+📩 https://t.co/5nj9YhyXuC
+📩 https://t.co/WCbMN0LaxN https://t.co/TY3d1nZCXi",,
+695,twitter,"@houlyshid APP PREMIUM MURAH💥
+
+🎬Netflix private sharing anti hold, Iflix, Viu, Youtube
+🎼Spotify, Apple Music
+⚡️Nord, Scribd
+
+👍🏻 aman legal
+🎟 full garansi
+💰 BNI-Dana-Ovo-Gopay-Jenius
+
+order, beli tanya2:
+📩 https://t.co/5nj9YhyXuC
+📩 https://t.co/WCbMN0LaxN https://t.co/qb6gBhTCH5",,
+696,twitter,"APP PREMIUM MURAH💥
+
+🎬Netflix private sharing anti hold, Iflix, Viu, Youtube
+🎼Spotify, Apple Music
+⚡️Nord, Scribd
+
+👍🏻 aman legal
+🎟 full garansi
+💰 BNI-Dana-Ovo-Gopay-Jenius
+
+order, beli tanya2:
+📩 https://t.co/5nj9YhyXuC
+📩 https://t.co/WCbMN0LaxN https://t.co/fWEe8vAT4n",,
+697,twitter,"READY FRESH
+
+💞Netflix Premium
+TF--&gt; Akun
+Sharing 3OK 
+Private 1OOK (bisa req email) 
+Anti on hold
+Garansi full
+
+💞SPOTIFY 3 bulan 14k proses 5 menit
+
+Byr: ovo dana bank shopeepay gopay pulsa
+
+DM/https://t.co/VwJCp5Mm1E
+ https://t.co/BGGondJ1eY",,
+698,twitter,"APP PREMIUM MURAH💥
+
+🎬Netflix private sharing anti hold, Iflix, Viu, Youtube
+🎼Spotify, Apple Music
+⚡️Nord, Scribd
+
+👍🏻 aman legal
+🎟 full garansi
+💰 BNI-Dana-Ovo-Gopay-Jenius
+
+order, beli tanya2:
+📩 https://t.co/5nj9YhyXuC
+📩 https://t.co/WCbMN0LaxN https://t.co/gLlcZNTLPF",,
+699,twitter,"APP PREMIUM MURAH💥
+
+🎬Netflix private sharing anti hold, Iflix, Viu, Youtube
+🎼Spotify, Apple Music
+⚡️Nord, Scribd
+
+👍🏻 aman legal
+🎟 full garansi
+💰 BNI-Dana-Ovo-Gopay-Jenius
+
+order, beli tanya2:
+📩 https://t.co/5nj9YhyXuC
+📩 https://t.co/WCbMN0LaxN https://t.co/758L1LbE7A",,
+700,twitter,"RT @milkyskieee: OPEN ORDER
+
+NETLIX ANTI ON HOLD‼
+
+✨30k/bulan (Shared)
+✨100k/bulan (Private)
+
+✅ FULL GARANSI
+✅ ANTI ONHOLD
+✅ NO TRIAL
+✅ TF&gt;…",,
+701,twitter,"READY FRESH
+
+💞Netflix Premium
+TF--&gt; Akun
+Sharing 3OK 
+Private 1OOK (bisa req email) 
+Anti on hold
+Garansi full
+
+💞SPOTIFY 3 bulan 14k proses 5 menit
+
+Byr : ovo dana bank shopeepay gopay pulsa
+
+DM/https://t.co/VwJCp5Mm1E
+https://t.co/BGGondJ1eY",,
+702,twitter,"APP PREMIUM MURAH💥
+
+🎬Netflix private sharing anti hold, Iflix, Viu, Youtube
+🎼Spotify, Apple Music
+⚡️Nord, Scribd
+
+👍🏻 aman legal
+🎟 full garansi
+💰 BNI-Dana-Ovo-Gopay-Jenius
+
+order, beli tanya2:
+📩 https://t.co/5nj9YhyXuC
+📩 https://t.co/WCbMN0LaxN https://t.co/oUjseWtXm1",,
+703,twitter,"@rnarsk Adaa ka
+READYYY 3 SLOT
+
+💞Netflix Premium
+TF--&gt; Akun
+Sharing 3OK 
+Private 1OOK (bisa req email) 
+Anti on hold
+Garansi full
+
+💞SPOTIFY
+3 bulan 14K
+Proses 5 menit
+
+Byr : ovo dana bank shopeepay gopay pulsa
+
+DM/https://t.co/VwJCp5Mm1E
+ https://t.co/BGGondJ1eY",,
+704,twitter,"yuk netflix spotify viu hbo now max, ready stock semua 😍😍 
+
+order: 
+✨ DM 
+✨ Whatsapp (no call) https://t.co/vSawoi68w7 https://t.co/qQhtzRu6TO",,
+705,twitter,"READY BANYAK
+
+NETLIX ANTI ON HOLD‼
+
+✨30k/bulan (1 profile 1device)
+
+✅ FULL GARANSI
+✅ ANTI ONHOLD
+✅ NO TRIAL
+✅ TF&gt;DAPET ACC
+
+minat? mau tanya2? Bisa dm / wa ke https://t.co/IG5OvU7YbT
+
+t. jual netflix anti on hold spotify viu nord vpn premium jualan wtb need https://t.co/Fq7AaqSTf1",,Q
+706,twitter,"Top 10 data science tools of 2020
+1. RapidMiner
+2. Apache Spark
+3. MySQL
+4. DataRobot
+5. BigML
+6. Go Spot Check
+7. Alteryx
+8. Mozenda
+9. MATLAB
+10. Paxata
+@Alstom we are using at least two of them. Can you guess which one?
+https://t.co/EWJBGyo33U https://t.co/wHsQtwYGH8",,Q
+707,twitter,Goodnotes literally makes me so excited to make notes that I’m doing it FOR FUN like huh 😭 https://t.co/jTFuhf1y0x,,
+708,twitter,"RT @htqdays: pls rt 
+giveaway png Instagram stories decoration 🖐🏻🥺🌷
+
+✨— https://t.co/kVcFiTPxOc
+#แจกpng #goodnotes https://t.co/JUI2Vm552k",,
+709,twitter,"RT @flappypj: 🙌🏻 𝚐𝚒𝚟𝚎 𝚊𝚠𝚊𝚢 🦊⛵️
+
+𝚙𝚕𝚜 𝚛𝚝 𝚊𝚗𝚍 𝚏𝚘𝚕𝚕𝚘𝚠 🧡⛺️
+
+#แจกpng #goodnotes #flappypj https://t.co/1xT2AOFwTG",,
+710,twitter,"RT @AutomationAnywh: 🔔 Join @MihirAndNow and @Akakhandiki at #AIExperience Worldwide brought to you by @DataRobot.
+
+You'll hear advice on h…",,
+711,twitter,"""Production users got us there...The community got us there."" 
+
+Mark Little (@nmcl) recounts the road to #Quarkus GA, completing the first supported #Kubernetes-native #Java stack on the @rhdevelopers blog: https://t.co/HQl9hbhipJ",,
+712,twitter,"RT @RHMiddleware: ""Production users got us there...The community got us there."" 
+
+Mark Little (@nmcl) recounts the road to #Quarkus GA, com…",,
+713,twitter,"#RedHat @jwildeboer #OpenSource Evangelist @RedHatEMEA explains how the open source community can help inspire new business #culture ::  
+https://t.co/Chow9ajbRQ",,
+714,twitter,RT @NadhanEG: #RedHat @jwildeboer #OpenSource Evangelist @RedHatEMEA explains how the open source community can help inspire new business #…,,
+715,twitter,"RT @rhdevelopers: Mandrel: A community distribution of #GraalVM for the @RedHat build of #Quarkus. @QuarkusIO 
+ https://t.co/ZLR0R35Xy0 htt…",,
+716,twitter,"RT @RHMiddleware: ""Production users got us there...The community got us there."" 
+
+Mark Little (@nmcl) recounts the road to #Quarkus GA, com…",,
+717,twitter,"RT @rhdevelopers: Mandrel: A community distribution of #GraalVM for the @RedHat build of #Quarkus. @QuarkusIO 
+ https://t.co/ZLR0R35Xy0 htt…",,
+718,twitter,"RT @eagerbeavertech: https://t.co/0q7AO3KBcQ  
+  John Willis, vice president of DevOps and digital practices, RedHat..",,
+719,twitter,"RT @RHMiddleware: ""Production users got us there...The community got us there."" 
+
+Mark Little (@nmcl) recounts the road to #Quarkus GA, com…",,
+720,twitter,"RT @rhdevelopers: Mandrel: A community distribution of #GraalVM for the @RedHat build of #Quarkus. @QuarkusIO 
+ https://t.co/ZLR0R35Xy0 htt…",,
+721,twitter,@RedHat Our Lives amatters https://t.co/cXe2WhR04w via @Change . Click to sign and share . The time to remain Our Justice is now.,,
+722,twitter,"RT @rhdevelopers: Mandrel: A community distribution of #GraalVM for the @RedHat build of #Quarkus. @QuarkusIO 
+ https://t.co/ZLR0R35Xy0 htt…",,
+723,twitter,"RT @rhdevelopers: Mandrel: A community distribution of #GraalVM for the @RedHat build of #Quarkus. @QuarkusIO 
+ https://t.co/ZLR0R35Xy0 htt…",,
+724,twitter,"RT @RHMiddleware: ""Production users got us there...The community got us there."" 
+
+Mark Little (@nmcl) recounts the road to #Quarkus GA, com…",,
+725,twitter,"RT @rhdevelopers: Mandrel: A community distribution of #GraalVM for the @RedHat build of #Quarkus. @QuarkusIO 
+ https://t.co/ZLR0R35Xy0 htt…",,
+726,twitter,"RT @rhdevelopers: Mandrel: A community distribution of #GraalVM for the @RedHat build of #Quarkus. @QuarkusIO 
+ https://t.co/ZLR0R35Xy0 htt…",,
+727,twitter,"RT pythondj: Join 24 #CloudNative#OpenSource Community Leads for day of live virtual conversations on creating engaged, healthy, diverse &amp; inclusive #Communities OpenShiftCommon's Gathering on https://t.co/6Iifx13RsT  tommorrow 9 am EST Agenda … https://t.co/69h4048cPh",,
+728,twitter,"RT SWDevAngel: Very excited to join an amazing group of DevRel leaders, open source community organizers, and friends tomorrow at the openshiftcommon gathering - Community Development edition! Come join us and bring your questions for the interactive AMA… https://t.co/DrxfayiX7e",,
+729,twitter,"We are happy to announce @argntprgrmr J4K 2020 session. Jeremy is a Chief Architect for App Dev Technologies at @RedHat. He currently co-leads Red Hat’s Application Development Community of Practice (CoP), and used to lead Red Hat's Microservices CoP https://t.co/9yO3ZcQqGo https://t.co/76dMjiMi0k",,
+730,twitter,OpenShift Commons Gathering on Community Development https://t.co/1WWZwTx0Fd,,
+731,twitter,OpenShift Commons Gathering on Community Development https://t.co/tWJeUbUa5V,,
+732,twitter,"RT @RHMiddleware: ""Production users got us there...The community got us there."" 
+
+Mark Little (@nmcl) recounts the road to #Quarkus GA, com…",,
+733,twitter,"RT @RHMiddleware: ""Production users got us there...The community got us there."" 
+
+Mark Little (@nmcl) recounts the road to #Quarkus GA, com…",,
+734,twitter,"""With #Mandrel, both #RedHat customers and the @GraalVM community benefit from truly open development."" Mark Little (@nmcl) announces the new jointly established downstream distribution of GraalVM on the @rhdevelopers blog: https://t.co/GbTXZImafu",,
+735,twitter,"RT @RHMiddleware: ""With #Mandrel, both #RedHat customers and the @GraalVM community benefit from truly open development."" Mark Little (@nmc…",,
+736,twitter,OpenShift Commons Gathering on Community Development is an all-day event around building community around cloud native ecosystems https://t.co/KXuyk0pP4K #OpenShift #Kubernetes #CloudNative,,
+737,twitter,"RT SWDevAngel: We are LIVE openshiftcommon gathering.... so fun to spend the day with so many awesome community leaders and members (and my dear friends!) Join us!
+https://t.co/MWsndm60tB
+https://t.co/y8LXvFiHLR
+https://t.co/CxqepeI5KM https://t.co/UeN3vEbRDN",,
+738,twitter,"RT @RHMiddleware: ""With #Mandrel, both #RedHat customers and the @GraalVM community benefit from truly open development."" Mark Little (@nmc…",,
+739,twitter,Thank you #RedHat for Red Hat Recharge Day and reminding us how important work/life balance is to our work communities. #bestplacetowork #community,,
+740,twitter,RT @j4kio: We are happy to announce @argntprgrmr J4K 2020 session. Jeremy is a Chief Architect for App Dev Technologies at @RedHat. He curr…,,
+741,twitter,"RT gminks: listening to casajulie on the OpenShift Commons Gathering on Community Development.
+he just talked about how boundaries need to be permeable esp when looking for diversity.
+
+Everything he said was just fascinating. He's still on...
+
+https://t.co/KXuyk0pP4K",,
+742,twitter,RT @j4kio: We are happy to announce @argntprgrmr J4K 2020 session. Jeremy is a Chief Architect for App Dev Technologies at @RedHat. He curr…,,
+743,twitter,"RT @RHMiddleware: ""Production users got us there...The community got us there."" 
+
+Mark Little (@nmcl) recounts the road to #Quarkus GA, com…",,
+744,twitter,"RT @RHMiddleware: ""With #Mandrel, both #RedHat customers and the @GraalVM community benefit from truly open development."" Mark Little (@nmc…",,
+745,twitter,@Red_Hat_APAC @PaulJCormier @RedHat any Indonesia community ?,,Q
+746,twitter,"The best IQ is useless if you don't have an high EQ to be a good team player. Team first, community first, people first...the results come as a conseguece #theopenorganization #RedHat https://t.co/XvSwrKtsAv",,
+747,twitter,"RT @ppatierno: The best IQ is useless if you don't have an high EQ to be a good team player. Team first, community first, people first...th…",,
+748,twitter,"RT @ppatierno: The best IQ is useless if you don't have an high EQ to be a good team player. Team first, community first, people first...th…",,
+749,twitter,"RT @RHMiddleware: ""With #Mandrel, both #RedHat customers and the @GraalVM community benefit from truly open development."" Mark Little (@nmc…",,
+750,twitter,Building a #strong team environment can be challenging while working remotely. Learn how #RedHat is using #opensource principles to foster a sense of community. https://t.co/3qcVf7ozEI,,
+751,twitter,"RT @febsnowmoon: g i v e
+a w a y — 🥣
+
+L i n k : https://t.co/b9XKLkkfK5
+
+#แจกpng #goodnotes https://t.co/h08qDRL8PD",,
+752,twitter,"@sardin4s For a creative, I would also advise you to spare atleast P500 to buy the app called Procreate in the appstore. It’s the best for painting. Top rated in the app store. For note taking, you can buy Goodnotes 5, and for animations, Callipeg",,
+753,twitter,@smolindiequeen @Nattypie19 Goodnotes is a good app too! I think it's like $10 but for the last 2 semesters I never ran into a lack of storage issue,,
+754,twitter,@Antwaahnamobay Currently using the iPad Pro 11” display with the Apple Pencil and a Logitech keyboard. Can’t fault it. I use for note taking with GoodNotes &amp; OneNote. Really has helped with studying.,,
+755,twitter,"RT @htqdays: pls rt 
+giveaway png Instagram stories decoration 🖐🏻🥺🌷
+
+✨— https://t.co/kVcFiTPxOc
+#แจกpng #goodnotes https://t.co/JUI2Vm552k",,
+756,twitter,"RT @febsnowmoon: g i v e
+a w a y — 🥣
+
+L i n k : https://t.co/b9XKLkkfK5
+
+#แจกpng #goodnotes https://t.co/h08qDRL8PD",,
+757,twitter,"RT @urbantomayto1: (pls rt🍅,)
+
+* give away, duper cute stuffs 🤙🏾
+(by @urbantomayto1 )
+
+:📍) coming soonnnn...
+
+#แจกpng #goodnotes https://t.…",,
+758,twitter,"RT @urbantomayto1: (pls rt🍅,)
+
+* give away, duper cute stuffs 🤙🏾
+(by @urbantomayto1 )
+
+:📍) link in mention na ka
+
+#แจกpng #goodnotes https:…",,
+759,twitter,"RT @flappypj: 🙌🏻 𝚐𝚒𝚟𝚎 𝚊𝚠𝚊𝚢 🦊⛵️
+
+𝚙𝚕𝚜 𝚛𝚝 𝚊𝚗𝚍 𝚏𝚘𝚕𝚕𝚘𝚠 🧡⛺️
+
+#แจกpng #goodnotes #flappypj https://t.co/1xT2AOFwTG",,
+760,twitter,"RT @urbantomayto1: (pls rt🍅,)
+
+* give away, duper cute stuffs 🤙🏾
+(by @urbantomayto1 )
+
+:📍) link in mention na ka
+
+#แจกpng #goodnotes https:…",,
+761,twitter,@ManedFreak You don't need the pro!! Look up the prices of the new iPad and they are cheaper than you think! It's also a great investment for school and note taking if you download goodnotes!,,
+762,twitter,"RT @htqdays: pls rt 
+giveaway png Instagram stories decoration 🖐🏻🥺🌷
+
+✨— https://t.co/kVcFiTPxOc
+#แจกpng #goodnotes https://t.co/JUI2Vm552k",,
+763,twitter,"yay! UNDATED DAILY Reading Tracker for Noteshelf 2, Goodnotes, Notability / Daily Digital Tracker, Books reading, Books journal / SELFCARE just got sold, bringing some smiles to Rio de Janeiro, Rio de Janeiro. THANK YOU! https://t.co/rYj0M5yDED #digitalplanners",,
+764,twitter,"RT @htqdays: pls rt 
+giveaway png Instagram stories decoration 🖐🏻🥺🌷
+
+✨— https://t.co/kVcFiTPxOc
+#แจกpng #goodnotes https://t.co/JUI2Vm552k",,
+765,twitter,"RT @htqdays: pls rt 
+giveaway png Instagram stories decoration 🖐🏻🥺🌷
+
+✨— https://t.co/kVcFiTPxOc
+#แจกpng #goodnotes https://t.co/JUI2Vm552k",,
+766,twitter,"RT @htqdays: pls rt 
+giveaway png Instagram stories decoration 🖐🏻🥺🌷
+
+✨— https://t.co/kVcFiTPxOc
+#แจกpng #goodnotes https://t.co/JUI2Vm552k",,
+767,twitter,@DamianEstrada Do you happen to use it with GoodNotes or another note-taking app? Curious about compatibility and what typing/doodling looks like!,,Q
+768,twitter,"RT @flappypj: 🙌🏻 𝚐𝚒𝚟𝚎 𝚊𝚠𝚊𝚢 🦊⛵️
+
+𝚙𝚕𝚜 𝚛𝚝 𝚊𝚗𝚍 𝚏𝚘𝚕𝚕𝚘𝚠 🧡⛺️
+
+#แจกpng #goodnotes #flappypj https://t.co/1xT2AOFwTG",,
+769,twitter,"RT @febsnowmoon: g i v e
+a w a y — 🥣
+
+L i n k : https://t.co/b9XKLkkfK5
+
+#แจกpng #goodnotes https://t.co/h08qDRL8PD",,
+770,twitter,"RT @flappypj: 🙌🏻 𝚐𝚒𝚟𝚎 𝚊𝚠𝚊𝚢 🦊⛵️
+
+𝚙𝚕𝚜 𝚛𝚝 𝚊𝚗𝚍 𝚏𝚘𝚕𝚕𝚘𝚠 🧡⛺️
+
+#แจกpng #goodnotes #flappypj https://t.co/1xT2AOFwTG",,
+771,twitter,"RT @febsnowmoon: g i v e
+a w a y — 🥣
+
+L i n k : https://t.co/b9XKLkkfK5
+
+#แจกpng #goodnotes https://t.co/h08qDRL8PD",,
+772,twitter,"RT @urbantomayto1: (pls rt🍅,)
+
+* give away, duper cute stuffs 🤙🏾
+(by @urbantomayto1 )
+
+:📍) link in mention na ka
+
+#แจกpng #goodnotes https:…",,
+773,twitter,"RT @htqdays: pls rt 
+giveaway png Instagram stories decoration 🖐🏻🥺🌷
+
+✨— https://t.co/kVcFiTPxOc
+#แจกpng #goodnotes https://t.co/JUI2Vm552k",,
+774,twitter,"yay! Undated WINNERS Digital Planner with SCHEDULE Daily Pages / VERTICAL iPad / English / Life-Work / Noteshelf, Goodnotes, Notability just got sold, bringing some smiles to Taipei, Taiwan. THANK YOU! https://t.co/rYj0M5yDED #digitalplanners",,
+775,twitter,"RT @urbantomayto1: (pls rt🍅,)
+
+* give away, duper cute stuffs 🤙🏾
+(by @urbantomayto1 )
+
+:📍) link in mention na ka
+
+#แจกpng #goodnotes https:…",,
+776,twitter,"RT @meirintee: pastel shades from an afternoon sky
+#goodnotes #goodnotes5 #palette https://t.co/NLMua4U4cF",,
+777,twitter,"RT @Pichelle2: 📍free png
+
+🧸☁️✨
+----&gt;https://t.co/s3tdBQX5DR
+
+#แจกpng  #Goodnotes  #แจกไฟล์png  #แจกสตก #goodnotes5 https://t.co/qvAI6K8zfy",,
+778,twitter,"แอพ goodnote 5 30bath 
+แอพ notability 40bath 
+#dek63 #goodnotes #goodnotes5 #goodnote5 #แอพเพื่อการศึกษา #แอพการเรียน https://t.co/QPECVUNG11",,
+779,twitter,"RT @htqdays: pls rt 
+giveaway png Instagram stories decoration 🖐🏻🥺🌷
+
+✨— https://t.co/kVcFiTPxOc
+#แจกpng #goodnotes https://t.co/JUI2Vm552k",,
+780,twitter,"RT @urbantomayto1: (pls rt🍅,)
+
+* give away, duper cute stuffs 🤙🏾
+(by @urbantomayto1 )
+
+:📍) link in mention na ka
+
+#แจกpng #goodnotes https:…",,
+781,twitter,"RT @htqdays: pls rt 
+giveaway png Instagram stories decoration 🖐🏻🥺🌷
+
+✨— https://t.co/kVcFiTPxOc
+#แจกpng #goodnotes https://t.co/JUI2Vm552k",,
+782,twitter,"RT @xj99143: another pack of stickers🦕⭐️🪐
+
+💌 [download] https://t.co/nHRqQdRx5O
+
+#แจกpng #goodnotes #goodnote #goodnote5 #doodles #stickers…",,
+783,twitter,"@GoodNotesApp Hi there. My GoodNotes doesn't save any writing in notebooks and send out an error message ""E001-N"". I have been frequently troubled with the same problem from April. What can I do to resolve it? https://t.co/0VLzV8DXEl",,Q
+784,twitter,"RT @htqdays: pls rt 
+giveaway png Instagram stories decoration 🖐🏻🥺🌷
+
+✨— https://t.co/kVcFiTPxOc
+#แจกpng #goodnotes https://t.co/JUI2Vm552k",,
+785,twitter,"RT @urbantomayto1: (pls rt🍅,)
+
+* give away, duper cute stuffs 🤙🏾
+(by @urbantomayto1 )
+
+:📍) link in mention na ka
+
+#แจกpng #goodnotes https:…",,
+786,twitter,"RT @htqdays: pls rt 
+giveaway png Instagram stories decoration 🖐🏻🥺🌷
+
+✨— https://t.co/kVcFiTPxOc
+#แจกpng #goodnotes https://t.co/JUI2Vm552k",,
+787,twitter,@MaferVelsquezC4 usas GoodNotes?,,Q
+788,twitter,"RT @htqdays: pls rt 
+giveaway png Instagram stories decoration 🖐🏻🥺🌷
+
+✨— https://t.co/kVcFiTPxOc
+#แจกpng #goodnotes https://t.co/JUI2Vm552k",,
+789,twitter,"RT @flappypj: 🙌🏻 𝚐𝚒𝚟𝚎 𝚊𝚠𝚊𝚢 🦊⛵️
+
+𝚙𝚕𝚜 𝚛𝚝 𝚊𝚗𝚍 𝚏𝚘𝚕𝚕𝚘𝚠 🧡⛺️
+
+#แจกpng #goodnotes #flappypj https://t.co/1xT2AOFwTG",,
+790,twitter,Ok but GoodNotes actually makes me excited to take notes 😭 https://t.co/v1lHs5BUdk,,
+791,twitter,"@ProFootballTalk @RexChapman That’s not America, that’s ‘Mareka!  #MAGA #RedHat #KKK country at its finest.",,
+792,twitter,"RT @bibryam: Top 10 must-know #Kubernetes design patterns
+https://t.co/FT7JwJUUg1 https://t.co/omdyeatBeS",,
+793,twitter,RT @rhdevelopers: Create #Kubernetes-native applications to win the @Quarkusio Hackathon. https://t.co/MFs9A58jrx,,
+794,twitter,RT @rhdevelopers: Install #CodeReady Workspaces in a restricted @OpenShift 4 environment. #OpenShift #Java @eclipse_che  https://t.co/s3ARb…,,
+795,twitter,"RT @Elecktra23LIVE: Morning💙 #Online now!Let's drink our coffee together&amp;have a hot morning 😈 https://t.co/oYYOKnEIO5
+
+@academy_lourdes @St…",,
+796,twitter,@inkedbitchhh @GreatAssBigTits @Aim2PleaseYou @Redhat_Babes @Big_Boobs_4_Me in all your social networks you are beautiful,,Q
+797,twitter,RT @jdob: Thanks to everyone who attended the Operators Master Course today. I'm looking forward to seeing all of you awesome nerds on Wedn…,,
+798,twitter,RT @gp_pulipaka: Examples and Starter kits. #BigData #Analytics #DataScience #AI #MachineLearning #NLProc #IoT #IIoT #Python #RStats #Tenso…,,
+799,twitter,"A M4.3 earthquake has been reported by the BMKG for Java, Indonesia. Link: https://t.co/uvJVkmI6cM",,
+800,twitter,"RT @FreeWestPapua: Solidarity from #Java in #Indonesia! #FreeTheBalikpapan7!
+
+Join the Global Action here: https://t.co/xjqO9xfEiW  
+
+#Papu…",,
+801,twitter,"RT @VeronicaKoman: 15/6/20 Malang, Java
+
+During a #PapuanLivesMatter protest, Indonesian demonstrators apologized to West Papuans over suff…",,
+802,twitter,RT @javinpaul: What is the use of ContextLoaderListener in Spring MVC Framework? https://t.co/51K2QLlO5Q  #java #spring #programming,,Q
+803,twitter,"RT @ashuistic: Epic! 😂
+#100DaysOfCode #Code #Java #javascript #DEVCommunity #programming #programmingmemes https://t.co/ilpZTkwwfK",,
+804,twitter,"Two baskets are available for coffee lovers — But First Coffee... and Java Up...Wine Down.  Keurig, @Starbucks, and @PHCroasters are just a few of the name-brand coffees that are part of the packages. Less than 48 hours to bid on them! https://t.co/c33HW6gK1z #HHSSportsGala https://t.co/psW61a8OHX",,
+805,twitter,RT @gp_pulipaka: Let’s Develop ANN in 30 Lines of Code. #BigData #Analytics #DataScience #AI #MachineLearning #IoT #IIoT #Python #RStats #T…,,
+806,twitter,RT @gp_pulipaka: Let’s Develop ANN in 30 Lines of Code. #BigData #Analytics #DataScience #AI #MachineLearning #IoT #IIoT #Python #RStats #T…,,
+807,twitter,"RT @willsharma: Max product subarray problem solution. #Algorithms #Java #kotlin #javascript #freeCodeCamp #100DaysOfCode #code
+
+code here:…",,
+808,twitter,"RT @willsharma: Max product subarray problem solution. #Algorithms #Java #kotlin #javascript #freeCodeCamp #100DaysOfCode #code
+
+code here:…",,
+809,twitter,RT @diontimmermusic: join me on my Minecraft Java server :) https://t.co/sQmXdILzXO,,
+810,twitter,RT @gp_pulipaka: 11 #RaspberryPi Projects: From Beginners to Pros. #BigData #Analytics #IoT #IIoT #PyTorch #Python #RStats #TensorFlow #Jav…,,
+811,twitter,RT @gp_pulipaka: 11 #RaspberryPi Projects: From Beginners to Pros. #BigData #Analytics #IoT #IIoT #PyTorch #Python #RStats #TensorFlow #Jav…,,
+812,twitter,RT @gp_pulipaka: 11 #RaspberryPi Projects: From Beginners to Pros. #BigData #Analytics #IoT #IIoT #PyTorch #Python #RStats #TensorFlow #Jav…,,
+813,twitter,RT @gp_pulipaka: 11 #RaspberryPi Projects: From Beginners to Pros. #BigData #Analytics #IoT #IIoT #PyTorch #Python #RStats #TensorFlow #Jav…,,
+814,twitter,RT @gp_pulipaka: 11 #RaspberryPi Projects: From Beginners to Pros. #BigData #Analytics #IoT #IIoT #PyTorch #Python #RStats #TensorFlow #Jav…,,
+815,twitter,RT @gp_pulipaka: 11 #RaspberryPi Projects: From Beginners to Pros. #BigData #Analytics #IoT #IIoT #PyTorch #Python #RStats #TensorFlow #Jav…,,
+816,twitter,RT @gp_pulipaka: 11 #RaspberryPi Projects: From Beginners to Pros. #BigData #Analytics #IoT #IIoT #PyTorch #Python #RStats #TensorFlow #Jav…,,
+817,twitter,RT @gp_pulipaka: 11 #RaspberryPi Projects: From Beginners to Pros. #BigData #Analytics #IoT #IIoT #PyTorch #Python #RStats #TensorFlow #Jav…,,
+818,twitter,RT @gp_pulipaka: 11 #RaspberryPi Projects: From Beginners to Pros. #BigData #Analytics #IoT #IIoT #PyTorch #Python #RStats #TensorFlow #Jav…,,
+819,twitter,"GitHub Trending Archive, 14 Jun 2020, Java. corona-warn-app/cwa-verification-server, developersu/ns-usbloader, DSheirer/sdrtrunk, GeyserMC/Geyser, YangModels/yang, GoogleCloudPlatform/community, corona-warn-app/cwa-server, spring2go/staffjoy https://t.co/j5U4xDI8A3",,
+820,twitter,"GitHub Trending Archive, 14 Jun 2020, Java. confluentinc/schema-registry, confluentinc/kafka-streams-examples, HiddenRamblings/TagMo, openjdk/jdk, trojan-gfw/igniter, apache/maven, jtablesaw/tablesaw, awsdocs/aws-doc-sdk-examples, macrozheng/mall-swarm https://t.co/j5U4xDI8A3",,
+821,twitter,"GitHub Trending Archive, 14 Jun 2020, Java. Heeexy/SpringBoot-Shiro-Vue, apache/rocketmq-externals, youtube/api-samples, apache/tomcat, williamfiset/Algorithms, quarkusio/quarkus, TechEmpower/FrameworkBenchmarks, seven332/EhViewer https://t.co/j5U4xDI8A3",,
+822,twitter,"Java Developer Salary: 12638.17€
+MicroServices Developer Salary: 164109.35€
+Data Scientist Salary: 1314.78€
+Devops Engineer Salary: 4386.59€
+Cloud Architect Salary: 5673.22€
+CyberSecurity Expert Salary: 11588.15€
+Android Developer Salary: 11511.45€",,
+823,twitter,RT @elnegronaranja: FaceApp https://t.co/h38hLJNqO8,,
+824,twitter,@java_assassin I can't find it but there was an old hustler humor cartoon about Roger the Toaster Fucker.,,
+825,twitter,"JSON JavaScript Object Notation 
+#JavaScript #javascriptdeveloper #javascripts #JSON #javascriptobjectnotation #server #java #javascript30 #javascriptengineer #programminglanguage #programmers #developers #jsonformat https://t.co/1f0DAGqaDc",,
+826,twitter,"RT @nirvana_core: JSON JavaScript Object Notation 
+#JavaScript #javascriptdeveloper #javascripts #JSON #javascriptobjectnotation #server #j…",,
+827,twitter,"RT @nirvana_core: JSON JavaScript Object Notation 
+#JavaScript #javascriptdeveloper #javascripts #JSON #javascriptobjectnotation #server #j…",,
+828,twitter,"RT @nirvana_core: JSON JavaScript Object Notation 
+#JavaScript #javascriptdeveloper #javascripts #JSON #javascriptobjectnotation #server #j…",,
+829,twitter,"RT @nirvana_core: JSON JavaScript Object Notation 
+#JavaScript #javascriptdeveloper #javascripts #JSON #javascriptobjectnotation #server #j…",,
+830,twitter,RT @gp_pulipaka: Laplace’s Demon: A Seminar Series about Bayesian #MachineLearning at Scale. #BigData #Analytics #DataScience #AI #IoT #IIo…,,
+831,twitter,RT @gp_pulipaka: 11 #RaspberryPi Projects: From Beginners to Pros. #BigData #Analytics #IoT #IIoT #PyTorch #Python #RStats #TensorFlow #Jav…,,
+832,twitter,How to Get MINECRAFT JAVA Edition on iOS/Android - Download &amp; Play Minec... https://t.co/62QzWR8HgN via @YouTube,,
+833,twitter,"Chuck Norris can access private methods.
+
+#100DaysOfCode #Code #Java #javascript #DEVCommunity #programming #programmingmemes",,
+834,twitter,RT @gp_pulipaka: 11 #RaspberryPi Projects: From Beginners to Pros. #BigData #Analytics #IoT #IIoT #PyTorch #Python #RStats #TensorFlow #Jav…,,
+835,twitter,"RT @chuckchucknock: Chuck Norris can access private methods.
+
+#100DaysOfCode #Code #Java #javascript #DEVCommunity #programming #programmin…",,
+836,twitter,"RT @chuckchucknock: Chuck Norris can access private methods.
+
+#100DaysOfCode #Code #Java #javascript #DEVCommunity #programming #programmin…",,
+837,twitter,"RT @chuckchucknock: Chuck Norris can access private methods.
+
+#100DaysOfCode #Code #Java #javascript #DEVCommunity #programming #programmin…",,
+838,twitter,"RT @chuckchucknock: Chuck Norris can access private methods.
+
+#100DaysOfCode #Code #Java #javascript #DEVCommunity #programming #programmin…",,
+839,twitter,"RT @coding_monkeys: Software Engineer : Movies v/s real life⁣
+😆😅⁣
+
+#Python #rstats #java #javascript #100DaysOfCode #ReactJS #AWS #CloudCom…",,
+840,twitter,@King_La_Java @ShadayaKnight They will fight u nail to toe for that this shit is demonic whoever thought of it is a sick person.,,
+841,twitter,"New normal in Magelang, Central Java.
+
+Tourists flock Silancur Highland, a popular attractions with the view of Mount Sumbing. It's said that traffic jams up to 5 km on Sunday morning. https://t.co/0UWmG5OBr4",,
+842,twitter,RT @gp_pulipaka: 11 #RaspberryPi Projects: From Beginners to Pros. #BigData #Analytics #IoT #IIoT #PyTorch #Python #RStats #TensorFlow #Jav…,,
+843,twitter,RT @gp_pulipaka: Laplace’s Demon: A Seminar Series about Bayesian #MachineLearning at Scale. #BigData #Analytics #DataScience #AI #IoT #IIo…,,
+844,twitter,"Max product subarray problem solution. #Algorithms #Java #kotlin #javascript #freeCodeCamp #100DaysOfCode #code
+
+code here:
+https://t.co/XqmYzWnT1v",,
+845,twitter,"RT @willsharma: Max product subarray problem solution. #Algorithms #Java #kotlin #javascript #freeCodeCamp #100DaysOfCode #code
+
+code here:…",,
+846,twitter,"RT @willsharma: Max product subarray problem solution. #Algorithms #Java #kotlin #javascript #freeCodeCamp #100DaysOfCode #code
+
+code here:…",,
+847,twitter,"RT @willsharma: Max product subarray problem solution. #Algorithms #Java #kotlin #javascript #freeCodeCamp #100DaysOfCode #code
+
+code here:…",,
+848,twitter,"@vendetta_miga @IlhanMN Oh shit. omg you responded with a gif, what can I do?? You dun got me 🙄",,Q
+849,twitter,@APEX_COLLEGES Develop skills by learning java,,
+850,twitter,"RT @chuckchucknock: Chuck Norris does not need to know about class factory pattern. He can instantiate interfaces.
+
+#100DaysOfCode #Code #J…",,
+851,twitter,"RT @chuckchucknock: Chuck Norris does not need to know about class factory pattern. He can instantiate interfaces.
+
+#100DaysOfCode #Code #J…",,
+852,twitter,"RT @jfrog: Everything you need to know about JFrog Artifactory. How, where, and when to use Artifactory as part of your SDLC. Join this int…",,Q
+853,twitter,"RT @jfrog: Everything you need to know about JFrog Artifactory. How, where, and when to use Artifactory as part of your SDLC. Join this int…",,Q
+854,twitter,@Lawtakure95 @ShadayaKnight Religion will spoil this good statement.,,
+855,twitter,"@NathanM11_ @GoodGuyApplez I highly disagree but yet again, I used modded clients to mess about and f*ck with people for fun. Java is solid tho",,
+856,twitter,"RT @chuckchucknock: Chuck Norris uses canvas in IE.
+
+#100DaysOfCode #Code #Java #javascript #DEVCommunity #programming #programmingmemes",,
+857,twitter,"RT @vgrazi: The recording of my talk on Java Concurrent Animated Reboot at JNation Portugal is now available:
+https://t.co/tdq9hLRkqx
+Hope…",,
+858,twitter,"Binary Artifact Management Tool, 0.6.7 released https://t.co/eyYpd998E7 #Java #HTML #Dockerfile",,
+859,twitter,"RT @PiyushRaj714: Open any program by #Python #Coding 🤫
+
+#BigData #Analytics #DataScience #IoT #rstats #ReactNative #reactjs #javascript #J…",,
+860,twitter,"RT @PiyushRaj714: Open any program by #Python #Coding 🤫
+
+#BigData #Analytics #DataScience #IoT #rstats #ReactNative #reactjs #javascript #J…",,
+861,twitter,RT @gp_pulipaka: Infographic | Storage for the Industrial #IoT @westerndigital. #BigData #Analytics #IIoT #PyTorch #Python #RStats #TensorF…,,
+862,twitter,RT @gp_pulipaka: Best microSD Cards for #RaspberryPi @westerndigital. #BigData #Analytics  #IoT #IIoT #PyTorch #Python #RStats #TensorFlow…,,
+863,twitter,"RT @nessathemself: every ""deep"" zombie game: maybe we're the real monsters
+Resident Evil: the real monsters are the corporations idiots",,
+864,twitter,RT @gp_pulipaka: Big GANs Are Watching You. #BigData #Analytics #DataScience #AI #MachineLearning #IoT #IIoT #PyTorch #Python #RStats #Tens…,,
+865,twitter,RT @Ashot_: Java: the elegant #simplicity of C++ and the blazing speed of Smalltalk. ~ #Roland #Turner,,
+866,twitter,"Java Developer Salary: 12674.56€
+Cloud Architect Salary: 5762.07€",,
+867,twitter,RT @gp_pulipaka: High Quality Monocular Depth Estimation. #BigData #Analytics #DataScience #AI #MachineLearning #IoT #IIoT #Python #RStats…,,
+868,twitter,"RT @coding_monkeys: Software Engineer : Movies v/s real life⁣
+😆😅⁣
+
+#Python #rstats #java #javascript #100DaysOfCode #ReactJS #AWS #CloudCom…",,
+869,twitter,"2020-06-16's daily #java repos TOP 5 trending, here #github https://t.co/jshjfyB0i0 https://t.co/HV5HVoVxqW",,
+870,twitter,"2020-06-16's weekly #java repos TOP 5 trending, here #github https://t.co/8zMSh8rKfW https://t.co/XcEFIA7t5b",,
+871,twitter,"2020-06-16's monthly #java repos TOP 5 trending, here #github https://t.co/j3RNCyX0wL https://t.co/Z9Z96vso3R",,
+872,twitter,RT @gp_pulipaka: Best microSD Cards for #RaspberryPi @westerndigital. #BigData #Analytics  #IoT #IIoT #PyTorch #Python #RStats #TensorFlow…,,
+873,twitter,"2020-06-16's most forks #java repos TOP 5 trending, here #github https://t.co/1P4XaLKFA1 https://t.co/3Loypru80R",,
+874,twitter,"2020-06-16's most stars #java repos TOP 5 trending, here #github https://t.co/K2VHdFmOGV https://t.co/dLKAoR91bh",,
+875,twitter,"@ErenYeagerRe Facts java, html and css I learned the fastest",,
+876,twitter,Build Reactive #REST APIs with #Spring WebFlux ��� Part2 | #Java Code Geeks - 2020 https://t.co/HEwtaBpdo8,,
+877,twitter,"RT @enjelhutasoit: “#Sitecore #Developer Hiring Trends UK""
+
+▪Read: https://t.co/IKmNr1V1rr
+▪Via: @exploregroupUK
+
+#infographic #Algorithms…",,
+878,twitter,"RT @enjelhutasoit: “#Java #Developer Hiring Trends UK""
+
+▪More: https://t.co/BkjDZTNPl2
+▪Via: @exploregroupUK
+
+#infographic #Algorithms #Rea…",,
+879,twitter,"RT @enjelhutasoit: “#Java #Developer Hiring Trends UK""
+
+▪More: https://t.co/BkjDZTNPl2
+▪Via: @exploregroupUK
+
+#infographic #Algorithms #Rea…",,
+880,twitter,"RT @chuckchucknock: Chuck Norris uses canvas in IE.
+
+#100DaysOfCode #Code #Java #javascript #DEVCommunity #programming #programmingmemes",,
+881,twitter,"RT @chuckchucknock: Chuck Norris uses canvas in IE.
+
+#100DaysOfCode #Code #Java #javascript #DEVCommunity #programming #programmingmemes",,
+882,twitter,"RT @chuckchucknock: Chuck Norris uses canvas in IE.
+
+#100DaysOfCode #Code #Java #javascript #DEVCommunity #programming #programmingmemes",,
+883,twitter,"Being human means not just acting on feelings or instinct. Even If my sister upakile, I shall not sleep with her. People will tell you they are attracted to the same sex. Be attracted, acting in it is something else. The next thing, we'll be told ppl are attracted to dogs https://t.co/BygRQDdS7w",,
+884,twitter,"RT @cmswebsiteLLC: PHP Vs https://t.co/HgRTZRPpqR: How to Choose the Right framework? Read more https://t.co/7UmkDuPism
+
+#dotnet #MVC #aspn…",,Q
+885,twitter,"RT @cmswebsiteLLC: PHP Vs https://t.co/HgRTZRPpqR: How to Choose the Right framework? Read more https://t.co/7UmkDuPism
+
+#dotnet #MVC #aspn…",,Q
+886,twitter,RT @cassteebken: You having a depressive episode ? I will come over n wash your hair. I’ll make your bed n cook you something even if you d…,,Q
+887,twitter,"RT @hrish4bh: I know that it's not so much ...
+But better than ever .. 
+
+Still trying to achieve some goal 🚀 
+
+Thanks for the motivation  @…",,
+888,twitter,"RT @hrish4bh: I know that it's not so much ...
+But better than ever .. 
+
+Still trying to achieve some goal 🚀 
+
+Thanks for the motivation  @…",,
+889,twitter,"RT @hrish4bh: I know that it's not so much ...
+But better than ever .. 
+
+Still trying to achieve some goal 🚀 
+
+Thanks for the motivation  @…",,
+890,twitter,How to Get MINECRAFT JAVA Edition on iOS/Android - Download &amp; Play Minec... https://t.co/0kw7kLl5aA via @YouTube,,
+891,twitter,"If technology is what excites you and you want to join a team that is big on impact and scale, join us! Make your next career move with #Grouponengineering team in #Bangalore. We are hiring #productdevelopment engineers with more than 9 years of #java #ex…https://t.co/M7j5kAbgO7",,
+892,twitter,"RT @intellijidea: Starting today, we'll be introducing our JetBrains Technology Day for Java speakers and talks! First up:
+
+🎙Bootiful Testi…",,
+893,twitter,"RT @chuckchucknock: Chuck Norris does not need to know about class factory pattern. He can instantiate interfaces.
+
+#100DaysOfCode #Code #J…",,
+894,twitter,the #circleci #automatedtests are green https://t.co/cHwySuYxlq,,Q
+895,twitter,"How to build support for organizational change on your engineering teams – @lrnrd, VP Product Engineering @CircleCI, shares great advice on supporting your teams, driving support, and shaping your own approach engineering management: https://t.co/1LOwjOfKQW",,
+896,twitter,"RT @CircleCI: Join @AWS_Partners, @CircleCI, and @snyksec to learn how to integrate DevSecOps practices into your CI/CD pipeline on June 16…",,Q
+897,twitter,"RT @CircleCI: Join @AWS_Partners, @CircleCI, and @snyksec to learn how to integrate DevSecOps practices into your CI/CD pipeline on June 16…",,Q
+898,twitter,"How do you get your manager to sign off on a new DevOps tool? Here's how to emphasize the problem, use data to state your case, and more: https://t.co/vG014aHFAH https://t.co/mdpiEgcy2s",,Q
+899,twitter,Clever marketing by @CircleCI - by the imagery you would almost think there is some new analytics or dashboard in the app - nope its just a new api... https://t.co/I6q41XuCBK,,
+900,twitter,Check out our latest post that discusses the the two most popular cloud based #CICD providers: #TravisCI and #CircleCI. We discuss the differences and the pros and cons of each platform. Optomize your #DevOps flow with these 2 providers! #vosb #sdvosb https://t.co/ddqohWXpNv,,
+901,twitter,"In this tutorial, we'll show you how to deploy a Clojure web application to AWS using @HashiCorp Terraform: https://t.co/2k0uym490Q https://t.co/mxDNqmdXlL",,
+902,twitter,"Have you checked out our free, developer-focused learning platform, CircleCI Academy? Learn the basics of building, testing, and deploying on CircleCI, and learn how to use our features to increase speed to market. Read more about it here: https://t.co/d54Mb6k8Dn https://t.co/KO1Q8XizYy",,Q
+903,twitter,@CircleCI Nice job friends.,,
+904,twitter,"RT @4enterprisers: How to build support for organizational change on your engineering teams – @lrnrd, VP Product Engineering @CircleCI, sha…",,
+905,twitter,"@CircleCI Do I have to manually cache images? I keep seeing ""image cache not found on this host, downloading circleci/node:14.2.0""",,Q
+906,twitter,@CircleCI Can we go back to the old interface? Honestly the new one is terrible :( Now I have to click through to each pipeline to cancel? It isn't as simple anymore.,,Q
+907,twitter,"Seeking your thoughts on our recent blog on Modern CI/CD: Why change is good. Please RT if you like it. https://t.co/hJVeB4u9Rb @forwebdev, @BetaKit, @startuphereTO @startup_tor, @SuperDevRes42, @cameron_chapman @BuddyGit @github @CircleCI @speckyboy",,
+908,twitter,Making #serverless CI/CD easier with @CircleCI &amp; the Serverless Framework. https://t.co/HTjnKPHJZb,,
+909,twitter,RT @marcobuss: Making #serverless CI/CD easier with @CircleCI &amp; the Serverless Framework. https://t.co/HTjnKPHJZb,,
+910,twitter,"@antonsamper @CircleCI In this scenario, no. That just means the physical ""host"" your pipeline's job is running on needs to get the image. That's not something configurable by the user.
+
+We do have a new fleet of images that will more likely be cached throughout this year: https://t.co/NIx7KTb7bx",,
+911,twitter,RT @marcobuss: Making #serverless CI/CD easier with @CircleCI &amp; the Serverless Framework. https://t.co/HTjnKPHJZb,,
+912,twitter,@FelicianoTech @CircleCI Thanks for clarifying Ricardo,,
+913,twitter,@FelicianoTech @CircleCI Looks like I’ll be able to use “cimg/node:14.4.0” 🙂👍🏼,,
+914,twitter,@antonsamper @CircleCI Glad I could help.,,
+915,twitter,Learn how to make #serverless CI/CD easier with @CircleCI &amp; the Serverless Framework: https://t.co/hv9iP2Mynv https://t.co/LwytqxRnvd,,
+916,twitter,RT @awscloud: Learn how to make #serverless CI/CD easier with @CircleCI &amp; the Serverless Framework: https://t.co/hv9iP2Mynv https://t.co/Lw…,,
+917,twitter,RT @awscloud: Learn how to make #serverless CI/CD easier with @CircleCI &amp; the Serverless Framework: https://t.co/hv9iP2Mynv https://t.co/Lw…,,
+918,twitter,RT @awscloud: Learn how to make #serverless CI/CD easier with @CircleCI &amp; the Serverless Framework: https://t.co/hv9iP2Mynv https://t.co/Lw…,,
+919,twitter,@awscloud @CircleCI I’ve been using circleci with zappa to deploy serverless architecture to aws infrastruture and I love it @CircleCI,,
+920,twitter,Excellent leadership advice from @CircleCI VP @lrnrd  https://t.co/UUGIoOyo9J via @4enterprisers,,
+921,twitter,RT @Nabazmaaruf: @awscloud @CircleCI I’ve been using circleci with zappa to deploy serverless architecture to aws infrastruture and I love…,,
+922,twitter,RT @awscloud: Learn how to make #serverless CI/CD easier with @CircleCI &amp; the Serverless Framework: https://t.co/hv9iP2Mynv https://t.co/Lw…,,
+923,twitter,RT @Nabazmaaruf: @awscloud @CircleCI I’ve been using circleci with zappa to deploy serverless architecture to aws infrastruture and I love…,,
+924,twitter,@awscloud @CircleCI Oh wow I didn't know AWS actually promoted tools like the Serverless Framework.,,
+925,twitter,RT @FabriceDej: @awscloud @CircleCI Oh wow I didn't know AWS actually promoted tools like the Serverless Framework.,,
+926,twitter,RT @Nabazmaaruf: @awscloud @CircleCI I’ve been using circleci with zappa to deploy serverless architecture to aws infrastruture and I love…,,
+927,twitter,RT @FabriceDej: @awscloud @CircleCI Oh wow I didn't know AWS actually promoted tools like the Serverless Framework.,,
+928,twitter,RT @awscloud: Learn how to make #serverless CI/CD easier with @CircleCI &amp; the Serverless Framework: https://t.co/hv9iP2Mynv https://t.co/Lw…,,
+929,twitter,Making Serverless CI/CD Easier with CircleCI and Serverless Framework https://t.co/6VqV5MPaKr via @awscloud,,
+930,twitter,RT @FabriceDej: @awscloud @CircleCI Oh wow I didn't know AWS actually promoted tools like the Serverless Framework.,,
+931,twitter,RT @awscloud: Learn how to make #serverless CI/CD easier with @CircleCI &amp; the Serverless Framework: https://t.co/hv9iP2Mynv https://t.co/Lw…,,
+932,twitter,RT @awscloud: Learn how to make #serverless CI/CD easier with @CircleCI &amp; the Serverless Framework: https://t.co/hv9iP2Mynv https://t.co/Lw…,,
+933,twitter,"RT @AutomationAnywh: 🔔 Join @MihirAndNow and @Akakhandiki at #AIExperience Worldwide brought to you by @DataRobot.
+
+You'll hear advice on h…",,
+934,twitter,RT @SnowflakeDB: Accelerating #AI impact in changing times: easier said than done. We’re joining @DataRobot June 16th &amp; 17th for #AIExperie…,,
+935,twitter,moul/golang-repo-template (1.13.0): A template for creating new #Golang + Docker + Canonical Domain + Badges + Renovate + Golangci + Goreleaser + CircleCI + https://t.co/q2zhMP8OcU,,
+936,twitter,RT @RealGophersShip: moul/golang-repo-template (1.13.0): A template for creating new #Golang + Docker + Canonical Domain + Badges + Renovat…,,
+937,twitter,"CircleCI recently released a new fleet of convenience images, Docker images that give users a quick and easy starting point for building CI pipelines. Join us on June 9 at 10am PT to learn about these new tools and how get started using them. https://t.co/MOnasimCl2 https://t.co/YxBeC6ixD2",,
+938,twitter,"June 18 @ 10AM PT: Learn how to create a custom @Docker image to run your CI builds
+
+@CircleCI released a new fleet of Docker images that can be used on any CI platform. These images provide fast spin-up time and improved reliability &amp; stability. Register: https://t.co/Y1jfnqdC1j https://t.co/YA9m2BhWfR",,
+939,twitter,moul/golang-repo-template (1.14.0): A template for creating new #Golang + Docker + Canonical Domain + Badges + Renovate + Golangci + Goreleaser + CircleCI + https://t.co/q2zhMP8OcU,,
+940,twitter,RT @RealGophersShip: moul/golang-repo-template (1.14.0): A template for creating new #Golang + Docker + Canonical Domain + Badges + Renovat…,,
+941,twitter,RT @RealGophersShip: moul/golang-repo-template (1.14.0): A template for creating new #Golang + Docker + Canonical Domain + Badges + Renovat…,,
+942,twitter,"@xeraa @CircleCI @elastic Hi Philipp, I'm not sure I understand. The snippet above is from my CircleCI config and i'm using the official elasticsearch docker image. Im just wondering if there is something wrong with my environment settings as the HTTP port is not consistent",,
+943,twitter,"@antonsamper @CircleCI @elastic the settings look correct for our docker image (I'm not using CircleCI). maybe the 9200 port is already in use? but 9300 is for transport, so I don't think HTTP will be used for that — if you run a HTTP call against transport you will see heavy complaints in the logs",,Q
+944,twitter,"Sometimes I feel like if I ever need new followers I can just tweet something like:
+
+We're using JavaScript + TypeScript  in Node.js with Express and server side React hosted in an Azure cloud after moving from AWS build by Docker and CircleCI in an Agile with Lean Scrum DevOps.",,
+945,twitter,"RT @AlwaysMoreHats: Sometimes I feel like if I ever need new followers I can just tweet something like:
+
+We're using JavaScript + TypeScrip…",,
+946,twitter,"@ministryoftest CircleCI, Cypress, Applitools, Docker, Bash, New Relic, DataDog, AWS",,
+947,twitter,The @CircleCI Monthly Convenience Images Update: June 2020 https://t.co/wsRpWIYX4b #CI #DevOps #Docker,,
+948,twitter,"Thrilled to see Alteryx named as one of @dbtrends 100 companies that matter most in data, recognizing cutting-edge data companies that are preparing for the future. #TogetherWeSolve #DataAnalytics https://t.co/rq65COzRO3 https://t.co/joHvzwYkUz",,
+949,twitter,"How analytic process automation enables the federal data strategy: people, processes, &amp; data are an organization’s richest assets, and when these three assets are addressed together, transformative outcomes are realized. #TogetherWeSolve #AlteryxAnalytics https://t.co/HgwcENi0dx https://t.co/HSKiWb4r9R",,
+950,twitter,"Attn Cestrian ""Lite"" subscribers - we initiate coverage of $AYX today.  Link here: https://t.co/5clJRrgIro",,
+951,twitter,"@IanCutress @hpcnotes @ANSYS @HPCwire Yep, I agree. The people that I've met at @tableau Conference Europe 2017 &amp; 2018 and @alteryx Conference London in 2017 have been far, *FAR* more valuable to me than any of the sessions that I've attended.",,
+952,twitter,"RT @james_carter89: 6 Top Stocks You Need in 2020: 
+
+$OKTA - Okta 
+$CRWD - Crowdstrike 
+$ZS - Zscaler 
+$AYX - Alteryx 
+$NOW - ServiceNow
+$Z…",,
+953,twitter,"RT @WIRED: ""If COVID-19’s problems aren’t a wake-up call that change is needed, then we’re all toast.” @alteryx CEO Dean Stoecker shares wh…",,
+954,twitter,@WIRED @alteryx The WEALTH MUST BE EQUIEL!!!! NO POOR!!!!,,
+955,twitter,RT @lily_phd: @WIRED @alteryx The WEALTH MUST BE EQUIEL!!!! NO POOR!!!!,,
+956,twitter,"#AI and augmented #analytics are changing the conversation around digital transformation. In fact, they’re changing the whole analytics landscape. Hear the discussion from #analytic leaders on this new approach to #dataanalytics. 
+https://t.co/E9V8w7MX4A
+#TogetherWeSolve https://t.co/vFVgXa7B2p",,
+957,twitter,"@slpng_giantsPR @GoogleAds @googlebrasil @Google @adsensept @AdSense @GoogleAI @slpng_giantsPR Thank you for bringing this to our attention, we have removed our ads from this site.",,
+958,twitter,"RT @alteryx: Connect with the Austin #AlteryxUserGroup on Friday, June 26th at 2pm CT for a special virtual meeting. The group will cover t…",,
+959,twitter,@alteryx @GoogleAds @googlebrasil @Google @adsensept @AdSense @GoogleAI Thank you very much!,,
+960,twitter,"(2020-2026) Data Prep Market Analysts Expect Robust Growth in 2026| Alteryx, Inc, Informatica ...: Data quality. Data ingestion. Data governance. By Applications: Hosted On-premises. By Regions: North America (The US, Canada, and Mexico) ... https://t.co/O2XcWOTbJJ",,
+961,twitter,"RT @alteryx: How analytic process automation enables the federal data strategy: people, processes, and data are an organization’s richest a…",,Q
+962,twitter,"How will you lead? How will you respond? Thursday 1 ET, 10 PT #data #analytics #AI #cloud #data4good #leadership 
+
+https://t.co/Ay4hvlTqku
+
+@alteryxdean
+@alteryx
+@elissafink
+@JacinthLaval
+@snowflake
+@storybydata
+@thoughtspot https://t.co/nFLniq5RJk",,Q
+963,twitter,"RT @BIScorecard: How will you lead? How will you respond? Thursday 1 ET, 10 PT #data #analytics #AI #cloud #data4good #leadership 
+
+https:/…",,Q
+964,twitter,"With the Alteryx Intelligence Suite, the power of #machinelearning and text mining belongs to everyone. Evolve your solving and grow your skills. Learn more on the Alteryx Analytics Blog. #TogetherWeSolve https://t.co/PziiG0R270 https://t.co/DPJFRObAaY",,
+965,twitter,"RT @BIScorecard: How will you lead? How will you respond? Thursday 1 ET, 10 PT #data #analytics #AI #cloud #data4good #leadership 
+
+https:/…",,Q
+966,twitter,"RT @slpng_giantsPR: @alteryx Hey there! We discovered your   advertisements shown on a known far-right fake news, hate speech and flat Eart…",,
+967,twitter,@alteryx @slpng_giantsPR @GoogleAds @googlebrasil @Google @adsensept @AdSense @GoogleAI Thanks Tha-Tha-Thanksss,,
+968,twitter,"@LibertyRPF @stockthoughts81 They're similarish:
+https://t.co/ZbW90aQbGU
+
+https://t.co/S5I7nvcrvj.",,
+969,twitter,@PythiaR @LibertyRPF @stockthoughts81 Alteryx will tell you they compete mostly with SAS and white space,,
+970,twitter,"@PythiaR @skipperm00 @LibertyRPF @stockthoughts81 $AYX offers it’s solution on Azure and is already a preferred partner: https://t.co/oJ4REocJcw
+
+I don’t think SAS release is newsworthy tbh.",,
+971,twitter,"RT @WIRED: ""If COVID-19’s problems aren’t a wake-up call that change is needed, then we’re all toast.” @alteryx CEO Dean Stoecker shares wh…",,
+972,twitter,"RT @WIRED: ""If COVID-19’s problems aren’t a wake-up call that change is needed, then we’re all toast.” @alteryx CEO Dean Stoecker shares wh…",,
+973,twitter,"WEBINAR: Join Alan Jacobson, Chief Data &amp; Analytics Officer of Alteryx, on 6/17 at 4:30pm for ""Analytics In Turbulent Times"". You'll hear about how #analytics helped address organizational &amp; societal issues, from the #pandemic to day-to-day ops challenges. https://t.co/4cYYR8NTvz https://t.co/wMtaS7LJFK",,
+974,twitter,"RT @BIScorecard: How will you lead? How will you respond? Thursday 1 ET, 10 PT #data #analytics #AI #cloud #data4good #leadership 
+
+https:/…",,Q
+975,twitter,"Geospatial Analytics Market Emerging Trends May Make Driving Growth Volatile | Esri, Pitney Bowes Inc., Oracle, SAP SE, ALTERYX, INC., Hexagon AB, DigitalGlobe, Trimble - 3rd Watch News https://t.co/rWwBUKzgA6",,
+976,twitter,"Join this #LinkedIn live event with leaders in the #data and #analytics community to hear multiple perspectives on balancing empathy with the need to enable speed to insight in business and in healthcare. https://t.co/kNpfLccWIB @alteryxdean 
+#TogetherWeSolve #AlteryxAnalytics https://t.co/MM4jia8FkH",,
+977,twitter,"Do you ever need to quickly anonymize your data for work with consultants?
+Or do you want to make public some awesome work you did?
+If yes, then check this out!
+#python #alteryx
+https://t.co/s3Uq0gOBD9",,Q
+978,twitter,"RT @INFORMS: WEBINAR: Join Alan Jacobson, Chief Data &amp; Analytics Officer of Alteryx, on 6/17 at 4:30pm for ""Analytics In Turbulent Times"".…",,
+979,twitter,"@WIRED @alteryx In between the ""Epidemiologists"" and the ""Data Geeks"" there need to be ""Risk Managers"" and ""Quant Design"" pp. If there had been, Dr F would never have gotten up and scared 7.7B pp to death &amp; shut down global markets.",,
+980,twitter,@alteryx @slpng_giantsPR @GoogleAds @googlebrasil @Google @adsensept @AdSense @GoogleAI Thank you very much @alteryx 👏🏻👏🏻👏🏻👏🏻,,
+981,twitter,@WIRED @alteryx What a joke,,Q
+982,twitter,Read Gartner’s latest report on the collision of data + analytics to see how business leaders can make the most of a changing business landscape.  📚 https://t.co/Nen9nXEdOq #DigitalTransformation #TogetherWeSolve #AlteryxAnalytics https://t.co/aQEQmVOa0z,,
+983,twitter,"RT @WIRED: ""If COVID-19’s problems aren’t a wake-up call that change is needed, then we’re all toast.” @alteryx CEO Dean Stoecker shares wh…",,
+984,twitter,RT @alteryx: Join this #LinkedIn live event with leaders in the #data and #analytics community to hear multiple perspectives on balancing e…,,
+985,twitter,@WIRED @alteryx Fake pandemic.  Quit pandering to something that isn't even real.,,
+986,twitter,"Connect with your fellow #AlteryxAddicts at the St. Louis #AlteryxUserGroup virtual meeting on June 24. Anyone can join! 
+https://t.co/dqVLM8Pm4U
+#TogetherWeSolve https://t.co/jdvPj9Keca",,
+987,twitter,@qlik @juliekae @Qlikorg Love to the whole fam!,,
+988,twitter,"RT @Noesis_Portugal: In the last Data Analytics Session, Bruno Santos and João Gonçalves bring us @qlik's approach to Big Data. Learn how t…",,
+989,twitter,"This is cool!
+Nice job, @FortuneMagazine and @qlik 
+https://t.co/Hliy5wvGaG",,
+990,twitter,"#Microsoft 
+Microsoft, Snowflake and Cognizant amongst the big winners at Qlik partner awards https://t.co/AjxRrAczHE",,
+991,twitter,ATTN QlikView users: say hello to the next generation of #BI. Check out Qlik ebook to uncover the Top 3 Reasons to Modernize Your Analytics.  https://t.co/mqTMhbwUOP https://t.co/n4E3gRvNZK,,
+992,twitter,"Qlik Sense peeps, would be much obliged if anyone knows the answer to this! https://t.co/cBALf3z7hO",,
+993,twitter,"How smart are your organizations' decisions? 
+
+Do you have the right information to make those decisions in the first place? 
+
+Choose between the following four BI tools. 
+
+https://t.co/xoajpeMeg2 via @keybeyond
+
+#buisnessanalytics https://t.co/SPH83vzjBJ",,Q
+994,twitter,ATTN QlikView users: say hello to the next generation of #BI. Check out Qlik ebook to uncover the Top 3 Reasons to Modernize Your Analytics.  https://t.co/SK6ZGwgfHg https://t.co/vhMWr7tcCa,,
+995,twitter,ATTN QlikView users: say hello to the next generation of #BI. Check out Qlik ebook to uncover the Top 3 Reasons to Modernize Your Analytics.  https://t.co/Wauq5HJ6dx https://t.co/67mew5mS6Q,,
+996,twitter,"Our product teams are now executing a *two* *week* release cycle for the safe workplace apps. Incredible velocity from @servicenow. #safeworkplace #returntowork 
+
+https://t.co/eNaPfbkO2e",,
+997,twitter,RT @drummonds: Our product teams are now executing a *two* *week* release cycle for the safe workplace apps. Incredible velocity from @serv…,,
+998,twitter,"Like any other AI solutions, speech to text models needs to be trained with four Vs : Volume, Variety, Velocity and Veracity of the data #bigdata #speechtotext #ai #ml https://t.co/hLTqtdZYH1",,
+999,twitter,"@VodkaSlam @PS5only I mean yes, but doesn't Xbox have velocity architecture et al. 
+Both machines have unique solutions to those problems.",,
+1000,twitter,"Congratulations to the Science staff &amp; students who took part in the 2020 Velocity Innovation Challenge 👏
+
+Our winners included ideas for fish haul management, a pet data app, an oxygen ventilator, and a microfibre trap.
+
+Check out the winning pitches 👇
+
+https://t.co/aQnFeLujyS",,
