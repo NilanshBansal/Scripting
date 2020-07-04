@@ -1,0 +1,1606 @@
+s.no,msg,tags,Tf-idf 
+1,"I am trying to use this rootless on Fedora CoreOS which runs cgroups v1 and I am getting
+
+`Error: mkdir /sys/fs/cgroup/pids/system.slice/elasticsearch.service/supervisor: permission denied`
+
+Here is my unit:
+
+```
+[Unit]
+      Description=Elasticsearch Service
+      Wants=network.target
+      After=network-online.target
+      After=mycool-pod.service
+
+      [Service]
+      Delegate=true
+      User=mycool
+      Group=mycool
+      Environment=PODMAN_SYSTEMD_UNIT=%n
+      Restart=on-failure
+      ExecStartPre=-/usr/local/bin/podman pull elasticsearch:7.5.2
+      ExecStartPre=-/usr/local/bin/podman volume create %N
+      ExecStart=/usr/local/bin/podman run --replace --rm -d --log-driver=journald --log-opt tag=""{{.ImageName}}"" --pod mycool-pod --name %N -e ES_JAVA_OPTS=""-Xms512m -Xmx512m"" --conmon /usr/local/bin/conmon --cgroups=split --conmon-pidfile=%T/%N.pid --env-file /opt/mycool/envs/elasticsearch.env --volume %N:/usr/share/elasticsearch/data:Z elasticsearch:7.5.2
+      ExecStop=/usr/local/bin/podman stop -t 10 %N
+      ExecStopPost=/usr/local/bin/podman stop -t 10 %N
+      PIDFile=%T/%N.pid
+      KillMode=none
+      Type=forking
+      SyslogIdentifier=%N
+
+      [Install]
+      WantedBy=multi-user.target default.target
+```
+
+Will this only work with rootless on cgroups v2?","['fs', 'network', 'mkdir', 'local', 'environment', 'fedora', 'elasticsearch', 'pod', 'pid', 'env', 'denied', 'cgroups', 'coreos']","rootless 
+coreos 
+pids 
+fedora 
+supervisor 
+mkdir 
+slice 
+elasticsearch 
+denied 
+sys "
+2,"I am fine with creating a podman group and adding write access to the socket, but not by default,  This would have to be configured in the containers.conf with strong words about how dangerous this is.  
+
+Setting up podman group access to the root running podman, is equivalent to giving sudo without password access to root, and potentially worse.
+
+Is there something we could do as an alternative with systemd?  IE I turn on the systemd podman.sock socket for a particular user and it sets up permissions for just this user. 
+Bottom line, I would want this to be specific to the remote service over ssh rather then something local users of a linux system start doing.","['local', 'linux', 'access']","systemd 
+socket 
+access 
+root 
+group 
+dangerous 
+worse 
+potentially 
+sock 
+containers "
+3,"> I understood that to mean that the CoreDNS pods were being restarted (rolled out) at the annotations, not the application pods.
+
+You are correct @chrisohaver, I'm talking about the `coredns pods` and **not about** the `application pods` when I mentioned about restarts and rollouts.
+
+> Oh, we should check that with the reporter. Restarting the CoreDNS pods will fix the issue in this ticket too as it's CoreDNS pods (some, not usually all, but can be all) that are in a bad state, so restarting CoreDNS also fixes the issue. But... the distinct thing about this ticket is that restarting the app pods also fixes the issue. We should have the reporter check if some of their app pods have the issue and if deleting those app pods causes the issue to go away.
+
+@huntharo I can easily do this and return with some results!
+
+Also, we are currently running the v1.7.0 under our staging environment, I will keep you guys posted.","['environment', 'app', 'distinct', 'go', 'coredns']","pods
+coredns
+restarting
+issue
+reporter 
+ticket 
+fixes 
+rollouts 
+app 
+rolled "
+4,"I can't believe this is still an open issue. Seems like a very obvious feature for TypeScript. Can't wait to see it!
+
+I personally prefer `catch(error as Error)` as opposed to `catch(error: Error)` because the first makes more sense because you're casting and faking it, but if we used the second method then people may mistakenly believe we are telling the try-catch block to behave in a certain way which is not what TypeScript is for. That should be a new JavaScript feature.
+
+Still, @zzzzBov did show an interesting way of getting around this which is something I'm completely up for.","['typescript', 'block']","typescript
+catch
+believe
+feature
+error
+faking
+mistakenly
+personally
+casting
+opposed"
+5,"Hi,
+if someone can help me with the travis build failed.
+I don't understand why it says that ""Error: Call to undefined method Symfony\Component\Workflow\Workflow::getEnabledTransition()"" as I did commit he method. You can see it here : https://github.com/symfony/symfony/pull/37428/files#diff-6d1e8dc0d2c0e7c4ab206d0efbb71516R241
+
+and I don't understand all the other errors regarding src/Symfony/Component/Notifier/Bridge/FreeMobile, src/Symfony/Component/Notifier/Bridge/Slack, etc....
+```PHP Fatal error:  Declaration of Symfony\Component\Notifier\Bridge\Slack\SlackTransport::doSend(Symfony\Component\Notifier\Message\MessageInterface $message): void must be compatible with Symfony\Component\Notifier\Transport\AbstractTransport::doSend(Symfony\Component\Notifier\Message\MessageInterface $message): Symfony\Component\Notifier\Message\SentMessage in /home/travis/build/symfony/symfony/src/Symfony/Component/Notifier/Bridge/Slack/SlackTransport.php on line 34```
+
+I feel like it has nothing to do with this PR :/","['declaration', 'bridge', 'build', 'php']","symfony
+notifier
+bridge
+component
+workflow
+travis
+slack
+understand
+src
+pr"
+6,"Thanks for putting this together @ShuiRuTian! I looked through a bunch of the changed test baselines last week, and my suspicion is that this change is going to be too big for 4.0 now that we’ve released the beta (we try not to add any big features or breaking changes during this period). I’m on DefinitelyTyped duty this week, but will try to give this a more careful review next week and discuss with the team. Just wanted to set expectations that even if all the changes look perfect, we may decide it needs to wait until 4.1. Thanks again!",[],"week
+big
+definitely typed
+expectations
+duty
+suspicion
+changes
+discuss
+careful
+breaking"
+7,"I had to change the way the regex is built up, to take lines' order into consideration. I made a new class in the reproducer that correctly matches files when they are re-ignored (or re-unignored) on lines after a previous line that (un-)ignored it: https://github.com/Jeroeny/reproduce/blob/gitign/GitignoreNew.php
+
+The regex per positive `.gitignore` line is a group followed by a negative lookbehind with all the negations that were on lines áfter that line. 
+
+It seems to work so far.",[],"lines
+ignored
+regex
+lookbehind
+line
+reproducer
+consideration
+gitignore
+positive"
+8,"Default is low because terminals are not designed to redraw too often. This is nothing new, check FPS of even some famous terminal ASCII animations, such as `towel.blinkenlights.nl`. Unlike Symfony ProgressBar, these are real animations and yet, they are kept to low refresh rate. 
+
+High redraws impact runtime performance more than you would think. People would rather their script finish sooner than having super smooth animation, don't you think?","['animation', 'ascii']","animations
+symfony
+towel
+redraws
+sooner
+terminals
+famous
+redraw
+progressbar
+think"
+9,"Moving upstream for feedback from the TS team. 
+
+**repro**
+
+1. In the VS Code code base
+1. For this call to `dispose`: https://github.com/microsoft/vscode/blob/ced1335a0eb79623338322c04f8c36ec970e1264/src/vs/base/browser/dnd.ts#L46
+1. Run `find all references`
+
+This returns 2568 references, which is not very helpful.
+
+I understand that the type system makes it impossible to know exactly which `dispose` we are interested in, but I wonder if there is something we can do to improve the user experience for cases like this","['feedback', 'dispose']","dispose
+references
+repro
+upstream
+feedback
+impossible
+ts
+improve
+interested
+team"
+10,"I agree safety is the most important - it's the main reason I want to use structs :) Even `printStackTrace` has the caveat that ""The format of this information depends on the implementation"", and there has indeed been a significant format change with Java 7. Having parsing fail because a backend didn't catch up with a Java or Android version seems fragile and with a higher chance of failure, admittedly it's not something that happens often but there's no guarantee of safety here. This is just one programming language, others may take even less care with stack trace strings, but the native APIs of the languages don't have this issue.
+
+I appreciate the concern about the missing checks / features in our reference implementations. But I don't think that's a reason to assume we can't get it right - we're doing a good job of learning from prior art and going through the details. Serializing a stack isn't such a complex issue that this is untenable, and once we have it down right it should be forwards compatible through any changes in the runtime, I don't see a big reason to expect our code to be less safe than a runtime.
+
+> I'm still trying to compare the CPU and memory allocation cost of recording structured stacks as compared to using a string encoding. 
+
+I spiked a change to marshall exceptions into the proto and compare with string. 
+
+https://github.com/anuraaga/opentelemetry-java/blob/exception-serialize/exporters/otlp/src/jmh/java/io/opentelemetry/trace/ExceptionDescriptionBenchmark.java
+https://gist.github.com/anuraaga/4e6f09408392264fedbfc13c98f2d3f8
+(note the proto change is in the gist itself in case anyone wants to compile themselves, since it'd be tedious to propagate that through submodules in a way that can be pushed)
+
+As with all benchmarks, there's always a chance it's missing something, happy to adjust with any feedback. FWIW, I tried a default `StringWriter` before and tried changing to presized `StringBuilder` wrapped with writer, but didn't see any real difference.
+
+From the numbers, it seems that proto is a little faster, maybe due to the reduced amount of whitespace / words like `At:`. But even with 150 stack frames, both are <50us - don't know what people's thresholds are but this seems low enough not to worry too much about to me. Of course, this is only Java, but I figure other languages like Go would be at least as fast.
+
+One thing I noticed with `MaxJavaStackTraceDepth` is it affects population of stack trace, not printing, so the flag affects both approaches the same. If we wanted to use `printStackTrace` with our own limit on depth, I can't think of a way other than a line-length-limited `PrintWriter` which still has to iterate the entire stack either way.
+
+Let me know if any other info can help here (though I can't commit to writing similar code in other languages).","['cpu', 'android', 'population', 'frames', 'compare', 'ignore', 'format', 'java', 'memory', 'native', 'depends', 'allocation', 'ca', 'iterate', 'printwriter']","stack
+proto
+languages
+safety
+affects
+chance
+reason
+don
+trace
+printstacktrace"
+11,"Thanks for this context. FWIW, I'm generally in the camp of it being fragile to map all error codes in the world to gRPC.
+
+But I think it's good if our current code matches our current spec, and can fix forward as needed. So wondering if you can +1 this instead? https://github.com/open-telemetry/opentelemetry-collector/pull/1226","['map', 'grpc']","fragile
+grpc
+camp
+current
+spec
+generally
+forward
+codes
+matches
+world"
+12,"@rahulchheda: The following tests **failed**, say `/retest` to rerun all failed tests:
+
+Test name | Commit | Details | Rerun command
+--- | --- | --- | ---
+pull-kubernetes-integration | 32109bf52cfa414e6f1a44bb4231af69f82a2e7f | [link](https://prow.k8s.io/view/gcs/kubernetes-jenkins/pr-logs/pull/92394/pull-kubernetes-integration/1277728270653067265) | `/test pull-kubernetes-integration`
+pull-kubernetes-e2e-kind | 32109bf52cfa414e6f1a44bb4231af69f82a2e7f | [link](https://prow.k8s.io/view/gcs/kubernetes-jenkins/pr-logs/pull/92394/pull-kubernetes-e2e-kind/1277728270648872960) | `/test pull-kubernetes-e2e-kind`
+pull-kubernetes-verify | 32109bf52cfa414e6f1a44bb4231af69f82a2e7f | [link](https://prow.k8s.io/view/gcs/kubernetes-jenkins/pr-logs/pull/92394/pull-kubernetes-verify/1277728270653067264) | `/test pull-kubernetes-verify`
+
+[Full PR test history](https://prow.k8s.io/pr-history?org=kubernetes&repo=kubernetes&pr=92394). [Your PR dashboard](https://prow.k8s.io/pr?query=is%3Apr%20state%3Aopen%20author%3rahulchheda). Please help us cut down on flakes by [linking to](https://git.k8s.io/community/contributors/devel/sig-testing/flaky-tests.md#filing-issues-for-flaky-tests) an [open issue](https://github.com/kubernetes/kubernetes/issues?q=is:issue+is:open) when you hit one in your PR.
+
+<details>
+
+Instructions for interacting with me using PR comments are available [here](https://git.k8s.io/community/contributors/guide/pull-requests.md).  If you have questions or suggestions related to my behavior, please file an issue against the [kubernetes/test-infra](https://github.com/kubernetes/test-infra/issues/new?title=Prow%20issue:) repository. I understand the commands that are listed [here](https://go.k8s.io/bot-commands).
+</details>
+<!-- test report -->","['dashboard', 'integration', 'open', 'kubernetes', 'instructions']","pr
+tests
+retest
+failed
+rerun
+kubernetes
+interacting
+test
+cut
+listed"
+13,"[APPROVALNOTIFIER] This PR is **APPROVED**
+
+This pull-request has been approved by: *<a href=""https://github.com/kubernetes/kubernetes/pull/91606#"" title=""Author self-approved"">danwinship</a>*, *<a href=""https://github.com/kubernetes/kubernetes/pull/91606#pullrequestreview-439572397"" title=""Approved"">thockin</a>*
+
+The full list of commands accepted by this bot can be found [here](https://go.k8s.io/bot-commands?repo=kubernetes%2Fkubernetes).
+
+The pull request process is described [here](https://git.k8s.io/community/contributors/guide/owners.md#the-code-review-process)
+
+<details >
+Needs approval from an approver in each of these files:
+
+- ~~[pkg/registry/OWNERS](https://github.com/kubernetes/kubernetes/blob/master/pkg/registry/OWNERS)~~ [thockin]
+
+Approvers can indicate their approval by writing `/approve` in a comment
+Approvers can cancel approval by writing `/approve cancel` in a comment
+</details>
+<!-- META={""approvers"":[]} -->","['list', 'bot']","approval
+approve 
+approved 
+cancel 
+pull 
+approver 
+writing 
+pr 
+bot 
+request "
+14,"<!-- identifier: ci-result -->
+
+@vankop The most important CI builds failed. This way your PR can't be merged.
+
+Please take a look at the CI results from [travis](https://travis-ci.org/github/webpack/webpack/builds/702494672?utm_source&#x3D;github_status&amp;utm_medium&#x3D;notification) (success) and [appveyor](https://ci.appveyor.com/project/sokra/webpack/builds/33794174) (failure) and fix these issues.","['ca', 'issues', 'ci']","ci
+pr
+merged
+builds
+important
+issues
+failed
+take
+fix
+look"
+15,"Kubernetes is moving away from direct usage of docker to the CRI - Container Runtime Interface. 
+I don't think new docker specific features are being used. A feature like this would likely need an enhancement proposal to CRI https://github.com/kubernetes/enhancements","['kubernetes', 'docker']","docker
+enhancement
+proposal
+kubernetes
+likely
+direct
+away
+features
+moving
+usage"
+16,"Going though the code - looks like functionality like that is needed for HA scalable adapters in Knative eventing. 
+
+I think we should experiment with it and to do this we need that code to be in knative eventing",['knative'],"knative
+eventing
+ha
+experiment
+adapters
+scalable
+functionality
+needed
+like
+going"
+17,"We are much more likely to implement this at the OpenFaaS deployment level, rather than at the Function schema. The various options include a mode and using the new profiles feature.
+
+We need more context though. Do you see this configuration being applied to all functions in your cluster in the same way? Perhaps you can reply with some concrete examples","['profiles', 'deployment', 'openfaas']","openfaas
+profiles
+concrete
+reply
+likely
+cluster
+deployment
+applied
+schema
+feature"
+18,"It worked after that, thanks very much for clarifying. But isn't there any option to permanently hardcode response header in the config? Actually gRPC-web repo framework by default send request likewise and I have just converted the request to cURL form while asking here. And I don't think to change the generated files or gRPC code to send a custom header is much feasible in my case. Any suggestion will be highly appreciated.
+
+BTW new cURL output is as below.
+```
+nikhil@Nikhil-PC:~$ curl 'http://localhost:8081/docinterface.DocAPI/TokenTest'   -H 'X-User-Agent: grpc-web-javascript/0.1'   -H 'DNT: 1'   -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36'   -H 'Content-Type: application/grpc-web-text'   -H 'Accept: application/grpc-web-text'   -H 'X-Grpc-Web: 1'   -H 'Referer: http://localhost:3000/'   -H 'token: qwertyuiop'   --data-binary 'AAAAAAA=' -H 'Origin: http://localhost:3000'   --compressed -v
+*   Trying 127.0.0.1:8081...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8081 (#0)
+> POST /docinterface.DocAPI/TokenTest HTTP/1.1
+> Host: localhost:8081
+> Accept-Encoding: deflate, gzip, br
+> X-User-Agent: grpc-web-javascript/0.1
+> DNT: 1
+> User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36
+> Content-Type: application/grpc-web-text
+> Accept: application/grpc-web-text
+> X-Grpc-Web: 1
+> Referer: http://localhost:3000/
+> token: qwertyuiop
+> Origin: http://localhost:3000
+> Content-Length: 8
+> 
+* upload completely sent off: 8 out of 8 bytes
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< content-type: application/grpc-web-text+proto
+< grpc-accept-encoding: identity,deflate,gzip
+< accept-encoding: identity,gzip
+< x-envoy-upstream-service-time: 5
+< access-control-allow-origin: http://localhost:3000
+< access-control-expose-headers: custom-header-1,grpc-status,grpc-message
+< date: Sun, 28 Jun 2020 16:35:18 GMT
+< server: envoy
+< transfer-encoding: chunked
+< 
+* Connection #0 to host localhost left intact
+AAAAABIKEEhlbGxvIHF3ZXJ0eXVpb3A=gAAAACBncnBjLXN0YXR1czowDQpncnBjLW1lc3NhZ2U6T0sNCg==
+```","['agent', 'binary', 'gmt', 'mozilla', 'grpc', 'proto', 'chunked', 'connection', 'linux', 'javascript', 'encoding', 'header', 'localhost']","grpc
+curl
+clarifying
+header
+likewise
+hardcode
+permanently
+feasible
+request
+btw"
+19,"I have referred there only and integrated in my react app as per below snippet:
+```
+import React, {Component} from ""react"";
+import {DocAPIClient} from ""../protoc/docinterface_grpc_web_pb""
+import {PseudoRequest, TestReply} from ""../protoc/docinterface_pb""
+
+class Test extends Component {
+    constructor(props) {
+        super(props);
+        let request = new PseudoRequest();
+        let client = new DocAPIClient('http://localhost:8081',
+            null, null);
+        client.tokenTest(request, {""token"": ""qwertyuiop""}, (err, response) => {
+            if (err) {
+                console.log(`Unexpected error for gRPC: code = ${err.code}` +
+                    `, message = ""${err.message}""`);
+            } else {
+                console.log(response.getMessage());
+            }
+        });
+        this.state = {};
+    }
+
+    render() {
+        return (
+            <div>
+                Test
+            </div>
+        );
+    }
+}
+
+export default Test;
+```
+But while running this in browser I was getting CORS issue in console and then I extracted actual request from browser developer tool as cURL to analyse. I then wrapped envoy in Apache and set hardcoded header and it worked. I am using the gRPC library as is from npm.","['console', 'constructor', 'grpc', 'protoc', 'extends']","grpc
+browser
+analyse
+cors
+extracted
+hardcoded
+referred
+integrated
+npm
+wrapped"
+20,"@cpakulski maybe we should reconsider `enable_parsing` to be `false` by default due to the poor quality of the current SQL parser. Below I'll show you some concrete information about why we should reconsider it:
+
+Did some tests using the [pgbench](https://www.postgresql.org/docs/12/pgbench.html) tool to simulate a workload and used the three available modes of protocol: `simple`, `extended` and `prepared`.
+
+1. **simple** protocol:
+
+    ```text
+    ...
+    postgres.egress_postgres.statements: 257447
+    ...
+    postgres.egress_postgres.statements_parse_error: 110334
+    postgres.egress_postgres.statements_parsed: 147113
+    ...
+    ```
+
+2. **extended** protocol:
+
+    ```text
+    postgres.egress_postgres.statements: 135549
+    ...
+    postgres.egress_postgres.statements_parse_error: 135548
+    postgres.egress_postgres.statements_parsed: 1
+    ```
+
+3. **prepared** protocol:
+
+    ```text
+    postgres.egress_postgres.statements: 146742
+    ...
+    postgres.egress_postgres.statements_parse_error: 70
+    postgres.egress_postgres.statements_parsed: 1
+    ```
+
+And running PostgreSQL regression tests trough Envoy we get ~70% of queries not parsed (all regression runs in Simple mode)
+
+```text
+postgres.egress_postgres.statements_parse_error: 25852
+postgres.egress_postgres.statements_parsed: 11377
+```
+ 
+Another evidence of the low effectiveness of this feature due the parser limitation is demonstrated on the table below. I collected information about a lot of Postgres connectors implementations in several programming languages and the majority of the cases the default mode is `Extended`:
+
+| Language | Driver        | Type   | Notes                                                                                                                                                                                                                                                                                                                                                                                                 |
+| -------- | ------------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| C/C++    | libpq         | native | Simple and Extended                                                                                                                                                                                                                                                                                                                                                                                   |
+| Java     | JDBC          | native | (Extended and Simple) - see preferQueryMode in [https://github.com/pgjdbc/pgjdbc/blob/master/docs/documentation/head/connect.md](https://github.com/pgjdbc/pgjdbc/blob/master/docs/documentation/head/connect.md)                                                                                                                                                                                     |
+| Python   | psycopg2      | libpq  | (Simple) - [https://github.com/psycopg/psycopg2/blob/master/psycopg/pqpath.c#L829](https://github.com/psycopg/psycopg2/blob/master/psycopg/pqpath.c#L829)                                                                                                                                                                                                                                             |
+| NodeJS   | node-postgres | native | (Extended) - need to confirm and test more: [https://github.com/brianc/node-postgres](https://github.com/brianc/node-postgres)                                                                                                                                                                                                                                                                        |
+| PHP      | pdo-pgsql     | libpq  | (Extended and Simple) - see PDO\_PGSQL\_ATTR\_DISABLE\_PREPARES and PDO\_ATTR\_EMULATE\_PREPARES in [https://github.com/php/php-src/blob/master/ext/pdo\_pgsql/pgsql\_driver.c#L245](https://github.com/php/php-src/blob/master/ext/pdo_pgsql/pgsql_driver.c#L245)                                                                                                                                    |
+| Golang   | pq            | native | (Extended and Simple) - [https://github.com/lib/pq/blob/master/conn.go#L823](https://github.com/lib/pq/blob/master/conn.go#L823)                                                                                                                                                                                                                                                                      |
+| Golang   | pqx           | native | (Extended and Simple) - [https://github.com/jackc/pgconn/blob/master/pgconn.go#L829](https://github.com/jackc/pgconn/blob/master/pgconn.go#L829)  [https://github.com/jackc/pgconn/blob/master/pgconn.go#L875](https://github.com/jackc/pgconn/blob/master/pgconn.go#L875)  [https://github.com/jackc/pgconn/blob/master/pgconn.go#L909](https://github.com/jackc/pgconn/blob/master/pgconn.go#L909)  |
+| Ruby     | ruby-pg       | libpq  | (Extended and Simple) - [https://github.com/ged/ruby-pg/blob/master/ext/pg\_connection.c#L953](https://github.com/ged/ruby-pg/blob/master/ext/pg_connection.c#L953)  [https://github.com/ged/ruby-pg/blob/master/ext/pg\_connection.c#L1239](https://github.com/ged/ruby-pg/blob/master/ext/pg_connection.c#L1239)                                                                                    |
+| Rust     | rust-postgres | native | (Extended and Simple) - [https://github.com/sfackler/rust-postgres/blob/master/tokio-postgres/src/simple\_query.rs#L17](https://github.com/sfackler/rust-postgres/blob/master/tokio-postgres/src/simple_query.rs#L17)  [https://github.com/sfackler/rust-postgres/blob/master/tokio-postgres/src/query.rs#L16](https://github.com/sfackler/rust-postgres/blob/master/tokio-postgres/src/query.rs#L16) |",[],"native
+pdo
+extended
+postgres
+rust
+golang
+protocol
+parser
+simple
+ruby"
+21,RT @AuDesigns: Coach @RmortonWm and his Meridian Yellow Jackets are back for more honeycomb action in 2020! Thank you for your continued Au…,"['honeycombio', 'honeycomb.io', 'honeycomb']","meridian
+jackets
+honeycomb
+continued
+au
+yellow
+action
+thank
+back"
+22,"Took my own advice
+
+Perfect
+
+Another potentially good combination: American Kinsey whiskey. Vanilla and honeycomb on the backend. Prefect with cacao https://t.co/i2LIWRhwN6",[],"whiskey
+prefect
+honeycomb
+american
+vanilla
+potentially
+took
+combination
+backend"
+23,"what i did today:
+-wake up and my kidneys hurt
+-drink water
+-eat goldfish, honeycomb cereal, 12 grapes, and a calzone
+-run some laps, play basketball for a bit, and hang out with my brothers
+-eat 2 garlic bread sticks
+-play on a Nintendo Switch Lite with my friend
+h e l o","['honeycombio', 'honeycomb.io', 'cereal', 'honeycomb']","eat
+play
+honeycomb
+cereal
+brothers
+bread
+basketball
+grapes
+drink
+sticks"
+24,"RT @NehemiahKiv: 🆓Free Web Hosting Sites🆓
+
+- Heroku
+- Netlify 
+- Firebase
+- Github Pages
+- Vercel (formerly ZEIT) 
+
+What's your go to optio…",[],"heroku
+firebase
+hosting
+sites
+github
+free
+pages
+web"
+25,"RT @isolatedalysha: Today I made a GitHub account, made my first repository and deployed my first site on Netlify. 
+
+Maybe I will understan…",['github'],"made
+deployed
+first
+today
+github
+repository
+account
+maybe
+site"
+26,"@GaganGulyani Head first python/java/javascript
+You don't know js
+The pragmatic programmer
+Cook books(depending on tje language)
+
+Any specific language you're looking for??","['ignore', 'java', 'python', 'javascript', 'js']","pragmatic
+language
+head
+specific
+looking
+python
+java 
+don
+first
+know"
+27,RT @NS1: Win a LEGO®  Ideas International Space Station from @honeycombio at #INS1GHTS2020! Check out all our swag and giveaways on Thursda…,[],"lego
+international
+station
+ins
+win
+space
+ideas
+check"
+28,"RT @chuckchucknock: Chuck Norris can install a 64 bit OS on 32 bit machines.
+
+#100DaysOfCode #Code #Java #javascript #DEVCommunity #program…","['install', 'chuck']","norris
+chuck
+bit
+machines
+os
+install
+program
+javascript
+java"
+29,"RT @_daffyduke_: 7 Best Courses to learn JVM, Garbage Collection, and Performance Tuning for Experienced Java… https://t.co/Jx9ZitCPXg http…","['jvm', 'garbage', 'java']","tuning
+courses
+garbage
+jvm
+experienced
+learn
+performance
+collection
+http
+best"
+30,"RT @honeycombio: Understand what happens as soon as you ship code, without waiting until after its released to production. Join @PuckPuck a…",[],"ship
+released
+waiting
+production
+soon
+happens
+join
+understand"
+31,"Why do Java developers wear glasses? Because they can't C#
+
+#coding #software #python #java #javascript #array #quirk #joke #funny #development #web #geek #js #leisure #100DaysOfCode #30DaysOfCode #CodeNewbie",[],"joke
+glasses
+quirk
+wear
+funny
+java
+developers
+software
+coding
+development"
+32,"Why was the JavaScript developer sad?
+Because he didn't Node how to Express himself
+
+#OkSorry #coding #software #python #java #javascript #array #quirk #joke #funny #development #web #geek #js #leisure #100DaysOfCode #30DaysOfCode #CodeNewbie",[],"joke
+quirk
+sad
+funny
+javascript
+express
+software
+coding
+developer
+development"
+33,"@fs0c131y My IT frnd working in as a java dev 😂 after ban, he call me ,bro just look for another popular app for tiktok urgently please bro.
+
+Me : 🥔 bro use your java skill and create your own app 😒 and you working on bank apps so u know it.frnd : bro i only know java name that it 😂",[],"bro
+frnd
+java
+ban
+urgently
+skill
+bank
+popular
+app
+working"
+34,"Phython is heaven for me ...
+#computerscience #coding #programming #technology #programmer #python #computer #tech #developer #coder #java #code #javascript #webdeveloper #codinglife #engineering #softwareengineer #machinelearning #softwaredeveloper #computerengineering #linux https://t.co/yDBMBtF2fE",[],"heaven
+coder
+tech
+engineering
+technology
+programmer
+computer
+coding
+developer
+programming"
+35,"RT @techgirl1908: The wait is over! I've just released my free #Java course! 🎉
+
+The course is designed for beginners to programming, so if…",[],"course
+beginners
+released
+designed
+wait
+free
+programming
+java
+just"
+36,"Fun.
+
+This is what you see in Google Cloud Billing if you accidently mis-configure PubSub and it re-delivers every message thousands of times to your infinitely scalable Cloud Run instance.
+
+(with images this time) https://t.co/sHn1codyHV","['pubsub', 'billing', 'cloud', 'configure']","cloud
+pubsub
+accidently
+delivers
+mis
+billing
+infinitely
+scalable
+thousands
+fun"
+37,"RT @kuzzleio: Many thanks to @gabrielpuede who developed a library to use the #Javascript SDK with #Ngrx.Great job, #Angular users will be…",[],"ngrx
+developed
+sdk
+job
+who
+angular
+great
+library
+users
+javascript"
+38,"@Gooner_Fox It’s just a Swiss Army knife. Was using it for PubSub for a while, which is a really sweet feature. Now starting to use Redis Streams and just did some work on transactions. I’m smitten",[],"pubsub
+knife
+army
+sweet
+redis
+streams
+transactions
+just
+feature
+starting"
+39,"RT @debezium: 📢 It's release day -- #Debezium 1.2 Final is out 🔥!
+
+- New #KafkaConnect SMTs for content-based event routing + filtering
+- A…",[],"routing
+filtering
+release
+day
+final
+event
+based
+content
+new"
+40,"RT @dark_mark125: 1⃣| OrbitDB is a serverless, distributed, peer-to-peer database. OrbitDB uses IPFS as its data storage and IPFS Pubsub to…",[],"peer
+serverless
+pubsub
+distributed
+storage
+uses
+database
+data"
+41,A cross-platform and open-source document scanner that I built with React Native at a hackathon  ,['open source'],"scanner
+cross
+react
+native
+platform
+built
+document
+source
+open"
+42,"Need GPU opinions!  I am new to deep learning and am building a workstation to grow into and want to get further into deep learning/ml. I have two GPU options, a single rtx titan or dual 2080ti. I have done basics work with tensor flow / Keras but want to explore more model types, etc. I see different articles list the 11gb single card vram as too small for “some models”. Is this significant?? Does batch size increased on a single card reduce time more than splitting to two cards? Experienced advice would be greatly appreciated!",[],"gpu
+deep
+single
+card
+learning
+titan
+tensor
+explore
+workstation
+keras"
+43,"Are online HCI masters programs worth it? I'm interested in getting my masters in HCI, and want to start in the spring. It doesn't seem to be possible to matriculate at any top schools in the spring (although I'm open to suggestions), but it does seem to be possible to do so at some online schools.  Here are a few:
+
+Brandeis
+
+MICA
+
+Bentley
+
+Iowa State
+
+Depaul
+
+Drexel
+
+Alternatively, I might be willing to matriculate in Fall 2021 to a short part-time program, like those at California College of Art (I think?) and University of California Irvine.
+
+My question is, are any of the above online colleges noteworthy/worth the money and time? What about the CCA and UCI?
+
+Thank you!!",[],"hci
+masters
+california
+online
+schools
+worth
+spring
+irvine
+colleges
+cca"
+44,"A question about the pytorch-cuda version. Hey guys, I am new to DL, and curious about the differences among the pytorch frameworks under the same pytorch version, but different cuda version.  
+
+For example, what is the exact difference between pytorch1.3.1-cuda10.0 and pytorch1.3.1-cuda9.2?
+
+I assume that for a pytorch update, say from 1.2 to 1.3 there will be updates related to the operations, and enable the operation, the team has to come up with different solution for different cuda version? As I know there will be some lib difference between different version of CUDA
+
+It looks like a stupid question, any help would be appreciated!","['frameworks', 'pytorch', 'cuda']","pytorch
+cuda
+version
+cudait
+difference
+dl
+hey
+question
+stupid
+frameworks"
+45,PyTorch LSTM: Text Generation Tutorial. ,[],"pytorch
+lstm
+generation
+tutorial
+title"
+46,"Seeking advices on how to re-run my language model. Hello there!
+
+I'm new to ML and I just approached PyTorch (coming from a short beginning with TensorFlow).
+
+I'm currently having fun with this repo [https://github.com/mar-muel/artificial-self-AMLD-2020/blob/master/3/task\_3.ipynb](https://github.com/mar-muel/artificial-self-AMLD-2020/blob/master/3/task_3.ipynb) that creates sort of like a chatbot trained on chat logs. I followed the Colab and I ended up saving the mode on my drive. 
+
+I know it's probably a stupid question, but I'm now struggling to run the model I previously saved locally on my machine. Any suggestions on how to do it? And what about recalling it in a colab?
+
+At the moment this is what I did (on colab) after copying the model from my drive to a `runs` folder inside of `/content/artificial-self-AMLD-2020/3` :
+
+    !git clone https://github.com/mar-muel/artificial-self-AMLD-2020.git
+    %cd /content/artificial-self-AMLD-2020/3
+    pip install -r requirements.txt
+    !python interact.py --run_name run4
+
+But I'm far from getting the logic here, and of course is not working.
+
+Thanks you in advance for any help and tips.","['model', 'git', 'chat', 'chatbot', 'cd', 'ml', 'python', 'install', 'pip', 'clone']","artificial
+drive
+model
+pytorch
+chatbot
+run
+self
+approached
+advices
+seeking"
+47,"Day 181 of #NLP365 - Learning PyTorch – Language Model With Nn.Transformer And TorchText (Part 2). Day 181.
+
+Continuing from yesterday's post. We are moving onto training and evaluation. Check it out below!
+
+[https://ryanong.co.uk/2020/06/29/day-181-learning-pytorch-language-model-with-nn-transformer-and-torchtext-part-2/](https://ryanong.co.uk/2020/06/29/day-181-learning-pytorch-language-model-with-nn-transformer-and-torchtext-part-2/)
+
+Best,
+
+Ryan",[],"day
+pytorch
+nlp
+ryan
+transformer
+continuing
+nn
+evaluation
+yesterday
+training"
+48,"Running relu on first conv layer and then softmax after passing relu back to first layer. Title says it all. 
+I accidentally ran the output of layer 1 through relu then passed it back to the first layer and ran softmax.
+
+The network still learned with ""better"" results. Is this a correct method what's happening if I do that. If I try to do relu on layer 1 then pass output to layer 2 with softmax the results are worse. 
+
+What might be happening with the incorrect syntax of passing the output back to the first layer?","['network', 'layer']","layer
+relu
+softmax
+first
+back
+ran
+output 
+happening
+passing
+conv"
+49,"$10USD BTC BONUS &amp; Chance To Win 1BTC - Simply Trade $100USD - UK, EU, America, Australia, Asia @ Coinlist.co. No trading or withdraw fees.
+
+#Coinlist.co $10USD Bonus
+Please read the countries that are not supported here
+https://coinlist.co/legal
+
+##Conditions
+1. **New users only**
+2. **Register** using this link
+https://coinlist.co/clt?referral_code=YCHFJA
+3. **Verify your identity**
+4. Sell $100 or more in Crypto
+You can not trade a smaller amount !!
+
+##More Crypto BONUSES
+
+#Gemini
+##Conditions
+1. **New users only**
+2. **Register** using this link
+https://gemini.com/share/gk7obq  
+3. **Verify your identity**
+4. Activate Activetrader Mode, Settings &gt; Exchange &gt; Trade Interface
+This will lower the fees to meet the buy/sell condtion and it will open other other trading pairs.
+4. **Buy or Sell 100USD** of crypto within 30 days of opening an account. 
+BTC is paid out 1 working day after offer completion.
+
+##Gemini Supported Countries / States
+https://gemini.com/areas-of-operation/
+
+The Gemini platform is available to customers in a total of 49 U.S. states, Washington D.C., Puerto Rico, Australia, Canada, Hong Kong, Singapore, South Korea, and the United Kingdom.
+
+
+
+## Celsius.Network Bonus up to $70 USD on Deposit of $200USD
+
+##What Is Celsius.Network ? 
+Celsius is a Secured Crypto Backed loan platform, All loans are backed by at least 150% of the loan value in liquid crypto assets.
+Check out Celcius Network youtube
+https://www.youtube.com/channel/UC3yZY7UVs-zPKBuyNuPinbQ
+
+##Procedure
+Make sure you apply the code before you make a deposit otherwise the code will not activate. New codes are posted often so check back here. 
+Use one or two codes at a time, 1x 50 1x10 max. Otherwise you risk having your rewards canceled.
+
+1. **Download App**
+https://celsiusnetwork.app.link/16078547fa
+2. **Register and Verify** 
+3. **Enter one or two** of these codes below before your deposit. You can do multiple deposits. It is possible to enter them all but you risk them being canceled. 
+4. Make a deposit of $200 or more in Crypto. If you don't have crypto, crypto.com app is free for the next 3 months for buying crypto with card.
+to withdrawl activate new codes then deposit again.
+
+**You can withdraw anytime, funds are not locked in. You can withdraw your bonuses as you get them with out effecting your future bonuses.**
+
+**New Codes - Updated 11/04/2020**
+**MINEABLE** - Deposit $100 BONUS $10 of BTC, Hold for 30 Days
+**SAGA** - Non-US Residents Deposit $100 BONUS $10 paid in SGA when you deposit $100 (any currency) and hold it for 30 days
+**UNITED** US Residents only, Deposit $100USD BONUS $10 BTC Hold 30 Days 
+
+**NEW 4/4/2020**
+**crypt0** - $10 BTC BONUS, After $100USD deposit hold 10 days. 
+
+**Previous**
+**CRYPTOLOVE** - $10USD BONUS BTC after $100USD Deposit Hold for 30 Days
+**CELSIUS10** - $10USD BONUS BTC after $100USD Deposit hold for 10 Days
+**GAIN10** - $10USD in BTC after $500USD Deposit hold for 3 Days
+**HELLO10** - $10USD in BTC after $500USD Deposit hold for 3 Days
+**CERTIFIED10** - $10USD in BTC after $500USD Deposit hold for 3 Days
+
+
+**Referral Credit**
+Deposit 200USD, on first transfer BONUS $10USD
+
+
+##Buying Crypto
+I recommend Stable coins
+USDT,USDC,TUSD,TGBP,TAUD
+
+##Crypto.com App
+Fee Free using a debit card for the next 3 months, simply download the app and make your purchase. There is a small transfer fee.
+
+##Okex
+Bonus on Referral, Use the referral links below
+Use Banxa to buy
+https://www.ozbargain.com.au/node/523947 
+
+
+**See an updated list of Real Tested Crypto Bonuses**
+https://pastebin.com/QMG6fmaJ
+
+#Buying Crypto Bonuses
+
+##Okex Bonus $10USD on first $100usd or more
+**Bonus paid with-in 1-3 working days from purchase, works just about anywhere.
+
+Currencies supported: USD, EUR, GBP, KRW, JPY, RUB, TRY, USH, CAD, AUD, NZD, INR, SGD, NGN, KZT, COP, VND, THB, IDR, PHP, BRL, ARS, MXN, PLN, CHF, SEK, DKK, CZK, NOK, TWD
+
+1. **Register**
+https://www.okex.com/join/1880428
+2. Buy 100USD or more Crypto, Bonus paid in 3 working days. I recomend at least buying $120USD
+3. The third party payment gateway may require ID verfication, It's not required to do it at Okex.
+
+**Banxa is now Fee Free - UK, EU, AU**
+SEPA for users in the European Union - FREE
+Faster Payments Bank Transfer in the United Kingdom - FREE
+POLi for users in Australia - FREE
+iDEAL for users in the Netherlands  FREE
+
+#CoinSpot Australia [Australia Only]
+
+Procedure
+Easy to copy instructions at
+https://pastebin.com/zKn0Wk1p
+
+Register at
+1. Go to Coinspot Australia and enter the code
+**REF9PBJWT**
+When you Register.
+2. Verify
+3. Do a $1 Deposit or More. Use PayID for an Instant Deposit
+4. You will get 10AUD Credit in BTC, Free to Withdraw at anytime to AUD or Crypto.",[],"usd
+deposit
+btc
+crypto
+bonus
+days
+hold
+australia
+celsius
+paid"
+50,Neural Network Optimal Control in Astrodynamics using TensorFlow,"['network', 'tensorflow']","neural
+tensorflow
+optimal
+network
+control
+using"
+51,"Looking for small projects to practice ML. Hi guys, I’m about to take the TensorFlow certification exam and I was looking for some small projects to practice with before the exam.
+
+Projects on the following topics:
+
+1. Convolutional neural network (CNN) or image recognition.
+2. Text classification (NLP).
+3. Time sequences.
+
+Does anyone have any ideas for easy but good for practice projects to do before the exam? Thank you.",[],"exam
+projects
+practice
+convolutional
+small
+looking
+certification
+recognition
+neural
+ml"
+52,"MoCA Network Behind 3rd Party Router with Bridge Mode on in X1 Xfinity Modem. I've found so many discussions on MoCA, but nothing to answer my specific issue...Looking for help!
+
+I've got the **Xfinity X1 modem/route**r.  The house is run with CAT5 and coax and wifi and everything works great. **The cable boxes, 8 or 9 of them I suppose, all come into the MoCA port on the modem** via one coax.
+
+I installed a Unifi USG router/firewall, so I want to enable bridge mode (deactivate routing and DHCP) in the Xfinity modem/router.  This works great, except it kills the MoCA network served by the Xfinity modem and thus all the cable boxes.  I've seen many posts asking about the same sort of issue, but no answers...
+
+**Is it possible** to have that single coax cable- that splits out to all the cable boxes- plugged into my network BEHIND the USG? ideally via a single adapter plugged into my ethernet switch..   *(I thought about splitter/amplifier problems, etc, but it all it worked fine when plugged in to the MoCA port on the modem, so i think the coax wiring is fine.)*  I ordered a single adapter on Amazon ""Actiontec/TiVo MOCA Adapter for Ethernet Over Coax, 1 Gbps Bonded 2.0 MoCA Adapter (ECB6200) Pack of 1"" and did not have any luck.
+
+Any suggestions? Are there forwarding rules or ports or any other kind of setup I need to do in the USG firewall?
+
+&amp;#x200B;
+
+Thanks in advance for any help! I've been pouring over threads for hours upon days.","['network', 'modem', 'adapter', 'pack', 'firewall', 'forwarding', 'ports', 'port']","modem
+coax
+cable
+adapter
+boxes
+router
+plugged
+ethernet
+bridge
+network"
+53,"bitcoin price emailed. [https://pastebin.com/DDXqPW9J](https://pastebin.com/DDXqPW9J)
+
+&amp;#x200B;
+
+can someone make it so that the out put which looks something like this
+
+    The price in British Pound Sterling - GBP: 7,419.9110
+    Time of the price: Jun 30, 2020 02:58:00 UTC
+
+gets saved in a .txt and emails the last 5 entries of the .txt to a email of choice
+
+&amp;#x200B;
+
+just looked and the api might be broken beasue its displaying the wrong value?
+
+Or if anyone knows a script which does the same thing pls link it thanks","['api', 'pound', 'gbp', 'bitcoin', 'email']","price
+txt
+sterling
+pound
+emailed
+british
+bitcoin
+gbp
+jun
+amp"
+54,"Use of Sipeed for 1D Signal Classification with Maixpy. Hi, I am looking to classify 1D signals (like EEG and EMG), rather than images, using Maixpy. In this case, the camera was replaced by electrode acquisition board. I have a Tensorflow model I am looking to implement on it. Any suggestions, or documentation and examples, I could follow? Thanks.","['acquisition', 'camera']","acquisition
+looking
+classify
+signals
+classification
+tensorflow
+board
+signal
+replaced
+camera"
+55,"Transposing in Linear Regression. I am trying to change the (w \* x\^t + b) in this code to the more traditional (w\^t \* x + b) form.
+
+    import tensorflow as tf
+    import numpy as np
+    
+    x_data = np.random.rand(2000,3) 
+    w_real = [0.3,0.5,0.1]
+    b_real = -0.2
+    
+    noise = np.random.randn(1,2000)*0.1
+    y_data = np.matmul(w_real,x_data.T) + b_real + noise
+    
+    NUM_STEPS = 10
+    
+    g = tf.Graph()
+    wb_ = []
+    with g.as_default():
+        x = tf.placeholder(tf.float32,shape=[None,3])
+        y_true = tf.placeholder(tf.float32,shape=None)
+    
+        with tf.name_scope('inference') as scope:
+            w = tf.Variable([[0,0,0]],dtype=tf.float32,name='weights')
+            b = tf.Variable(0,dtype=tf.float32,name='bias')
+            # Here w is initialized as a row vector; It works in this case because
+            # transposing x will yield the same result as in the traditional equation (wt * x + b)
+    
+            y_pred = tf.matmul(w,tf.transpose(x)) + b
+    
+        with tf.name_scope('loss') as scope:
+            loss = tf.reduce_mean(tf.square(y_true-y_pred))
+    
+        with tf.name_scope('train') as scope:
+            learning_rate = 0.05
+            optimizer = tf.train.GradientDescentOptimizer(learning_rate)
+            train = optimizer.minimize(loss)
+    
+        #before starting, initialize the variables. We will 'run' this first.
+        init = tf.global_variables_initializer()
+        with tf.Session() as sess:
+            sess.run(init)
+            for step in range(NUM_STEPS):
+                sess.run(train,{x: x_data, y_true: y_data})
+                if (step % 5 == 0):
+                    print(step, sess.run([w,b]))
+                    wb_.append(sess.run([w,b]))
+    
+            print(10, sess.run([w,b]))
+
+I was given the hint that changes need to be made somewhere within these lines of code, as well as a rule that we COULD NOT change line 5.
+
+    x_data = np.random.rand(2000,3) 
+    
+    x = tf.placeholder(tf.float32,shape=[None,3])
+    y_true = tf.placeholder(tf.float32,shape=None)
+    
+    w = tf.Variable([[0,0,0]],dtype=tf.float32,name='weights')
+    b = tf.Variable(0,dtype=tf.float32,name='bias')
+
+I attempted to change the code to the (w^(t) \* x + b) form and then work with the error codes until I got it working, however I kept running into circular problems where changing the shapes would only bring up different issues.
+
+Note: This is ran using Tensorflow 1.15","['minimize', 'import', 'placeholder', 'graph', 'append', 'global', 'loss', 'np', 'equation', 'tensorflow', 'noise', 'random', 'numpy', 'x', 'init', 'range', 'initializer', 'form']","tf
+np
+sess
+placeholder
+matmul
+optimizer
+noise
+dtype
+traditional
+random"
+56,"JQuery posting over HTTPS. So my site seems to have issues after I added SSL to the custom domain. When I do a post request using JQuery I get a 404 page not found error. I feel like it's because it's doing it through https and not http, but why would it be a 404 error? Wouldn't it be a different one? It worked fine when I just got the domain and the site did not have ssl.
+
+Also, I'm using Heroku with a custom domain to host a flask app if that helps at all","['jquery', 'posting', 'flask', 'issues', 'app']","domain
+https
+ssl
+custom
+site
+jquery
+flask
+heroku
+helps"
+57,Android 3.0 Honeycomb: The Android version we all forgot.,['android'],"honeycomb
+android
+forgot
+version"
+58,"4 Free Stocks + $385 Free Cash/Bitcoin Bonuses - Sign Up for Webull, Moomoo, M1 Finance, SoFi Invest, Robinhood, Crypto.com, Voyager, BlockFi, Gemini, Celsius Network, Coinbase - Commission Free Stock Trading + Cryptocurrency Apps. Get up to **four (4) free stocks** (valued up to $2400 total) plus a **$85 cash bonus** when you sign up for any commission free stock trading app with no deposit required like **Robinhood** and **Webull** or a small deposit like **SoFi Invest**, **Moomoo**, and **M1 Finance**.  Free stocks are available to **US residents only**.
+
+Plus enjoy **a minimum of $140 (up to $300) in free cash/Bitcoin bonuses** from **Crypto.com** ($50 Cash), **Voyager** (**$25 Bitcoin**), **BlockFi** (**$10 Bitcoin**), **Celsius Network** (**$30 Bitcoin Bonus**), **Gemini** (**$10 Bitcoin**), **Coinbase** (**$10 Bitcoin + $160 Bonus**), and **Crypterium** (**$5 Cash**) by signing up and making a small deposits/transactions!  All companies are regulated and licensed.  Crypto.com, Celsius Network, BlockFi, Gemini, Coinbase, and Crypterium are open to **users globally**, but Voyager and Binance.US are available to **US customers only**.
+
+More details below! Be sure to use each referral link or promo code to get your free stock, cash, and Bitcoin bonuses and thank you!
+
+* **Webull with 2 Free Stocks -** [**https://act.webull.com/i/Vofifd5bibi6/3jx/us\_na\_invite\_year02**](https://www.google.com/url?q=https%3A%2F%2Fact.webull.com%2Fi%2FVofifd5bibi6%2F3jx%2Fus_na_invite_year02&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNE4t0egh4c7ib4Ma2wNZLNEgtEmVw)
+* **SoFi Invest with $75 Cash Bonus -** [**https://www.sofi.com/share/invest/1919989**](https://www.sofi.com/share/invest/1919989)
+* **Moomoo with 1 Free Stock** \- [**https://j.moomoo.com/001zFH**](https://j.moomoo.com/001zFH)
+* **M1 Finance with $10 Cash Bonus** \-  [**https://m1.finance/wG5ouGBolHyU**](https://m1.finance/wG5ouGBolHyU)
+* **Robinhood with 1 Free Stock -** [**http://invite.robinhood.com/davids2005**](http://invite.robinhood.com/davids2005)
+* **Crypto.com** **with $50 Cash Bonus** \- [**https://platinum.crypto.com/r/bcsbb2r465**](https://platinum.crypto.com/r/bcsbb2r465) (or use code **bcsbb2r465** during signup)
+* **Voyager Crypto Trading App with $25 in Free Bitcoin** \- [**https://apps.apple.com/us/app/voyager-buy-bitcoin-crypto/id1396178579**](https://apps.apple.com/us/app/voyager-buy-bitcoin-crypto/id1396178579) or [**https://play.google.com/store/apps/details?id=com.investvoyager**](https://play.google.com/store/apps/details?id=com.investvoyager) (and use code **O6E5JJ** during signup)
+* **BlockFi with $10 in Free Bitcoin -** [**https://blockfi.com/?ref=c316afd8**](https://blockfi.com/?ref=c316afd8) (or use referral code **c316afd8** during signup)
+* **Celsius Network with $30 in Free Bitcoin** \- [**https://celsiusnetwork.app.link/1891962be1**](https://celsiusnetwork.app.link/1891962be1) (or use promo code **1891962be1** during signup)
+* **Gemini with $10 in Free Bitcoin** \- [**https://gemini.com/share/mllyldt7**](https://gemini.com/share/mllyldt7)
+* **Coinbase with $10 in Free Bitcoin + $160 Bonus** \- [**https://www.coinbase.com/join/5a29d6adad50d7010b47bac0**](https://www.coinbase.com/join/5a29d6adad50d7010b47bac0)
+* **Crypterium Wallet App with $5 Cash Bonus** \- [**https://crypterium.app.link/DU5iX9vsDY**](https://crypterium.app.link/DU5iX9vsDY) (or referral code **cdgy4** during signup)
+
+# Webull (2 Free Stocks up to $1400)
+
+Sign up for [**Webull**](https://www.google.com/url?q=https%3A%2F%2Fact.webull.com%2Fi%2FVofifd5bibi6%2F3jx%2Fus_na_invite_year02&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNE4t0egh4c7ib4Ma2wNZLNEgtEmVw) ([**https://act.webull.com/i/Vofifd5bibi6/3jx/us\_na\_invite\_year02**](https://www.google.com/url?q=https%3A%2F%2Fact.webull.com%2Fi%2FVofifd5bibi6%2F3jx%2Fus_na_invite_year02&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNE4t0egh4c7ib4Ma2wNZLNEgtEmVw)**)** and receive a **free stock (valued $2.50-$250) when you open a stock brokerage account** (within 24 hours) with no deposit required.
+
+Plus, if you make an **initial deposit of $100 or more within 30 days**, you'll get **another free stock worth between $12 to $1400**!
+
+That's **two free stocks**!  Webull is available on Android and iOS!
+
+Webull is registered and regulated by the Securities and Exchange Commission (SEC) and the Financial Industry Regulatory Authority (FINRA). It is also a member of the SIPC which protects securities customers of its members up to $500,000 (including $250,000 for claims for cash).
+
+Remember to sign up and get your two free stocks after $100+ deposit at [**https://act.webull.com/i/Vofifd5bibi6/3jx/us\_na\_invite\_year02**](https://www.google.com/url?q=https%3A%2F%2Fact.webull.com%2Fi%2FVofifd5bibi6%2F3jx%2Fus_na_invite_year02&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNE4t0egh4c7ib4Ma2wNZLNEgtEmVw)
+
+Thank you!
+
+# SoFi Invest ($75 Cash Bonus)
+
+Open a **SoFi Invest Account** ([**https://www.sofi.com/share/invest/1919989**](https://www.sofi.com/share/invest/1919989)) today and get a **$50 cash bonus** to invest in **ANY stock or ETF with no trading fees**!
+
+Just open a **SoFi Invest** **Account** with an **initial deposit of $1000 or more** and SoFi will instantly give you a **$50 cash bonus** to invest in any stock which you can sell and cash out the money back to your bank account.
+
+Plus get **another $25 cash bonus** when you buy **$10 or more of crypto** like Bitcoin, Litecoin or Ethereum. **That's a total of $75 cash bonuses with SoFi Invest!**
+
+I love SoFi Invest because you can invest in **any stock or ETF** like Apple, Amazon or Google for **as low as $1 with fractional share investing** and **no fees to buy or sell!**  Be sure to signup at [**https://www.sofi.com/share/invest/1919989**](https://www.sofi.com/share/invest/1919989)
+
+Thank you!
+
+# Moomoo (1 Free Stock up to $1000)
+
+Sign up for [**Moomoo**](https://j.moomoo.com/001zFH) Commission Free Stock Trading App ([**https://j.moomoo.com/001zFH**](https://j.moomoo.com/001zFH)) and **open a trading account** and you're **guaranteed to receive a free stock (valued between $10-$1000) when you make an initial deposit of $500 or more.**
+
+You'll have a **1 in 250 chance to win a free stock in Tesla, Netflix, Apple or Facebook** and **1 in 100 chance to win a free stock in Microsoft, Disney, Starbucks or IBM**.
+
+You don't need to buy stocks with your deposit.  You can simply get your free stocks, sell it and cash out back to your bank.  It took me about **20 minutes for my account to get verified and receive my free stock within 3 days after my initial deposit cleared.**
+
+Moomoo (Futu Inc.) is a member of FINRA and SIPC so your account is protected up to $500,000.  Moomoo app is available for iOS and Android!
+
+Be sure to signup with my referral link to get your free stocks! - [**https://j.moomoo.com/001zFH**](https://j.moomoo.com/001zFH)
+
+Thank you!
+
+# M1 Finance ($10 Cash Bonus)
+
+Sign up for a free [**M1 Finance**](https://m1.finance/wG5ouGBolHyU) stock trading account ([**https://m1.finance/wG5ouGBolHyU**](https://m1.finance/wG5ouGBolHyU)) and **you'll get a $10 cash bonus after you make an initial deposit of $100 or more** when you open a **taxable (non-retirement) account.**  You can choose to invest the cash bonus or withdrawal the money to your bank!
+
+If you open a **taxable (non-retirement) account**, then you must make **initial deposit of $100 or more** to get $10 cash bonus.  If you open an **IRA account**, then you must make **initial deposit of $500 or more** to get bonus and open a **taxable (non-retirement) account.**
+
+**M1 Finance** allows you to **buy fractional shares as low as $0.01** on stocks and ETFs like **Tesla**, **Amazon**, and **Google** with **no trading/commission fees** plus there are no monthly fees or account minimums.  You can open a regular investment, IRA, and/or Roth IRA account plus your accounts are SIPC and FDIC insured!
+
+Be sure to use my [**M1 Finance**](https://m1.finance/wG5ouGBolHyU) signup link - [**https://m1.finance/wG5ouGBolHyU**](https://m1.finance/wG5ouGBolHyU)
+
+Thank you!
+
+# Robinhood (1 Free Stock up to $200)
+
+Sign up for a free [**Robinhood**](http://invite.robinhood.com/davids2005) stock trading account ([**http://invite.robinhood.com/davids2005**](http://invite.robinhood.com/davids2005)) and you'll get **a free stock valued up to $200 instantly** (like Ford, Apple or Facebook) with **no deposit required**!  Its free money just for signing up!
+
+**Robinhood** offers **commission-free trading** on stocks and ETFs via web and mobile plus your account is SIPC insured!  Plus you can signup for a **free Cash Management Account** with **1.80% APY interest on cash** (FDIC insured up to $1.25 million), free Mastercard debit card, no foreign transaction fees, no account minimums and no fee 75,000+ ATMs.
+
+Be sure to use my Robinhood signup link and thanks! - [**http://invite.robinhood.com/davids2005**](http://invite.robinhood.com/davids2005)
+
+Thank you!
+
+# Crypto.com ($50 Cash Bonus + Up to 12% APY Interest)
+
+Get **$50 free cash bonus** when you signup and open a [**Crypto.com**](https://platinum.crypto.com/r/bcsbb2r465) account ([**https://platinum.crypto.com/r/bcsbb2r465**](https://platinum.crypto.com/r/bcsbb2r465)) or use referral code **bcsbb2r465** during registration.  After you **buy and hold 50 MCO (Crypto.com) tokens**, the **$50 cash bonus is unlocked** to your wallet to spend with your **free MCO Visa prepaid card** which **earns up to 5% cashback on all purchases with free Netflix, Spotify or Amazon Prime membership**!
+
+Crypto.com is the best place to **buy and sell cryptocurrency with fees as low as 0.10%**.  Plus you'll earn **up to 8% interest per year** on the cryptos you deposit into your Crypto.com account like **Bitcoin**, **Ethereum**, **Litecoin**, **Binance Coin, and PAX Gold.**  You'll earn up to **12% interest per year on stablecoin deposits like USDT, USDC, DAI, PAX, GUSD** and **TGBP**.  Interest is paid weekly!
+
+You can buy **50 MCO (Crypto.com) tokens** via the Crypto.com app with bank transfer, credit card or crypto like Bitcoin.  50 MCO will cost between $200 to $250 depending on the price of MCO tokens.  The 50 MCO tokens will be locked up for 6 months.
+
+Visit [**https://platinum.crypto.com/r/bcsbb2r465**](https://platinum.crypto.com/r/bcsbb2r465) or download the Crypto.com app for iOS or Android and use my referral code **bcsbb2r465** during registration to get your instant $50 cash bonus.
+
+# Voyager ($25 in Free Bitcoin + Up to 6% APY Interest)
+
+Get **$25 in free Bitcoin (BTC)** when you download and signup for the **Voyager Crypto Trading App** with code **O6E5JJ** and **trade** **at least $100 or more in crypto** (buy and/or sell).
+
+To get your **$25 in free Bitcoin after trading (buy/sell) $100 or more in crypto**, use reward/referral code **O6E5JJ** during registration:
+
+* Download the iOS app at [**https://apps.apple.com/us/app/voyager-buy-bitcoin-crypto/id1396178579**](https://apps.apple.com/us/app/voyager-buy-bitcoin-crypto/id1396178579) \- use reward code **O6E5JJ**
+* Download the Android app at [**https://play.google.com/store/apps/details?id=com.investvoyager**](https://play.google.com/store/apps/details?id=com.investvoyager) \- use reward code **O6E5JJ**
+
+**Voyager App** allows you to **connect a bank account** and deposit cash directly.  The easiest way to get the bonus is depositing $55 into your account to buy Bitcoin/Ethereum.  Then sell the Bitcoin/Ethereum immediately.  You'll receive your $25 in free Bitcoin bonus and can transfer the money back to your bank.
+
+**Voyager App** offers commission-free cryptocurrency trading for over 20 cryptos and its currently available to residents in all U.S. states (excluding New York state).
+
+Plus, you can **earn monthly interest on your crypto holdings up to 6% APY interest annually** on Bitcoin, Ethereum, Litecoin, USDC, and USDT!
+
+Please use my referral code by downloading the [**iOS app**](https://apps.apple.com/us/app/voyager-buy-bitcoin-crypto/id1396178579) or [**Android app**](https://play.google.com/store/apps/details?id=com.investvoyager) and use reward/referral code **O6E5JJ** during registration.  Its an easy way to earn a $25 worth of free Bitcoin after you buy $100 or more in crypto and cash out the profit back to your bank!
+
+Thank you!
+
+# BlockFi ($10 in Free Bitcoin + Earn up to 8.6% Per Year on Crypto Deposits)
+
+Sign up for [**BlockFi**](https://blockfi.com/?ref=c316afd8) ([**https://blockfi.com/?ref=c316afd8**](https://blockfi.com/?ref=c316afd8)) and **receive $10 in free Bitcoin bonus** when you **deposit $100 or more in crypto** and **maintain that balance or greater for at least 30 days**.  The bonus is paid on the following interest payment day which is the 1st of the following month.  **This promotional $10 Bitcoin bonus is available to all customers globally!**
+
+Plus you'll earn **up to 8.6% per year** on the cryptos you deposit into your BlockFi account like **Bitcoin**, **Ethereum**, **Litecoin**, **PAX**, **GUSD** and **USDC**.  Interest is compounded monthly and paid out every month.
+
+You can download the iOS app ([**https://apps.apple.com/us/app/blockfi/id1506274532**](https://apps.apple.com/us/app/blockfi/id1506274532)) or Android app ([**https://play.google.com/store/apps/details?id=com.blockfi.mobile**](https://play.google.com/store/apps/details?id=com.blockfi.mobile)).  Be sure to use referral code [**c316afd8**](https://blockfi.com/?ref=c316afd8) during signup to get your $10 Bitcoin bonus after initial $100 or more deposit.
+
+BlockFi supports bank wire transfers and deposits via crypto.  If you want to buy crypto and deposit on BlockFi, you will need to use [**Coinbase**](https://www.coinbase.com/join/silva_jt8), [**Gemini**](https://gemini.com/share/mllyldt7) or [**Binance US**](https://www.binance.us/?ref=35011786) to link your bank account to buy crypto and transfer to BlockFi.
+
+In addition to earning interest on your crypto deposits, **BlockFi** allows you to exchange cryptos like BTC for Ethereum and take out a loan without selling your crypto.
+
+**BlockFi is available to all customers globally including in all 50 US states**!  BlockFi is a licensed and regulated company in the United States.
+
+Remember to sign up at [**https://blockfi.com/?ref=c316afd8**](https://blockfi.com/?ref=c316afd8) to get your $10 in free Bitcoin bonus.
+
+Thank you!
+
+# Celsius Network ($30 in Free Bitcoin + Up to 11% APY Interest)
+
+Sign up on [**Celsius Network**](https://celsiusnetwork.app.link/1891962be1) ([**https://celsiusnetwork.app.link/1891962be1**](https://celsiusnetwork.app.link/1891962be1)) and you'll get **$20 in free Bitcoin (BTC)** after **first deposit of $200 or more in crypto** (like Bitcoin, Ripple, Ethereum, USDT, USDC) within 30 days!  In addition, there are **additional promotional codes** that you can input into the app after you complete the registration and KYC process which will earn you an **additional $10 in free Bitcoin/crypto after qualifying additional deposits totaling $100 or more**.  **You'll earn a total of $30 in free Bitcoin/crypto bonuses!**
+
+You'll also earn up to **11% APY interest** on all the cryptos you deposit including **BTC, ETH, BCH, LTC, XRP, XLM, and USD stablecoin (like USDC, USDT, DAI, PAX)** with **no fees to deposit or withdrawal**!
+
+After you make your **initial $200 or more in crypto deposit to get $20 in free Bitcoin**, enter the following **promo codes** in the app to **earn additional $10 more free Bitcoin**:
+
+* **SPRING** \- Get $10 free in BTC after depositing $100+ and holding it for 30 days with each promo code
+
+**DO NOT WITHDRAW** any crypto from your account for 30 days OR YOU WILL LOSE the bonuses.  **Wait until all bonuses are unlocked (after 30 days)** if you wish to withdraw your crypto.
+
+I love Celsius because **interest is paid out every Monday**!  Your free Bitcoin is **locked for 30 days** after your initial deposit and available to withdrawal after 30 days. You cannot withdraw any funds deposited for 30 days or else you will lose the Bitcoin bonus!
+
+At the moment you can't link a bank account to deposit cash to your **Celsius Network** account so you'll need to use [**Coinbase**](https://www.coinbase.com/join/silva_jt8), [**Binance US**](https://www.binance.us/?ref=35011786), or [**Gemini**](https://gemini.com/share/mllyldt7) to buy crypto like **Bitcoin** or **USDC** and transfer to your Celsius account.  Then transfer back to cash out and back to your bank.
+
+Remember to use my Celsius Network referral link - [**https://celsiusnetwork.app.link/1891962be1**](https://celsiusnetwork.app.link/1891962be1) or use promo code [**1891962be1**](https://celsiusnetwork.app.link/1891962be1) during registration.
+
+In summary, you will earn a total of **$30 in free crypto/Bitcoin** after **depositing at least $300+ in crypto** into your Celsius Network account within 30 days.
+
+Thank you!
+
+# Gemini ($10 in Free Bitcoin)
+
+Get **$10 in free Bitcoin** when you signup for [**Gemini**](https://gemini.com/share/mllyldt7), a US-based Regulated Cryptocurrency Exchange.  This offer is available to **NEW USERS ONLY** residing in the United States, United Kingdom, Canada, Hong Kong, Singapore, and South Korea.
+
+Follow these steps:
+
+1. Sign up for a Gemini account with my referral link at [**https://gemini.com/share/mllyldt7**](https://gemini.com/share/mllyldt7) (new users only)
+2. Verify your identity
+3. Link your bank account and deposit money
+4. **Buy or Sell 100 USD** of any crypto **within 30 days** of opening an account and Gemini will deposit your bonus of **$10 worth of Bitcoin** within a day.
+
+After you receive your **free $10 of Bitcoin**, you can sell your cryptos and transfer the cash back to your bank!  Gemini also allows you to transfer any crypto to an external wallet for free with no withdrawal fees.
+
+Thank you!
+
+# Coinbase ($10 in Free Bitcoin + $160 in Bonus Crypto)
+
+Sign up on [**Coinbase**](https://www.coinbase.com/join/silva_jt8) ([**https://www.coinbase.com/join/5a29d6adad50d7010b47bac0**](https://www.coinbase.com/join/5a29d6adad50d7010b47bac0)) and get **$10 of free Bitcoin (BTC)** after you **buy or sell $100 or more in cryptocurrency** like Bitcoin, Ethereum, and Bitcoin Cash.   You will also need to verify your identity.
+
+In addition, get up to **$160 in free cryptocurrency** by learning, watching videos, and answering simple questions about other cryptocurrencies like XRP, DAI and EOS without any deposit or trading required.  You can easily make up to $170 in free cryptocurrency and cash out the money back to your bank!
+
+**Plus if you're a US customer, you earn 1.25% APY interest holding USDC tokens!**
+
+Coinbase is one of the most trusted and easiest place to buy, sell, and manage your digital currency portfolio and its available in 100+ countries around the world!
+
+Remember to use my referral link to get your **$10 of free Bitcoin after trading $100 or more in crypto plus another $160 in free bonuses** \- [**https://www.coinbase.com/join/5a29d6adad50d7010b47bac0**](https://www.coinbase.com/join/5a29d6adad50d7010b47bac0)
+
+Thank you!
+
+# Crypterium ($5 Cash Bonus)
+
+Have you tried the Crypterium App ([**https://crypterium.app.link/DU5iX9vsDY**](https://crypterium.app.link/DU5iX9vsDY)) for iOS and Android? It lets you buy, send, exchange or cash out crypto, and even get the first global crypto card!   The [**Crypterium Wallet**](https://crypterium.app.link/DU5iX9vsDY) is regarded as one of the most promising fintech solutions by KPMG and H2 Ventures. Making crypto as easy to spend as cash!
+
+The Crypterium App supports cryptocurrencies such as Bitcoin, Ethereum, Litecoin, Bitcoin Cash, CRPT, XRP, LINK, MKR, QASH, BAT, ZRX, REP, OMG, USDC, USDT, DAI, and EURS.
+
+Sign up now and get a $5 cash bonus by **verifying your identity** and **make a transaction worth €50/$60 or more (like buy crypto)** via the Crypterium Wallet app.
+
+Register at [**https://crypterium.app.link/DU5iX9vsDY**](https://crypterium.app.link/DU5iX9vsDY) to receive a link to download the app or use my referral code **cdgy4** during signup at [**https://crypterium.com**](https://crypterium.com/) and get your **$5 cash bonus**!
+
+Thank you!
+
+&amp;#x200B;
+
+https://preview.redd.it/z2pkvum4by751.png?width=1818&amp;format=png&amp;auto=webp&amp;s=bc81e3b2db21bc9817a0c1120f4e09c9db420b74",[],"bitcoin
+free
+crypto
+cash
+deposit
+bonus
+account
+stock
+trading
+invest"
+59,"Flutter and AWS. Hey everyone, how's it going?
+
+Some background: I'm an intern in a small software company and the owners are willing to launch new products with a more up-to-date tech stack (nowadays we pretty much have one major client only,). My boss asked me to do some research and I think using Flutter with AWS serverless would be a good shot.
+
+I'm new to both Flutter and AWS , and I wanna make a very simple app in order to learn the basics on how to integrate AWS to the application. Basically it'd be a ""hello world"" app, in which the user inputs their name, taps a button and it outputs ""hello, name"" and then stores the name of the person in an AWS database (dynamoDB). So the ""architecture"" would be something like:
+
+Flutter app as the front-end — calls API Gateway — calls Lambda Function — stores names in DynamoDB.
+
+So I have two questions:
+
+1. does that architecture even make sense? is it possible to work with it? if so, does anybody have any feedback on it?
+2. How would I go about actually doing the integration between the Flutter front-end and API Gateway + Lambda? I have done some AWS tutorials but I feel like they weren't really helpful for what I wanna do.
+
+Thank you very much sorry if these are too simple questions i'm really new to serverless",[],"aws
+serverless
+gateway
+wanna
+lambda
+architecture
+stores
+front
+hello
+questions"
+60,"HELP! Downloading Mac OS Catalina to USB. Hi there, thank you for taking the time to read. 
+
+A new SSD &amp; Battery/Charger was required for the 2013 MBP retina 13"" I purchased. I got the battery kit from [ifixit.com](https://ifixit.com). I got the OWC aura x2 Pro 240gb SSD. I thought I'd internet recover the latest OS by holding OPTION+COMMAND+R, but it didn't work. 
+
+The Mac said no disk was detectable, so in all my ignorance, my two questions are:
+
+1. How do I download Mac OS Catalina, using Ubuntu, onto a Flash Drive?
+2. How will the mac detect the disk (SSD)?
+
+Thank you for your time, i'm actively researching, so all tips are appreciated!","['ubuntu', 'battery', 'downloading', 'catalina', 'download', 'flash', 'disk']","mac
+ssd
+battery
+os
+catalina
+disk
+mbp
+charger
+aura
+ignorance"
+61,"I've been able to get a few more engineers interested in helping us use and evaluate Honeycomb with our data, so I'm hoping that we have more people show up here in this proof-of-concept channel","['honeycomb.io', 'honeycombio', 'proof', 'channel', 'honeycomb', 'evaluate']","honeycomb
+engineers
+proof
+helping
+evaluate
+channel
+concept
+interested
+hoping
+people"
+62,I also used Honeycomb to prep and track around an AWS RDS Postgresql upgrade we did one evening to understand how Amperity core services would be impacted by the maintenance. I found Honeycomb very useful to query and explore the telemetry we're sending it to understand the impact of that operation.,"['aws', 'honeycomb.io', 'maintenance', 'honeycombio', 'services', 'postgresql', 'rds', 'query', 'honeycomb']","honeycomb
+impacted
+evening
+prep
+explore
+understand
+rds
+maintenance
+impact
+upgrade"
+63,"*Admins: set up Google Calendar on behalf of your team*
+As an admin for Honeycomb Pollinators, we wanted to let you know about a new feature designed to help more users on your team to stay on top of their calendar right from Slack.
+
+*How it works:*
+- G Suite administrators can now perform a <https://support.google.com/a/answer/172482?hl=en|domain wide install> of the Google Calendar app in any workspace where the app is installed in Slack.
+- As an admin, you’re granting permission to the Google Calendar app in Slack on behalf of members on your team. This means that each individual in your workspace will have their account automatically connected to the app so they don’t need to complete the permissions process on their own. 
+- After the domain wide auth is deployed, each person in your workspace can set personal preferences—like configuring notifications and syncing their status—or choose to disconnect their calendar from the app.
+
+*Get started* by visiting the Settings button in your calendar's <slack://app?team=T4T3A2T63&amp;id=ADZ494LHY&amp;tab=home|home tab>
+
+️:information_source: <https://slack.com/help/articles/360047862573-Enable-domain-wide-authentication-for-calendar-apps-in-Slack|Learn more>",[],"calendar
+slack
+workspace
+behalf
+team
+app
+google
+admin
+honeycomb
+granting"
+64,"hi all, we're seeing sporadic, but increasingly common cases where the secure-tenancy app is throwing 500s for a short time. nothing in the logs. is there any way to get better visibility into what's going on with that?",['app'],"tenancy
+sporadic
+increasingly
+visibility
+secure
+throwing
+seeing
+short
+hi
+logs"
+65,"We have a system that paginates through external APIs, and apparently it can churn through thousands of pages. It’s pretty neat when you breakdown the heatmap by endpoint - it’s like a field of grass/chives <https://p-MrFZMAV.t0.n0.cdn.getcloudapp.com/items/JruLnZ97/Screen%20Recording%202020-06-26%20at%2003.10%20pm.gif?v=a8c08f187089ada8a8ec6ed6e55e370f>",[],"churn
+heatmap
+neat
+grass
+breakdown
+thousands
+apis
+apparently
+endpoint
+external"
+66,"I am trying to get my graphql traces to connect--from my Apollo instance I am generating a span and my downstream Starlette app is generating spans but I’m not sur ethe best way to hand off the span from apollo, which uses the fetch library",[],"apollo
+generating
+ethe
+span
+sur
+graphql
+downstream
+traces
+spans
+hand"
+67,"For anyone looking to use the OpenTelemetry Collector in a Kubernetes environment, we now have a Helm chart ready to go.  By default it will configure the collector with the recommended processors (memory limiter, queued retry, batch), and the standard open source receivers for OTLP, Jaeger and Zipkin formats.  You can modify the entire config or just portions of it via the Helm chart's values.  <https://github.com/honeycombio/helm-charts/tree/master/opentelemetry-collector>","['environment', 'kubernetes', 'opentelemetry']","collector
+chart
+zipkin
+jaeger
+receivers
+portions
+kubernetes
+processors
+formats
+recommended"
+68,"Hi again.  Our current design calls for tail-sampling of events.  I’ve been looking at blog posts, etc. on the Honeycomb website and unless I’ve missed stuff, it appears that that the sampling strategies (at least for a JVM server) are “roll your own” in the sense that while the Honeycomb Java library (which we’re not currently using anyways) gives a way to tag each event with a sample rate, it’s up to the service developers to do anything higher-level than that.
+
+So I was wondering if there’s been anything new in that space since those posts were written last year (or earlier) and/or what your customers who do tail sampling generally do.  For example, have people used the OpenTelemetry collector (which I think has some tail-sampling capability) as an intermediary?",[],"sampling
+honeycomb
+tail
+posts
+intermediary
+strategies
+collector
+roll
+higher
+generally"
+69,"<@U0159PL9BGA> this is fantastic! I'll give this a go this week and let you know if I have any comments. At the moment we have exporters for Go, Python and .NET, it'd be great to add this to the collection!",[],"fantastic
+week
+comments
+moment
+collection
+great
+give
+python
+.net"
+70,"So, one of our plans (which as I understand is a bit unusual) is to have external clients create a span, propagate the context to our cloud services, have them create child spans of that, send a response, and then have the external client close the span.  The external client would be sending any spans it creates to HC via an ingest service we’d have which would “forward” them to HC (so clients would *not* be directly talking to HC).
+
+Something like that brings up the possibility of time/timestamp skew between the external clients and the cloud services. So we were curious about any recommendations you might have on reconciling received timestamps with the cloud services’ idea of time.",[],"external
+cloud
+hc
+spans
+services
+clients
+ingest
+span
+skew
+plans"
+71,Hi everyone. We are using honeycomb-opentracing-proxy to publish the kamon spans onto honeycomb and facing certificate issues. Somehow the proxy is using the application custom trust store instead of the os trust store and getting the error `x509: certificate is valid for *.&lt;our-domain&gt; not <http://api.honeycomb.io|api.honeycomb.io>`,"['publish', 'honeycomb.io', 'certificate', 'opentracing', 'honeycombio', 'kamon', 'proxy', 'honeycomb']","honeycomb
+trust
+certificate
+proxy
+store
+spans
+publish
+facing
+hi
+domain"
+72,"Is it normal to be rate limited every day? I was wondering if I'm instrumenting my services correctly. I've treated Honeycomb as something I apply to every function in a call stack, but it's looking like I'll need to upgrade to the enterprise plan, even though I've only instrumented one API call (its an add to cart function for an ecommerce site).",[],"honeycomb
+treated
+enterprise
+call
+upgrade
+plan
+rate
+limited
+services"
+73,"Just a quick heads up to Nathan (not anchoring here cos TZ lag ^^) about the deployment model; We have changed, we won't be deploying OC service  (agent and collector). We can be way faster by;
+1) adding HC exporter to price-service (golang application) its actually 98% done :blob-bee:
+2) deploying honeycomb-opentracing-proxy to ingest tracing data from api-v2 (php application)
+
+*Why?*
+1)  That would require us to remove the prometheus and jaeger exporters from the code, and let the new OC collector export them out. The problem is price-service is a critical service and we can break its traces or metrics by moving them to collector, we don't need to spent time with that for the POC, thx for OC exporters
+2) Api-v2 is the most critical service we have, it serves ~90% of HelloFresh customers queries. If we go with OC service, the way OC php SDK works with OC service is by adding a additional daemon process (traces are exported via local unix socket) at the same container. ATM the api-v2 processes already take high cpu times :smiling_face_with_smiling_eyes_and_hand_covering_mouth:, its too risky for the POC purposes I'd say.
+
+lemme know what you think about that, thank you ^^","['model', 'honeycomb.io', 'deploying', 'opentracing', 'honeycombio', 'api', 'php', 'export', 'deployment', 'proxy', 'honeycomb', 'go', 'sdk', 'blob']","oc
+service
+collector
+poc
+traces
+critical
+deploying
+api
+price
+prometheus"
+74,"Hi peeps, some heads up;
+
+• oc agent `receivers.jaeger: {}` wasn't exposing any of the ports it supposed to. We had to do a hack to make it work
+• all our tracing data within our k8s cluster are now exported to our jaeger and honeycomb, we need to use a zipkin v2 fmt exporter instead
+
+Tomorrow we are taking all out tracing data to HC in one go :fingerscrossed:",[],"jaeger
+tracing
+zipkin
+honeycomb
+exporter
+receivers
+oc
+hc
+heads
+fmt"
+75,"Ok HelloFresh.. last one cc <@UPBGYLAQJ> … your issue *could* have been related to email.  I see that big SQL insert that takes a long time, but also the field on the trace around http URL often has send_email and “freebies” in it.   Your email verification provider Kickbox doesn’t seem to be reporting any outages on <http://status.kickbox.com|status.kickbox.com>, but who knows.. here’s a link.   <https://share.getcloudapp.com/7Kuxrk8k> hope the weekend is well for you!",[],"send_email
+email
+weekend
+verification
+reporting
+knows
+sql
+provider
+trace
+hope"
+76,"like this:
+Which pods are using the most CPU?
+How does container resource use compare to limits?
+What do system metrics look like at the node level?
+Why are pods failing to start?",[],"pods
+limits
+metrics
+cpu
+compare
+resource
+level
+container
+node
+like"
+77,"HelloFresh team, pleasure to meet you! I’m the new Director of Customer Engineering at Honeycomb, based in Portland, OR. I’ve joined after 6 years at Chef Software where I was the Principal Customer Architect. I look forward to partnering with you to achieve your goals with Honeycomb!
+
+ E: <mailto:irving@honeycomb.io|irving@honeycomb.io>
+ M: <tel:5034905523|(503) 490-5523>
+ L: <http://linkedin.com/in/irvingpop/|linkedin.com/in/irvingpop/>
+ T: <http://twitter.com/irvingpop/|twitter.com/irvingpop/>",[],"honeycomb
+customer
+portland
+partnering
+director
+architect
+chef
+engineering
+principal
+goals"
+78,"Hi <@UPBH1KLV8> we do have an open feature request to integrate with Kubernetes metrics server and I can add your name to it. For now, we don't have a metrics integration for k8s beyond the deprecated heapster integration.","['metrics', 'integration', 'open', 'kubernetes', 'integrate']","metrics
+integration 
+kubernetes 
+deprecated 
+integrate 
+hi 
+feature 
+request 
+open 
+server "
+79,"Good evening <@UPBH1KLV8>, I'm doing great!
+
+Regarding automation, here's what I can share:
+• Datasets - these are automatically created upon receipt of data marked with a new dataset name. That way you can even create datasets with curl. However there's no API for management of them.
+• Team members: You aready have SAML enabled and all users signing up via SAML, so they will be automatically added to your team 
+• boards - yes! there is a Boards API: <https://docs.honeycomb.io/api/boards-api/#docs-sidebar>
+• SLOs - not yet.  However I recommend you watch our new 3-part video series on SLOs, these have a lot of practical advice I think you'll find valuable: <https://www.honeycomb.io/production-slos/>
+• Finally, one more bit of automation that is very popular and useful is to use Markers.  For example all code deploys, config changes and alerts from other systems could be added as markers to dataset: <https://docs.honeycomb.io/api/markers/>",[],"boards 
+saml 
+datasets 
+markers 
+automation 
+team 
+dataset 
+automatically 
+valuable 
+evening "
+80,"Hello, I need some help with the agent less solution to collect logs from RDS databases. I’m not able to get the logs on Honeycomb, I could not see errors, and also the dataset is not created.  I created the lambda function following this link <https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=honeycomb-rds-postgresql-log-integration&amp;templateURL=https://s3.amazonaws.com/honeycomb-builds/honeycombio/integrations-for-aws/LATEST/templates/cloudwatch-rds-postgresql.yml> , for MySQL databases is working well, but I could not do the same for Postgres.",[],"databases
+logs
+honeycomb
+rds
+created
+postgres
+lambda
+collect 
+agent 
+dataset "
+81,"Ok - I don't see anything for ELB support with the agentless integration, I've posted the question internally. You might be able to do it using the cloudwatch agentless integration - I'm asking",[],"integration
+cloudwatch
+elb
+internally
+posted
+asking
+support
+ok
+able
+question"
